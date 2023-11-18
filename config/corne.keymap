@@ -31,128 +31,14 @@
             quick-tap-ms = <250>;
         };
 
-        t_key: t_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "T_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL T>, <&kp T>;
-        };
-
         hold_tap_kp_kr: hold_tap_kp_kr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_KP_KR";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <300>;
             flavor = "tap-preferred";
             quick-tap-ms = <250>;
             bindings = <&kp>, <&key_repeat>;
-        };
-
-        repeat_key: repeat_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "REPEAT_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kr LCTRL 0>, <&key_repeat>;
-
-            tapping-term-ms = <80>;
-        };
-
-        a_key: a_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "A_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL A>, <&kp A>;
-        };
-
-        r_key: r_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "R_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL R>, <&kp R>;
-        };
-
-        s_key: s_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "S_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL S>, <&kp S>;
-        };
-
-        g_key: g_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "G_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL G>, <&kp G>;
-        };
-
-        q_key: q_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "Q_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL Q>, <&kp Q>;
-        };
-
-        w_key: w_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "W_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL W>, <&kp W>;
-        };
-
-        f_key: f_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "F_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL F>, <&kp F>;
-        };
-
-        p_key: p_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "P_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL P>, <&kp P>;
-        };
-
-        b_key: b_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "B_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL B>, <&kp B>;
-        };
-
-        z_key: z_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "Z_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL Z>, <&kp Z>;
-        };
-
-        x_key: x_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "X_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL X>, <&kp X>;
-        };
-
-        c_key: c_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "C_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL C>, <&kp C>;
-        };
-
-        d_key: d_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "D_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL D>, <&kp D>;
-        };
-
-        v_key: v_key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "V_KEY";
-            #binding-cells = <0>;
-            bindings = <&hold_tap_kp_kp LCTRL V>, <&kp LS(V)>;
         };
     };
 
@@ -167,10 +53,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &q_key  &w_key  &f_key   &p_key     &b_key         &kp J           &kp L          &kp U      &kp Y    &kp SEMICOLON  &none
-&none  &a_key  &r_key  &s_key   &t_key     &g_key         &kp M           &kp N          &kp E      &kp I    &kp O          &none
-&none  &z_key  &x_key  &c_key   &d_key     &v_key         &kp K           &kp H          &kp COMMA  &kp DOT  &kp SQT        &none
-                       &kp TAB  &kp SPACE  &repeat_key    &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER
+&none  &hold_tap_kp_kp LCTRL Q  &hold_tap_kp_kp LCTRL W  &hold_tap_kp_kp LCTRL F  &hold_tap_kp_kp LCTRL P  &hold_tap_kp_kp LCTRL P    &kp J           &kp L          &kp U      &kp Y    &kp SEMICOLON  &none
+&none  &none                    &none                    &none                    &none                    &none                      &kp M           &kp N          &kp E      &kp I    &kp O          &none
+&none  &none                    &none                    &none                    &none                    &none                      &kp K           &kp H          &kp COMMA  &kp DOT  &kp SQT        &none
+                                                         &kp TAB                  &kp SPACE                &hold_tap_kp_kr LCTRL 0    &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER
             >;
         };
 
