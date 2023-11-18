@@ -8,6 +8,39 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        home_row_layer: home_row_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <250>;
+        };
+
+        home_row_mod: home_row_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <250>;
+        };
+
+        repeatDanceT: repeatDanceT {
+            compatible = "zmk,behavior-tap-dance";
+            label = "REPEATDANCET";
+            #binding-cells = <0>;
+            bindings = <&home_row_mod T RCTRL>, <&key_repeat>;
+
+            tapping-term-ms = <180>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -19,10 +52,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F    &kp P      &kp B     &kp J   &kp L          &kp U      &kp Y    &kp SEMICOLON  &none
-&none  &kp A  &kp R  &kp S    &kp T      &kp G     &kp M   &kp N          &kp E      &kp I    &kp O          &none
-&none  &kp Z  &kp X  &kp C    &kp D      &kp V     &kp K   &kp H          &kp COMMA  &kp DOT  &kp SQT        &none
-                     &kp TAB  &kp SPACE  &trans    &trans  &kp BACKSPACE  &kp ENTER
+&none  &kp Q  &kp W  &kp F    &kp P          &kp B          &kp J           &kp L          &kp U      &kp Y    &kp SEMICOLON  &none
+&none  &kp A  &kp R  &kp S    &repeatDanceT  &kp G          &kp M           &kp N          &kp E      &kp I    &kp O          &none
+&none  &kp Z  &kp X  &kp C    &kp D          &kp V          &kp K           &kp H          &kp COMMA  &kp DOT  &kp SQT        &none
+                     &kp TAB  &kp SPACE      &key_repeat    &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER
             >;
         };
 
@@ -37,7 +70,7 @@
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                       &trans  &trans  &trans    &trans  &trans  &trans
+                       &trans  &trans  &to 0     &to 2   &trans  &trans
             >;
         };
 
@@ -52,7 +85,7 @@
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                       &trans  &trans  &trans    &trans  &trans  &trans
+                       &trans  &trans  &to 1     &to 0   &trans  &trans
             >;
         };
 
