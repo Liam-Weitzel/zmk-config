@@ -89,6 +89,39 @@
             flavor = "tap-preferred";
             quick-tap-ms = <250>;
         };
+
+        backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DEL_MOD_LAYER_1";
+            bindings =
+                <&hold_tap_kp_kp K_CANCEL BACKSPACE>,
+                <&hold_tap_kp_kp K_CANCEL DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        backspace_del_mod_layer_2: backspace_del_mod_layer_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DEL_MOD_LAYER_2";
+            bindings =
+                <&hold_tap_tog_kp 2 BACKSPACE>,
+                <&hold_tap_tog_kp 2 DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        backspace_del_mod_layer_3: backspace_del_mod_layer_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DEL_MOD_LAYER_3";
+            bindings =
+                <&hold_tap_tog_kp 5 BACKSPACE>,
+                <&hold_tap_tog_kp 5 DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -102,19 +135,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &hold_tap_kp_kp K_CANCEL Q  &hold_tap_kp_kp K_CANCEL W  &hold_tap_kp_kp K_CANCEL F    &hold_tap_kp_kp K_CANCEL P      &hold_tap_kp_kp K_CANCEL P               &hold_tap_kp_kp K_CANCEL J  &hold_tap_kp_kp K_CANCEL L          &hold_tap_kp_kp K_CANCEL U      &hold_tap_kp_kp K_CANCEL Y       &hold_tap_kp_kp K_CANCEL SEMI  &none
-&none  &hold_tap_kp_kp K_CANCEL A  &hold_tap_kp_kp K_CANCEL R  &hold_tap_kp_kp K_CANCEL S    &hold_tap_mo_kp 3 T             &hold_tap_mo_kp 6 G                      &hold_tap_kp_kp LCTRL M     &hold_tap_kp_kp LCTRL N             &hold_tap_kp_kp LCTRL E         &hold_tap_kp_kp LCTRL I          &hold_tap_kp_kp K_CANCEL O     &none
-&none  &hold_tap_kp_kp K_CANCEL Z  &hold_tap_kp_kp K_CANCEL X  &hold_tap_kp_kp K_CANCEL C    &hold_tap_kp_kp K_CANCEL D      &hold_tap_kp_kp K_CANCEL V               &hold_tap_kp_kp K_CANCEL K  &hold_tap_kp_kp K_CANCEL H          &hold_tap_kp_kp K_CANCEL COMMA  &hold_tap_kp_kp K_CANCEL PERIOD  &hold_tap_kp_kp K_CANCEL SQT   &none
-                                                               &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_kp_kp K_CANCEL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &hold_tap_kp_kp K_CANCEL BACKSPACE  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &hold_tap_kp_kp K_CANCEL Q  &hold_tap_kp_kp K_CANCEL W  &hold_tap_kp_kp K_CANCEL F    &hold_tap_kp_kp K_CANCEL P      &hold_tap_kp_kp K_CANCEL B               &hold_tap_kp_kp K_CANCEL J  &hold_tap_kp_kp K_CANCEL L  &hold_tap_kp_kp K_CANCEL U      &hold_tap_kp_kp K_CANCEL Y       &hold_tap_kp_kp K_CANCEL SEMI  &none
+&none  &hold_tap_kp_kp K_CANCEL A  &hold_tap_kp_kp K_CANCEL R  &hold_tap_kp_kp K_CANCEL S    &hold_tap_kp_kp K_CANCEL T      &hold_tap_mo_kp 3 G                      &hold_tap_mo_kp 6 M         &hold_tap_kp_kp K_CANCEL N  &hold_tap_kp_kp K_CANCEL E      &hold_tap_kp_kp K_CANCEL I       &hold_tap_kp_kp K_CANCEL O     &none
+&none  &hold_tap_kp_kp K_CANCEL Z  &hold_tap_kp_kp K_CANCEL X  &hold_tap_kp_kp K_CANCEL C    &hold_tap_kp_kp K_CANCEL D      &hold_tap_kp_kp K_CANCEL V               &hold_tap_kp_kp K_CANCEL K  &hold_tap_kp_kp K_CANCEL H  &hold_tap_kp_kp K_CANCEL COMMA  &hold_tap_kp_kp K_CANCEL PERIOD  &hold_tap_kp_kp K_CANCEL SQT   &none
+                                                               &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_kp_kp K_CANCEL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp K_CANCEL ENTER
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &none  &none  &none                         &none                     &none                            &none                       &none                               &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                            &none                       &none                               &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                            &none                       &none                               &none                           &none  &none  &none
-                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_tog_kp 2 SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr K_CANCEL 0  &hold_tap_kp_kp K_CANCEL BACKSPACE  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &none  &none  &none                         &none                     &none                            &none                       &none                       &none                           &none  &none  &none
+&none  &none  &none  &none                         &none                     &none                            &none                       &none                       &none                           &none  &none  &none
+&none  &none  &none  &none                         &none                     &none                            &none                       &none                       &none                           &none  &none  &none
+                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_tog_kp 2 SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp K_CANCEL ENTER
             >;
         };
 
@@ -138,10 +171,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none                         &none                     &none                                    &none                       &none                               &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                                    &none                       &none                               &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                                    &none                       &none                               &none                           &none  &none  &none
-                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_tog_kp 5 SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &hold_tap_kp_kp K_CANCEL BACKSPACE  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &none  &none  &none                         &none                     &none                                    &none                    &none                       &none                           &none  &none  &none
+&none  &none  &none  &none                         &none                     &none                                    &none                    &none                       &none                           &none  &none  &none
+&none  &none  &none  &none                         &none                     &none                                    &none                    &none                       &none                           &none  &none  &none
+                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_tog_kp 5 SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LCTRL 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp K_CANCEL ENTER
             >;
         };
 
