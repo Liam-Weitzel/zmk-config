@@ -83,7 +83,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        layer_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -91,23 +91,23 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &hold_tap_kp_kp LCTRL Q  &hold_tap_kp_kp LCTRL W  &hold_tap_kp_kp LCTRL F  &hold_tap_kp_kp LCTRL P  &hold_tap_kp_kp LCTRL P    &hold_tap_kp_kp LCTRL J                &hold_tap_kp_kp LCTRL L  &hold_tap_kp_kp LCTRL U      &hold_tap_kp_kp LCTRL Y       &hold_tap_kp_kp LCTRL SEMI  &none
-&none  &hold_tap_kp_kp LCTRL A  &hold_tap_kp_kp RCTRL R  &hold_tap_kp_kp LCTRL S  &hold_tap_mo_kp 3 T      &hold_tap_kp_kp LCTRL G    &hold_tap_kp_kp LCTRL M                &hold_tap_kp_kp LCTRL N  &hold_tap_kp_kp LCTRL E      &hold_tap_kp_kp LCTRL I       &hold_tap_kp_kp LCTRL O     &none
-&none  &hold_tap_kp_kp LCTRL Z  &hold_tap_kp_kp LCTRL X  &hold_tap_kp_kp LCTRL C  &hold_tap_kp_kp LCTRL D  &hold_tap_kp_kp LCTRL V    &hold_tap_kp_kp LCTRL K                &hold_tap_kp_kp LCTRL H  &hold_tap_kp_kp LCTRL COMMA  &hold_tap_kp_kp LCTRL PERIOD  &hold_tap_kp_kp LCTRL SQT   &none
-                                                         &kp TAB                  &kp SPACE                &hold_tap_kp_kr LCTRL 0    &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT  &kp BACKSPACE            &kp ENTER
+&none  &hold_tap_kp_kp LCTRL Q  &hold_tap_kp_kp LCTRL W  &hold_tap_kp_kp LCTRL F    &hold_tap_kp_kp LCTRL P      &hold_tap_kp_kp LCTRL P    &hold_tap_kp_kp LCTRL J                &hold_tap_kp_kp LCTRL L          &hold_tap_kp_kp LCTRL U      &hold_tap_kp_kp LCTRL Y       &hold_tap_kp_kp LCTRL SEMI  &none
+&none  &hold_tap_kp_kp LCTRL A  &hold_tap_kp_kp RCTRL R  &hold_tap_kp_kp LCTRL S    &hold_tap_mo_kp 3 T          &hold_tap_mo_kp 6 G        &hold_tap_kp_kp LCTRL M                &hold_tap_kp_kp LCTRL N          &hold_tap_kp_kp LCTRL E      &hold_tap_kp_kp LCTRL I       &hold_tap_kp_kp LCTRL O     &none
+&none  &hold_tap_kp_kp LCTRL Z  &hold_tap_kp_kp LCTRL X  &hold_tap_kp_kp LCTRL C    &hold_tap_kp_kp LCTRL D      &hold_tap_kp_kp LCTRL V    &hold_tap_kp_kp LCTRL K                &hold_tap_kp_kp LCTRL H          &hold_tap_kp_kp LCTRL COMMA  &hold_tap_kp_kp LCTRL PERIOD  &hold_tap_kp_kp LCTRL SQT   &none
+                                                         &hold_tap_kp_kp LCTRL TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_kr LCTRL 0    &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT  &hold_tap_kp_kp LCTRL BACKSPACE  &hold_tap_kp_kp LCTRL ENTER
             >;
         };
 
-        lower {
+        layer_2 {
             bindings = <
-&none  &none  &none  &none  &none  &none                   &none                        &none                    &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none                        &hold_tap_kp_kp LCTRL N  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none                        &none                    &none  &none  &none  &none
-                     &none  &none  &hold_tap_tog_kr 2 0    &hold_tap_sk_kp LCTRL LCTRL  &none                    &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+                     &none  &none  &hold_tap_tog_kr 2 0    &none  &none  &none
             >;
         };
 
-        lower_lock {
+        layer_2_lock {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -116,7 +116,34 @@
             >;
         };
 
-        lower_temp {
+        layer_2_temp {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
+                     &none  &none  &hold_tap_tog_kr 5 0    &none  &none  &none
+            >;
+        };
+
+        layer_3_lock {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_3_temp {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -129,14 +156,24 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        lock {
+        layer_2_lock {
             if-layers = <2>;
             then-layer = <1>;
         };
 
-        unlock {
+        layer_2_temp {
             if-layers = <3>;
             then-layer = <1>;
+        };
+
+        layer_3_lock {
+            if-layers = <5>;
+            then-layer = <4>;
+        };
+
+        layer_3_temp {
+            if-layers = <6>;
+            then-layer = <4>;
         };
     };
 };
