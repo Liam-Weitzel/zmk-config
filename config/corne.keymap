@@ -48,6 +48,26 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&key_repeat>;
         };
+
+        sticky_key: sticky_key {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            quick-release;
+            release-after-ms = <3000>;
+        };
+
+        hold_tap_sk_kp: hold_tap_sk_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_SK_KP";
+            bindings = <&sticky_key>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -70,10 +90,10 @@
 
         lower {
             bindings = <
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-                     &none  &none  &hold_tap_tog_kr 2 0    &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none                        &none                    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none                        &hold_tap_kp_kp LCTRL N  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                   &none                        &none                    &none  &none  &none  &none
+                     &none  &none  &hold_tap_tog_kr 2 0    &hold_tap_sk_kp LCTRL LCTRL  &none                    &none
             >;
         };
 
