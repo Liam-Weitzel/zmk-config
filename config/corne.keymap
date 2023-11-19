@@ -78,6 +78,17 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        hold_tap_tog_kp: hold_tap_tog_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_TOG_KP";
+            bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <250>;
+        };
     };
 
     keymap {
@@ -91,19 +102,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &hold_tap_kp_kp LCTRL Q  &hold_tap_kp_kp LCTRL W  &hold_tap_kp_kp LCTRL F    &hold_tap_kp_kp LCTRL P      &hold_tap_kp_kp LCTRL P    &hold_tap_kp_kp LCTRL J                &hold_tap_kp_kp LCTRL L          &hold_tap_kp_kp LCTRL U      &hold_tap_kp_kp LCTRL Y       &hold_tap_kp_kp LCTRL SEMI  &none
-&none  &hold_tap_kp_kp LCTRL A  &hold_tap_kp_kp RCTRL R  &hold_tap_kp_kp LCTRL S    &hold_tap_mo_kp 3 T          &hold_tap_mo_kp 6 G        &hold_tap_kp_kp LCTRL M                &hold_tap_kp_kp LCTRL N          &hold_tap_kp_kp LCTRL E      &hold_tap_kp_kp LCTRL I       &hold_tap_kp_kp LCTRL O     &none
-&none  &hold_tap_kp_kp LCTRL Z  &hold_tap_kp_kp LCTRL X  &hold_tap_kp_kp LCTRL C    &hold_tap_kp_kp LCTRL D      &hold_tap_kp_kp LCTRL V    &hold_tap_kp_kp LCTRL K                &hold_tap_kp_kp LCTRL H          &hold_tap_kp_kp LCTRL COMMA  &hold_tap_kp_kp LCTRL PERIOD  &hold_tap_kp_kp LCTRL SQT   &none
-                                                         &hold_tap_kp_kp LCTRL TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_kr LCTRL 0    &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT  &hold_tap_kp_kp LCTRL BACKSPACE  &hold_tap_kp_kp LCTRL ENTER
+&none  &hold_tap_kp_kp Q Q      &hold_tap_kp_kp W W      &hold_tap_kp_kp F F        &hold_tap_kp_kp P P          &hold_tap_kp_kp P P                      &hold_tap_kp_kp J J      &hold_tap_kp_kp L L              &hold_tap_kp_kp U U          &hold_tap_kp_kp Y Y            &hold_tap_kp_kp SEMI SEMI  &none
+&none  &hold_tap_kp_kp LCTRL A  &hold_tap_kp_kp RCTRL R  &hold_tap_kp_kp LCTRL S    &hold_tap_mo_kp 3 T          &hold_tap_mo_kp 6 G                      &hold_tap_kp_kp LCTRL M  &hold_tap_kp_kp LCTRL N          &hold_tap_kp_kp LCTRL E      &hold_tap_kp_kp LCTRL I        &hold_tap_kp_kp LCTRL O    &none
+&none  &hold_tap_kp_kp Z Z      &hold_tap_kp_kp X X      &hold_tap_kp_kp C C        &hold_tap_kp_kp D D          &hold_tap_kp_kp V V                      &hold_tap_kp_kp K K      &hold_tap_kp_kp H H              &hold_tap_kp_kp COMMA COMMA  &hold_tap_kp_kp PERIOD PERIOD  &hold_tap_kp_kp SQT SQT    &none
+                                                         &hold_tap_kp_kp LCTRL TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LCTRL 0  &hold_tap_kp_kp LCTRL BACKSPACE  &hold_tap_kp_kp LCTRL ENTER
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-                     &none  &none  &hold_tap_tog_kr 2 0    &none  &none  &none
+&none  &none  &none  &none                      &none                     &none                            &none                    &none                            &none                        &none  &none  &none
+&none  &none  &none  &none                      &none                     &none                            &none                    &none                            &none                        &none  &none  &none
+&none  &none  &none  &none                      &none                     &none                            &none                    &none                            &none                        &none  &none  &none
+                     &hold_tap_kp_kp LCTRL TAB  &hold_tap_tog_kp 2 SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LCTRL 0  &hold_tap_kp_kp LCTRL BACKSPACE  &hold_tap_kp_kp LCTRL ENTER
             >;
         };
 
@@ -127,10 +138,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
-                     &none  &none  &hold_tap_tog_kr 5 0    &none  &none  &none
+&none  &none  &none  &none                      &none                     &none                                    &none                    &none                            &none                        &none  &none  &none
+&none  &none  &none  &none                      &none                     &none                                    &none                    &none                            &none                        &none  &none  &none
+&none  &none  &none  &none                      &none                     &none                                    &none                    &none                            &none                        &none  &none  &none
+                     &hold_tap_kp_kp LCTRL TAB  &hold_tap_tog_kp 5 SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LCTRL 0  &hold_tap_kp_kp LCTRL BACKSPACE  &hold_tap_kp_kp LCTRL ENTER
             >;
         };
 
