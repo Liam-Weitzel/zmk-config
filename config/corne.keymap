@@ -68,6 +68,16 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
         };
+
+        hold_tap_kp_sk: hold_tap_kp_sk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_KP_SK";
+            bindings = <&kp>, <&sticky_key>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -81,10 +91,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &hold_tap_kp_kp LCTRL Q  &hold_tap_kp_kp LCTRL W  &hold_tap_kp_kp LCTRL F  &hold_tap_kp_kp LCTRL P  &hold_tap_kp_kp LCTRL P    &hold_tap_kp_kp LCTRL J  &hold_tap_kp_kp LCTRL L  &hold_tap_kp_kp LCTRL U      &hold_tap_kp_kp LCTRL Y       &hold_tap_kp_kp LCTRL SEMI  &none
-&none  &hold_tap_kp_kp LCTRL A  &hold_tap_kp_kp RCTRL R  &hold_tap_kp_kp LCTRL S  &hold_tap_mo_kp 3 T      &hold_tap_kp_kp LCTRL G    &hold_tap_kp_kp LCTRL M  &hold_tap_kp_kp LCTRL N  &hold_tap_kp_kp LCTRL E      &hold_tap_kp_kp LCTRL I       &hold_tap_kp_kp LCTRL O     &none
-&none  &hold_tap_kp_kp LCTRL Z  &hold_tap_kp_kp LCTRL X  &hold_tap_kp_kp LCTRL C  &hold_tap_kp_kp LCTRL D  &hold_tap_kp_kp LCTRL V    &hold_tap_kp_kp LCTRL K  &hold_tap_kp_kp LCTRL H  &hold_tap_kp_kp LCTRL COMMA  &hold_tap_kp_kp LCTRL PERIOD  &hold_tap_kp_kp LCTRL SQT   &none
-                                                         &kp TAB                  &kp SPACE                &hold_tap_kp_kr LCTRL 0    &kp LEFT_SHIFT           &kp BACKSPACE            &kp ENTER
+&none  &hold_tap_kp_kp LCTRL Q  &hold_tap_kp_kp LCTRL W  &hold_tap_kp_kp LCTRL F  &hold_tap_kp_kp LCTRL P  &hold_tap_kp_kp LCTRL P    &hold_tap_kp_kp LCTRL J                &hold_tap_kp_kp LCTRL L  &hold_tap_kp_kp LCTRL U      &hold_tap_kp_kp LCTRL Y       &hold_tap_kp_kp LCTRL SEMI  &none
+&none  &hold_tap_kp_kp LCTRL A  &hold_tap_kp_kp RCTRL R  &hold_tap_kp_kp LCTRL S  &hold_tap_mo_kp 3 T      &hold_tap_kp_kp LCTRL G    &hold_tap_kp_kp LCTRL M                &hold_tap_kp_kp LCTRL N  &hold_tap_kp_kp LCTRL E      &hold_tap_kp_kp LCTRL I       &hold_tap_kp_kp LCTRL O     &none
+&none  &hold_tap_kp_kp LCTRL Z  &hold_tap_kp_kp LCTRL X  &hold_tap_kp_kp LCTRL C  &hold_tap_kp_kp LCTRL D  &hold_tap_kp_kp LCTRL V    &hold_tap_kp_kp LCTRL K                &hold_tap_kp_kp LCTRL H  &hold_tap_kp_kp LCTRL COMMA  &hold_tap_kp_kp LCTRL PERIOD  &hold_tap_kp_kp LCTRL SQT   &none
+                                                         &kp TAB                  &kp SPACE                &hold_tap_kp_kr LCTRL 0    &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT  &kp BACKSPACE            &kp ENTER
             >;
         };
 
