@@ -95,19 +95,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_1";
             bindings =
-                <&hold_tap_kp_kp K_CANCEL BACKSPACE>,
-                <&hold_tap_kp_kp K_CANCEL DELETE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        backspace_del_mod_layer_2: backspace_del_mod_layer_2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DEL_MOD_LAYER_2";
-            bindings =
-                <&hold_tap_kp_kp K_CANCEL BACKSPACE>,
-                <&hold_tap_kp_kp K_CANCEL DELETE>;
+                <&hold_tap_mo_kp 0 BACKSPACE>,
+                <&hold_tap_mo_kp 0 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -124,17 +113,6 @@
             mods = <(MOD_LSFT)>;
         };
 
-        backspace_del_mod_layer_4: backspace_del_mod_layer_4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DEL_MOD_LAYER_4";
-            bindings =
-                <&hold_tap_kp_kp K_CANCEL BACKSPACE>,
-                <&hold_tap_kp_kp K_CANCEL DELETE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         backspace_del_mod_layer_5: backspace_del_mod_layer_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_5";
@@ -146,12 +124,45 @@
             mods = <(MOD_LSFT)>;
         };
 
+        backspace_del_mod_layer_2: backspace_del_mod_layer_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DEL_MOD_LAYER_2";
+            bindings =
+                <&hold_tap_tog_kp 2 BACKSPACE>,
+                <&hold_tap_tog_kp 2 DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        backspace_del_mod_layer_4: backspace_del_mod_layer_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DEL_MOD_LAYER_4";
+            bindings =
+                <&hold_tap_tog_kp 8 BACKSPACE>,
+                <&hold_tap_tog_kp 8 DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
         backspace_del_mod_layer_6: backspace_del_mod_layer_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_6";
             bindings =
-                <&hold_tap_kp_kp K_CANCEL BACKSPACE>,
-                <&hold_tap_kp_kp K_CANCEL DELETE>;
+                <&hold_tap_tog_kp 14 BACKSPACE>,
+                <&hold_tap_tog_kp 14 DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        enter_home_end_mod: enter_home_end_mod {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ENTER_HOME_END_MOD";
+            bindings =
+                <&hold_tap_kp_kp HOME ENTER>,
+                <&hold_tap_kp_kp END ENTER>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -169,19 +180,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &hold_tap_kp_kp K_CANCEL Q  &hold_tap_kp_kp K_CANCEL W  &hold_tap_kp_kp K_CANCEL F    &hold_tap_kp_kp K_CANCEL P      &hold_tap_kp_kp K_CANCEL B               &hold_tap_kp_kp K_CANCEL J  &hold_tap_kp_kp K_CANCEL L  &hold_tap_kp_kp K_CANCEL U      &hold_tap_kp_kp K_CANCEL Y       &hold_tap_kp_kp K_CANCEL SEMI  &none
-&none  &hold_tap_kp_kp K_CANCEL A  &hold_tap_kp_kp K_CANCEL R  &hold_tap_kp_kp K_CANCEL S    &hold_tap_mo_kp 9 T             &hold_tap_mo_kp 3 G                      &hold_tap_mo_kp 6 M         &hold_tap_mo_kp 12 N        &hold_tap_kp_kp K_CANCEL E      &hold_tap_kp_kp K_CANCEL I       &hold_tap_kp_kp K_CANCEL O     &none
-&none  &hold_tap_mo_kp 15 Z        &hold_tap_kp_kp K_CANCEL X  &hold_tap_kp_kp K_CANCEL C    &hold_tap_kp_kp K_CANCEL D      &hold_tap_kp_kp K_CANCEL V               &hold_tap_kp_kp K_CANCEL K  &hold_tap_kp_kp K_CANCEL H  &hold_tap_kp_kp K_CANCEL COMMA  &hold_tap_kp_kp K_CANCEL PERIOD  &hold_tap_kp_kp K_CANCEL SQT   &none
-                                                               &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_kp_kp K_CANCEL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &hold_tap_kp_kp K_CANCEL Q  &hold_tap_kp_kp K_CANCEL W  &hold_tap_kp_kp K_CANCEL F    &hold_tap_kp_kp K_CANCEL P   &hold_tap_kp_kp K_CANCEL B               &hold_tap_kp_kp K_CANCEL J  &hold_tap_kp_kp K_CANCEL L  &hold_tap_kp_kp K_CANCEL U      &hold_tap_kp_kp K_CANCEL Y       &hold_tap_kp_kp K_CANCEL SEMI  &none
+&none  &hold_tap_kp_kp K_CANCEL A  &hold_tap_kp_kp K_CANCEL R  &hold_tap_kp_kp K_CANCEL S    &hold_tap_mo_kp 9 T          &hold_tap_mo_kp 3 G                      &hold_tap_mo_kp 6 M         &hold_tap_mo_kp 12 N        &hold_tap_kp_kp K_CANCEL E      &hold_tap_kp_kp K_CANCEL I       &hold_tap_kp_kp K_CANCEL O     &none
+&none  &hold_tap_mo_kp 15 Z        &hold_tap_kp_kp K_CANCEL X  &hold_tap_kp_kp K_CANCEL C    &hold_tap_kp_kp K_CANCEL D   &hold_tap_kp_kp K_CANCEL V               &hold_tap_kp_kp K_CANCEL K  &hold_tap_kp_kp K_CANCEL H  &hold_tap_kp_kp K_CANCEL COMMA  &hold_tap_kp_kp K_CANCEL PERIOD  &hold_tap_kp_kp K_CANCEL SQT   &none
+                                                               &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &enter_home_end_mod
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &none  &none  &none                         &none                     &none                            &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                            &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                            &none                       &none                       &none                           &none  &none  &none
-                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_tog_kp 2 SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &none  &none  &none                         &none                        &none                            &none                   &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                            &none                   &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                            &none                   &none                       &none                &none  &none  &none
+                     &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &enter_home_end_mod
             >;
         };
 
@@ -205,10 +216,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none                         &none                           &none                                    &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                           &none                                    &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                           &none                                    &none                       &none                       &none                           &none  &none  &none
-                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_kp_kp K_CANCEL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+                     &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &enter_home_end_mod
             >;
         };
 
@@ -232,10 +243,10 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none                         &none                     &none                                    &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                                    &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                     &none                                    &none                       &none                       &none                           &none  &none  &none
-                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_tog_kp 8 SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+                     &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &enter_home_end_mod
             >;
         };
 
@@ -259,10 +270,10 @@
 
         layer_5 {
             bindings = <
-&none  &none  &none  &none                         &none                           &none                                    &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                           &none                                    &none                       &none                       &none                           &none  &none  &none
-&none  &none  &none  &none                         &none                           &none                                    &none                       &none                       &none                           &none  &none  &none
-                     &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_kp_kp K_CANCEL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+&none  &none  &none  &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+                     &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &enter_home_end_mod
             >;
         };
 
@@ -286,10 +297,10 @@
 
         layer_6 {
             bindings = <
-&none  &none         &none         &none                         &none                      &bt BT_CLR                               &none                       &none                       &none                           &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                  &bt BT_SEL 3               &bt BT_SEL 4                             &none                       &none                       &none                           &none  &none  &none
-&none  &none         &none         &none                         &none                      &none                                    &none                       &none                       &none                           &none  &none  &none
-                                   &hold_tap_kp_kp K_CANCEL TAB  &hold_tap_tog_kp 14 SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr K_CANCEL 0  &backspace_del_mod_layer_6  &hold_tap_kp_kp K_CANCEL ENTER
+&none  &none         &none         &none                         &none                        &bt BT_CLR                               &none                       &none                       &none                &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                  &bt BT_SEL 3                 &bt BT_SEL 4                             &none                       &none                       &none                &none  &none  &none
+&none  &none         &none         &none                         &none                        &none                                    &none                       &none                       &none                &none  &none  &none
+                                   &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &enter_home_end_mod
             >;
         };
 
