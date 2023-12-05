@@ -155,24 +155,6 @@
             mods = <(MOD_RCTL)>;
         };
 
-        tap_dance_m_esc: tap_dance_m_esc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_M_ESC";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp ESCAPE>;
-
-            tapping-term-ms = <100>;
-        };
-
-        tap_dance_g_esc: tap_dance_g_esc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_G_ESC";
-            #binding-cells = <0>;
-            bindings = <&kp G>, <&kp ESC>;
-
-            tapping-term-ms = <100>;
-        };
-
         copy_yank_mod: copy_yank_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "COPY_YANK_MOD";
@@ -223,13 +205,23 @@
         compatible = "zmk,combos";
 
         home {
-            bindings = <&kp HOME>;
-            key-positions = <39 20 19>;
+            bindings = <&kp END>;
+            key-positions = <20 19 40>;
         };
 
         end {
-            bindings = <&kp END>;
-            key-positions = <38 16 15>;
+            bindings = <&kp HOME>;
+            key-positions = <16 15 37>;
+        };
+
+        esc-left {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 15 38>;
+        };
+
+        esc-right {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 19 39>;
         };
     };
 
@@ -245,7 +237,7 @@
 
             bindings = <
 &none  &kp Q                        &kp W                   &kp F                         &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                    &kp Y                   &kp SEMI                &none
-&none  &hold_tap_kp_kp RIGHT_ALT A  &hold_tap_kp_kp RGUI R  &hold_tap_kp_kp RCTRL S       &hold_tap_mo_kp 9 T          &tap_dance_g_esc                         &tap_dance_m_esc            &hold_tap_mo_kp 12 N        &hold_tap_kp_kp RCTRL E  &hold_tap_kp_kp RGUI I  &hold_tap_kp_kp RALT O  &none
+&none  &hold_tap_kp_kp RIGHT_ALT A  &hold_tap_kp_kp RGUI R  &hold_tap_kp_kp RCTRL S       &hold_tap_mo_kp 9 T          &kp G                                    &kp M                       &hold_tap_mo_kp 12 N        &hold_tap_kp_kp RCTRL E  &hold_tap_kp_kp RGUI I  &hold_tap_kp_kp RALT O  &none
 &none  &kp Z                        &kp X                   &kp C                         &hold_tap_mo_kp 3 D          &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                &kp DOT                 &kp APOS                &none
                                                             &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &kp ENTER
             >;
