@@ -96,9 +96,7 @@
         backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_1";
-            bindings =
-                <&hold_tap_mo_kp 15 BACKSPACE>,
-                <&hold_tap_mo_kp 15 DELETE>;
+            bindings = <&kp BACKSPACE>, <&hold_tap_mo_kp 15 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -151,9 +149,7 @@
         backspace_del_mod_layer_6: backspace_del_mod_layer_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_6";
-            bindings =
-                <&hold_tap_tog_kp 14 BACKSPACE>,
-                <&hold_tap_tog_kp 14 DELETE>;
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -318,7 +314,7 @@
         layer_6 {
             bindings = <
 &none  &ext_power EP_OFF  &ext_power EP_ON  &out OUT_USB                  &out OUT_BLE                 &bt BT_CLR                               &none                       &none                       &none                &none  &none  &none
-&none  &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2                  &bt BT_SEL 3                 &bt BT_SEL 4                             &none                       &none                       &none                &none  &none  &none
+&none  &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2                  &bt BT_SEL 3                 &bt BT_SEL 4                             &none                       &tog 14                     &none                &none  &none  &none
 &none  &bootloader        &sys_reset        &none                         &bt BT_PRV                   &bt BT_NXT                               &none                       &none                       &none                &none  &none  &none
                                             &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &enter_home_end_mod
             >;
