@@ -223,6 +223,18 @@
             bindings = <&kp ESCAPE>;
             key-positions = <20 19 40>;
         };
+
+        home-arrow {
+            bindings = <&kp HOME>;
+            key-positions = <27 37>;
+            layers = <1 2 3>;
+        };
+
+        end-arrow {
+            bindings = <&kp END>;
+            key-positions = <27 38>;
+            layers = <1 2 3>;
+        };
     };
 
     keymap {
