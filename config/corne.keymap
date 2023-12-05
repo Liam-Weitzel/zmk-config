@@ -321,9 +321,9 @@
 
         layer_4 {
             bindings = <
-&none  &kp GRAVE    &kp QUESTION     &kp AMPERSAND                 &none                        &none                                    &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &kp BACKSLASH  &none
-&none  &kp AT_SIGN  &kp EXCLAMATION  &kp PIPE                      &none                        &none                                    &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL      &none
-&none  &none        &kp HASH         &kp DOLLAR                    &none                        &none                                    &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &none          &none
+&none  &kp QUESTION     &kp GRAVE    &kp AMPERSAND                 &none                        &none                                    &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &kp BACKSLASH  &none
+&none  &kp EXCLAMATION  &kp AT_SIGN  &kp PIPE                      &none                        &none                                    &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL      &none
+&none  &kp PERIOD       &kp HASH     &kp DOLLAR                    &none                        &none                                    &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &kp COMMA      &none
                                      &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -348,10 +348,10 @@
 
         layer_5 {
             bindings = <
-&none  &none   &kp N7  &kp N8                        &kp N9                       &kp AMPERSAND                            &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &kp BACKSLASH  &none
-&none  &kp N0  &kp N4  &kp N5                        &kp N6                       &kp PIPE                                 &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL      &none
-&none  &none   &kp N1  &kp N2                        &kp N3                       &kp EXCLAMATION                          &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &none          &none
-                       &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp QUESTION     &kp N7  &kp N8                        &kp N9                       &kp AMPERSAND                            &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &kp BACKSLASH  &none
+&none  &kp EXCLAMATION  &kp N4  &kp N5                        &kp N6                       &kp PIPE                                 &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL      &none
+&none  &kp PERIOD       &kp N1  &kp N2                        &kp N3                       &kp N0                                   &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &kp COMMA      &none
+                                &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
