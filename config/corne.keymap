@@ -206,22 +206,22 @@
 
         home {
             bindings = <&kp END>;
-            key-positions = <20 19 40>;
+            key-positions = <27 28 38>;
         };
 
         end {
             bindings = <&kp HOME>;
-            key-positions = <16 15 37>;
+            key-positions = <27 28 37>;
         };
 
         esc-left {
             bindings = <&kp ESCAPE>;
-            key-positions = <16 15 38>;
+            key-positions = <16 15 37>;
         };
 
         esc-right {
             bindings = <&kp ESCAPE>;
-            key-positions = <20 19 39>;
+            key-positions = <20 19 40>;
         };
     };
 
