@@ -160,7 +160,7 @@
         copy_yank_mod: copy_yank_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "COPY_YANK_MOD";
-            bindings = <&kp LC(C)>, <&kp Y>;
+            bindings = <&kp LC(C)>, <&nvim_yank>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -169,7 +169,7 @@
         paste_put_mod: paste_put_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "PASTE_PUT_MOD";
-            bindings = <&kp LC(V)>, <&kp P>;
+            bindings = <&kp LC(V)>, <&nvim_paste>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -178,7 +178,7 @@
         cut_delete_mod: cut_delete_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "CUT_DELETE_MOD";
-            bindings = <&kp LC(X)>, <&kp D>;
+            bindings = <&kp LC(X)>, <&nvim_del_cut>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -187,7 +187,7 @@
         undo_undo_mod: undo_undo_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "UNDO_UNDO_MOD";
-            bindings = <&kp LC(Z)>, <&kp U>;
+            bindings = <&kp LC(Z)>, <&nvim_undo>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -196,7 +196,7 @@
         redo_redo_mod: redo_redo_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "REDO_REDO_MOD";
-            bindings = <&kp LC(Y)>, <&kp LC(R)>;
+            bindings = <&kp LC(Y)>, <&nvim_redo>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -246,6 +246,43 @@
         home-right {
             bindings = <&kp HOME>;
             key-positions = <39 31 32>;
+        };
+    };
+
+    macros {
+        nvim_yank: nvim_yank {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp ESCAPE &kp Y>;
+            label = "NVIM_YANK";
+        };
+
+        nvim_paste: nvim_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp ESCAPE &kp P>;
+            label = "NVIM_PASTE";
+        };
+
+        nvim_undo: nvim_undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp ESCAPE &kp U>;
+            label = "NVIM_UNDO";
+        };
+
+        nvim_redo: nvim_redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp ESCAPE &kp LC(R)>;
+            label = "NVIM_REDO";
+        };
+
+        nvim_del_cut: nvim_del_cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp ESCAPE &kp D &kp D>;
+            label = "NVIM_DEL_CUT";
         };
     };
 
