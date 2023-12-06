@@ -149,7 +149,9 @@
         backspace_del_mod_layer_6: backspace_del_mod_layer_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_6";
-            bindings = <&kp BACKSPACE>, <&kp DEL>;
+            bindings =
+                <&hold_tap_tog_kp 14 BACKSPACE>,
+                <&hold_tap_tog_kp 14 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_LCTL)>;
