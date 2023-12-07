@@ -307,7 +307,7 @@
         layer_2 {
             bindings = <
 &none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp PG_UP                     &kp C_NEXT                   &hold_tap_kp_sk GLOBE GLOBE      &undo_undo_mod          &copy_yank_mod              &kp UP_ARROW                    &paste_put_mod   &redo_redo_mod  &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp PG_UP                     &kp C_PREVIOUS               &none                            &cut_delete_mod         &kp LEFT_ARROW              &kp DOWN_ARROW                  &kp RIGHT_ARROW  &kp INSERT      &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp PAGE_DOWN                 &kp C_PREVIOUS               &none                            &cut_delete_mod         &kp LEFT_ARROW              &kp DOWN_ARROW                  &kp RIGHT_ARROW  &kp INSERT      &none
 &none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &kp C_PLAY_PAUSE              &none                        &none                            &kp SCROLLLOCK          &kp PAUSE_BREAK             &kp CAPSLOCK                    &kp PRINTSCREEN  &none           &none
                                                  &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
