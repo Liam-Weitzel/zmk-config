@@ -143,7 +143,7 @@
                 <&hold_tap_tog_kp 8 DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTL|MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
         backspace_del_mod_layer_6: backspace_del_mod_layer_6 {
@@ -163,7 +163,7 @@
             bindings = <&kp LC(C)>, <&nvim_yank>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         paste_put_mod: paste_put_mod {
@@ -172,7 +172,7 @@
             bindings = <&kp LC(V)>, <&nvim_paste>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         cut_delete_mod: cut_delete_mod {
@@ -181,7 +181,7 @@
             bindings = <&kp LC(X)>, <&nvim_del_cut>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         undo_undo_mod: undo_undo_mod {
@@ -190,7 +190,7 @@
             bindings = <&kp LC(Z)>, <&nvim_undo>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         redo_redo_mod: redo_redo_mod {
@@ -199,7 +199,7 @@
             bindings = <&kp LC(Y)>, <&nvim_redo>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
     };
 
@@ -255,7 +255,6 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp Y>;
             label = "NVIM_YANK";
-            wait-ms = <50>;
         };
 
         nvim_paste: nvim_paste {
@@ -263,7 +262,6 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp P>;
             label = "NVIM_PASTE";
-            wait-ms = <50>;
         };
 
         nvim_undo: nvim_undo {
@@ -271,7 +269,6 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp U>;
             label = "NVIM_UNDO";
-            wait-ms = <50>;
         };
 
         nvim_redo: nvim_redo {
@@ -279,7 +276,6 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp LC(R)>;
             label = "NVIM_REDO";
-            wait-ms = <50>;
         };
 
         nvim_del_cut: nvim_del_cut {
@@ -287,7 +283,6 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp D &kp D>;
             label = "NVIM_DEL_CUT";
-            wait-ms = <50>;
         };
     };
 
