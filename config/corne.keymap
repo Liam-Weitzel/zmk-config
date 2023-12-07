@@ -255,6 +255,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp Y>;
             label = "NVIM_YANK";
+            wait-ms = <50>;
         };
 
         nvim_paste: nvim_paste {
@@ -262,6 +263,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp P>;
             label = "NVIM_PASTE";
+            wait-ms = <50>;
         };
 
         nvim_undo: nvim_undo {
@@ -269,6 +271,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp U>;
             label = "NVIM_UNDO";
+            wait-ms = <50>;
         };
 
         nvim_redo: nvim_redo {
@@ -276,6 +279,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp LC(R)>;
             label = "NVIM_REDO";
+            wait-ms = <50>;
         };
 
         nvim_del_cut: nvim_del_cut {
@@ -283,6 +287,7 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp D &kp D>;
             label = "NVIM_DEL_CUT";
+            wait-ms = <50>;
         };
     };
 
