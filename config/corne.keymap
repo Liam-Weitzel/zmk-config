@@ -196,10 +196,31 @@
         redo_redo_mod: redo_redo_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "REDO_REDO_MOD";
-            bindings = <&kp LC(Y)>, <&nvim_redo>;
+            bindings = <&ctrly_f20>, <&nvim_redo>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
+        };
+
+        ctrly_f20: ctrly_f20 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRLY_F20";
+            bindings = <&kp LC(Y)>, <&hold_tap_kp_kp F20 LC(Y)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        hold_tap_no_kp: hold_tap_no_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_NO_KP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <250>;
         };
     };
 
@@ -297,9 +318,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                        &kp W                   &kp F                         &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                           &kp Y                   &kp SEMI                &none
-&none  &hold_tap_kp_kp RIGHT_ALT A  &hold_tap_kp_kp RGUI R  &hold_tap_kp_kp RCTRL S       &hold_tap_mo_kp 9 T          &kp G                                    &kp M                       &hold_tap_mo_kp 12 N        &hold_tap_kp_kp RCTRL E         &hold_tap_kp_kp RGUI I  &hold_tap_kp_kp RALT O  &none
-&none  &kp Z                        &kp X                   &kp C                         &hold_tap_mo_kp 3 D          &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                       &kp DOT                 &kp APOS                &none
+&none  &kp Q                        &kp W                   &kp F                         &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                           &kp Y                   &hold_tap_kp_kp F19 SEMI  &none
+&none  &hold_tap_kp_kp RIGHT_ALT A  &hold_tap_kp_kp RGUI R  &hold_tap_kp_kp RCTRL S       &hold_tap_mo_kp 9 T          &kp G                                    &kp M                       &hold_tap_mo_kp 12 N        &hold_tap_kp_kp RCTRL E         &hold_tap_kp_kp RGUI I  &hold_tap_kp_kp RALT O    &none
+&none  &kp Z                        &kp X                   &kp C                         &hold_tap_mo_kp 3 D          &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                       &kp DOT                 &kp APOS                  &none
                                                             &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -333,9 +354,9 @@
 
         layer_3 {
             bindings = <
-&none  &kp F13  &kp F7  &kp F8                        &kp F9                       &kp F10                                  &none                       &none                       &kp F22                         &kp F23  &kp F24  &none
-&none  &kp F14  &kp F4  &kp F5                        &kp F6                       &kp F11                                  &none                       &none                       &kp F19                         &kp F20  &kp F21  &none
-&none  &kp F15  &kp F1  &kp F2                        &kp F3                       &kp F12                                  &none                       &none                       &kp F16                         &kp F17  &kp F18  &none
+&none  &kp F13  &kp F7  &kp F8                        &kp F9                       &kp F10                                  &none                       &none                       &kp F22                         &kp F23  &hold_tap_kp_kp F21 F24  &none
+&none  &kp F14  &kp F4  &kp F5                        &kp F6                       &kp F11                                  &none                       &none                       &kp F19                         &kp F20  &kp F21                  &none
+&none  &kp F15  &kp F1  &kp F2                        &kp F3                       &kp F12                                  &none                       &none                       &kp F16                         &kp F17  &kp F18                  &none
                         &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -360,9 +381,9 @@
 
         layer_4 {
             bindings = <
-&none  &kp QUESTION     &kp GRAVE    &kp AMPERSAND                 &none                        &none                                    &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &kp BACKSLASH  &none
-&none  &kp EXCLAMATION  &kp AT_SIGN  &kp PIPE                      &none                        &none                                    &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL      &none
-&none  &kp PERIOD       &kp HASH     &kp DOLLAR                    &none                        &none                                    &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &kp COMMA      &none
+&none  &kp QUESTION     &kp GRAVE    &kp AMPERSAND                 &none                        &none                                    &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &hold_tap_kp_kp F22 BACKSLASH  &none
+&none  &kp EXCLAMATION  &kp AT_SIGN  &kp PIPE                      &none                        &none                                    &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL                      &none
+&none  &kp PERIOD       &kp HASH     &kp DOLLAR                    &none                        &none                                    &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &kp COMMA                      &none
                                      &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -387,9 +408,9 @@
 
         layer_5 {
             bindings = <
-&none  &kp QUESTION     &kp N7  &kp N8                        &kp N9                       &kp AMPERSAND                            &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &kp BACKSLASH  &none
-&none  &kp EXCLAMATION  &kp N4  &kp N5                        &kp N6                       &kp PIPE                                 &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL      &none
-&none  &kp PERIOD       &kp N1  &kp N2                        &kp N3                       &kp N0                                   &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &kp COMMA      &none
+&none  &kp QUESTION     &kp N7  &kp N8                        &kp N9                       &kp AMPERSAND                            &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH  &hold_tap_kp_kp F23 BACKSLASH  &none
+&none  &kp EXCLAMATION  &kp N4  &kp N5                        &kp N6                       &kp PIPE                                 &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS  &kp EQUAL                      &none
+&none  &kp PERIOD       &kp N1  &kp N2                        &kp N3                       &kp N0                                   &kp GREATER_THAN            &kp LESS_THAN               &kp PERCENT                     &kp CARET  &kp COMMA                      &none
                                 &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -414,9 +435,9 @@
 
         layer_6 {
             bindings = <
-&none  &ext_power EP_OFF  &ext_power EP_ON  &out OUT_USB                  &out OUT_BLE                 &bt BT_CLR                               &none                       &none                       &none                           &none  &none  &kp K_POWER
-&none  &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2                  &bt BT_SEL 3                 &bt BT_SEL 4                             &none                       &tog 14                     &none                           &none  &none  &kp K_COFFEE
-&none  &bootloader        &sys_reset        &none                         &bt BT_PRV                   &bt BT_NXT                               &none                       &none                       &none                           &none  &none  &none
+&none  &ext_power EP_OFF  &ext_power EP_ON  &out OUT_USB                  &out OUT_BLE                 &bt BT_CLR                               &kp K_POWER                 &none                       &none                           &none  &hold_tap_no_kp F24 K_CANCEL  &none
+&none  &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2                  &bt BT_SEL 3                 &bt BT_SEL 4                             &kp K_LOCK                  &tog 14                     &none                           &none  &none                         &none
+&none  &bootloader        &sys_reset        &none                         &bt BT_PRV                   &bt BT_NXT                               &none                       &none                       &none                           &none  &none                         &none
                                             &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
