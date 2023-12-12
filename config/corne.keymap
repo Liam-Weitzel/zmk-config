@@ -226,7 +226,7 @@
         left_prev: left_prev {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_PREV";
-            bindings = <&kp LEFT_ARROW>, <&kp F24>;
+            bindings = <&kp LEFT_ARROW>, <&kp F17>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -235,7 +235,7 @@
         right_next: right_next {
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT_NEXT";
-            bindings = <&kp RIGHT_ARROW>, <&kp F23>;
+            bindings = <&kp RIGHT_ARROW>, <&kp F18>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
