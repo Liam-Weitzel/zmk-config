@@ -462,9 +462,9 @@
 
         layer_6 {
             bindings = <
-&none  &ext_power EP_OFF  &ext_power EP_ON  &out OUT_USB                  &out OUT_BLE                 &bt BT_CLR                               &kp K_POWER                 &none                       &none                           &none  &hold_tap_no_kp F24 K_CANCEL  &none
-&none  &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2                  &bt BT_SEL 3                 &bt BT_SEL 4                             &kp K_LOCK                  &tog 14                     &none                           &none  &none                         &none
-&none  &bootloader        &sys_reset        &none                         &bt BT_PRV                   &bt BT_NXT                               &none                       &none                       &none                           &none  &none                         &none
+&none  &ext_power EP_OFF  &ext_power EP_ON  &out OUT_USB                  &out OUT_BLE                 &bt BT_CLR                               &kp K_POWER                 &none                       &none                           &none       &hold_tap_no_kp F24 K_CANCEL  &none
+&none  &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2                  &bt BT_SEL 3                 &bt BT_SEL 4                             &kp K_LOCK                  &tog 14                     &none                           &none       &none                         &none
+&none  &bootloader        &sys_reset        &none                         &bt BT_PRV                   &bt BT_NXT                               &none                       &none                       &none                           &sys_reset  &bootloader                   &none
                                             &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
