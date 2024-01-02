@@ -244,6 +244,22 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
+
+        capsword: capsword {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSWORD";
+            #binding-cells = <0>;
+            continue-list = <A B D C E F G H I J K L M N O P Q R S T U V W X Y Z>;
+        };
+
+        caps_capsword_mod_morph: caps_capsword_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS_CAPSWORD_MOD_MORPH";
+            bindings = <&kp CAPSLOCK>, <&capsword>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     combos {
@@ -358,7 +374,7 @@
             bindings = <
 &none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp PG_UP                               &kp C_NEXT                   &none                            &undo_undo_mod          &copy_yank_mod              &kp UP_ARROW                    &paste_put_mod   &redo_redo_mod  &none
 &none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp PAGE_DOWN                           &kp C_PREVIOUS               &none                            &cut_delete_mod         &left_prev                  &kp DOWN_ARROW                  &right_next      &alt_ctrl       &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &hold_tap_kp_kp RIGHT_ALT C_PLAY_PAUSE  &none                        &none                            &kp ESC                 &kp V                       &kp CAPSLOCK                    &kp PRINTSCREEN  &kp INSERT      &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &hold_tap_kp_kp RIGHT_ALT C_PLAY_PAUSE  &none                        &none                            &kp ESC                 &kp V                       &caps_capsword_mod_morph        &kp PRINTSCREEN  &kp INSERT      &none
                                                  &hold_tap_kp_kp LEFT_ALT TAB            &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
