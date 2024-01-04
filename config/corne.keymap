@@ -303,9 +303,9 @@
 
         layer_2 {
             bindings = <
-&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                              &none                        &none                            &kp PAGE_UP             &kp HOME                    &kp UP_ARROW                    &kp END      &hold_tap_kp_caps_word F20 0  &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREV                              &none                        &none                            &kp PAGE_DOWN           &left_prev                  &kp DOWN_ARROW                  &right_next  &alt_ctrl                     &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &hold_tap_kp_kp RIGHT_ALT C_PLAY_PAUSE  &none                        &none                            &none                   &kp ESC                     &none                           &none        &kp PRINTSCREEN               &none
+&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                              &none                        &none                            &kp PAGE_UP             &kp HOME                    &kp UP_ARROW                    &kp END         &hold_tap_kp_caps_word F20 0  &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREV                              &none                        &none                            &kp PAGE_DOWN           &left_prev                  &kp DOWN_ARROW                  &right_next     &alt_ctrl                     &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &hold_tap_kp_kp RIGHT_ALT C_PLAY_PAUSE  &none                        &none                            &kp INS                 &kp ESC                     &kp PRINTSCREEN                 &kp SCROLLLOCK  &kp PAUSE_BREAK               &none
                                                  &hold_tap_kp_kp LEFT_ALT TAB            &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -330,10 +330,10 @@
 
         layer_3 {
             bindings = <
-&none  &mkp MB4           &kp F7  &kp F8                        &kp F9                       &mkp MB1                                 &kp F20                     &kp F21                     &kp F22                         &kp F23  &hold_tap_kp_kp F21 F24  &none
-&none  &mkp MB5           &kp F4  &kp F5                        &kp F6                       &mkp MB2                                 &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19                  &none
-&none  &sticky_key GLOBE  &kp F1  &kp F2                        &kp F3                       &mkp MB3                                 &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14                  &none
-                                  &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &mkp MB4   &kp F7  &kp F8                        &kp F9                       &mkp LCLK                                &kp F20                     &kp F21                     &kp F22                         &kp F23  &hold_tap_kp_kp F21 F24  &none
+&none  &mkp MB5   &kp F4  &kp F5                        &kp F6                       &mkp RCLK                                &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19                  &none
+&none  &kp GLOBE  &kp F1  &kp F2                        &kp F3                       &mkp MCLK                                &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14                  &none
+                          &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
