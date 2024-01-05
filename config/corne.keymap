@@ -18,9 +18,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            quick-tap-ms = <220>;
         };
 
         hold_tap_kp_kp: hold_tap_kp_kp {
@@ -29,31 +29,31 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            quick-tap-ms = <220>;
         };
 
         hold_tap_tog_kr: hold_tap_tog_kr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_TOG_KR";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
             bindings = <&tog>, <&key_repeat>;
 
-            quick-tap-ms = <180>;
+            quick-tap-ms = <220>;
         };
 
         hold_tap_kp_kr: hold_tap_kp_kr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_KP_KR";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&key_repeat>;
 
-            quick-tap-ms = <180>;
+            quick-tap-ms = <220>;
         };
 
         sticky_key: sticky_key {
@@ -71,8 +71,8 @@
             bindings = <&sticky_key>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
             flavor = "tap-preferred";
         };
 
@@ -82,8 +82,9 @@
             bindings = <&kp>, <&sticky_key>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
+            quick-tap-ms = <220>;
         };
 
         hold_tap_tog_kp: hold_tap_tog_kp {
@@ -92,9 +93,9 @@
             bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            quick-tap-ms = <220>;
         };
 
         backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
@@ -167,9 +168,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            quick-tap-ms = <220>;
         };
 
         left_prev: left_prev {
@@ -212,9 +213,9 @@
             bindings = <&kp>, <&caps_capsword_mod_morph>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            quick-tap-ms = <220>;
         };
     };
 
