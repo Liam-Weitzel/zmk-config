@@ -104,7 +104,7 @@
             bindings = <&kp BACKSPACE>, <&hold_tap_mo_kp 15 DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         backspace_del_mod_layer_3: backspace_del_mod_layer_3 {
@@ -115,7 +115,7 @@
                 <&hold_tap_tog_kp 5 DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         backspace_del_mod_layer_5: backspace_del_mod_layer_5 {
@@ -126,7 +126,7 @@
                 <&hold_tap_tog_kp 11 DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         backspace_del_mod_layer_2: backspace_del_mod_layer_2 {
@@ -137,7 +137,7 @@
                 <&hold_tap_tog_kp 2 DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         backspace_del_mod_layer_4: backspace_del_mod_layer_4 {
@@ -148,7 +148,7 @@
                 <&hold_tap_tog_kp 8 DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         backspace_del_mod_layer_6: backspace_del_mod_layer_6 {
@@ -159,7 +159,7 @@
                 <&hold_tap_tog_kp 14 DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LALT)>;
         };
 
         hold_tap_no_kp: hold_tap_no_kp {
@@ -204,7 +204,7 @@
             bindings = <&kp CAPSLOCK>, <&capsword>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
 
         hold_tap_kp_caps_word: hold_tap_kp_caps_word {
