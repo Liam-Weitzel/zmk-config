@@ -173,24 +173,6 @@
             quick-tap-ms = <220>;
         };
 
-        left_prev: left_prev {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LEFT_PREV";
-            bindings = <&kp LEFT_ARROW>, <&kp F17>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
-        right_next: right_next {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RIGHT_NEXT";
-            bindings = <&kp RIGHT_ARROW>, <&kp F18>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
         capsword: capsword {
             compatible = "zmk,behavior-caps-word";
             label = "CAPSWORD";
@@ -216,6 +198,15 @@
             tapping-term-ms = <220>;
             flavor = "tap-preferred";
             quick-tap-ms = <220>;
+        };
+
+        sys_layer: sys_layer {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SYS_LAYER";
+            bindings = <&kp SEMICOLON>, <&mo 15>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RALT|MOD_RGUI|MOD_RCTL)>;
         };
     };
 
@@ -263,11 +254,6 @@
             bindings = <&kp HOME>;
             key-positions = <39 31 32>;
         };
-
-        sys_layer {
-            bindings = <&mo 12>;
-            key-positions = <24 13 2 15 38>;
-        };
     };
 
     keymap {
@@ -281,7 +267,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                        &kp W                   &kp F                         &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                           &kp Y                   &kp SEMICOLON           &none
+&none  &kp Q                        &kp W                   &kp F                         &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                           &kp Y                   &sys_layer              &none
 &none  &hold_tap_kp_kp RIGHT_ALT A  &hold_tap_kp_kp RGUI R  &hold_tap_kp_kp RCTRL S       &hold_tap_mo_kp 9 T          &kp G                                    &kp M                       &hold_tap_mo_kp 12 N        &hold_tap_kp_kp RCTRL E         &hold_tap_kp_kp RGUI I  &hold_tap_kp_kp RALT O  &none
 &none  &kp Z                        &kp X                   &kp C                         &hold_tap_mo_kp 3 D          &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                       &kp DOT                 &kp APOS                &none
                                                             &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
@@ -425,37 +411,37 @@
 
         AOE_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-                     &none  &none  &none    &none  &hold_tap_tog_kp 0 K_CANCEL  &none
+&none  &none  &none  &none  &none  &none    &kp A  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+                     &none  &none  &none    &none  &hold_tap_tog_kp 16 BACKSPACE  &none
             >;
         };
 
         SC2_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-                     &none  &none  &none    &none  &hold_tap_tog_kp 0 K_CANCEL  &none
+&none  &none  &none  &none  &none  &none    &kp S  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+                     &none  &none  &none    &none  &hold_tap_tog_kp 17 BACKSPACE  &none
             >;
         };
 
         OSRS_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-                     &none  &none  &none    &none  &hold_tap_tog_kp 0 K_CANCEL  &none
+&none  &none  &none  &none  &none  &none    &kp O  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+                     &none  &none  &none    &none  &hold_tap_tog_kp 18 BACKSPACE  &none
             >;
         };
 
         FPS_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none                        &none  &none  &none  &none
-                     &none  &none  &none    &none  &hold_tap_tog_kp 0 K_CANCEL  &none
+&none  &none  &none  &none  &none  &none    &kp F  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
+                     &none  &none  &none    &none  &hold_tap_tog_kp 19 BACKSPACE  &none
             >;
         };
     };
