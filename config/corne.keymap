@@ -340,10 +340,10 @@
 
         layer_2 {
             bindings = <
-&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                              &none                        &mo 15                           &pgup_mscroll           &lmb_scrollleft             &up_mup                         &rmb_scrollright  &caps_capsword_mod_morph  &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREV                              &none                        &none                            &pgdown_mscroll         &left_mleft                 &down_mdown                     &right_mright     &kp RIGHT_ALT             &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &hold_tap_kp_kp RIGHT_ALT C_PLAY_PAUSE  &none                        &none                            &none                   &none                       &none                           &none             &kp PRINTSCREEN           &none
-                                                 &hold_tap_kp_kp LEFT_ALT TAB            &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                              &none                        &mo 15                           &kp PG_UP               &mkp MB1                    &up_mup                          &mkp MB2       &caps_capsword_mod_morph  &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREV                              &none                        &none                            &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &hold_tap_kp_kp RIGHT_ALT C_PLAY_PAUSE  &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
+                                                 &hold_tap_kp_kp LEFT_ALT TAB            &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp RIGHT_ALT ENTER
             >;
         };
 
