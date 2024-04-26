@@ -394,10 +394,10 @@
 
         layer_4 {
             bindings = <
-&none  &kp NON_US_BACKSLASH  &kp N7        &kp N8                        &kp N9                       &none                                    &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp GRAVE  &none
-&none  &kp N0                &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &none                                    &none                       &none                       &kp EQUAL                       &kp MINUS          &none      &none
-&none  &kp SLASH             &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &none                                    &none                       &none                       &kp COMMA                       &kp PERIOD         &none      &none
-                                           &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp BACKSLASH  &kp N7        &kp N8                        &kp N9                       &none                                    &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp GRAVE  &none
+&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &none                                    &none                       &none                       &kp EQUAL                       &kp MINUS          &none      &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &none                                    &none                       &none                       &kp COMMA                       &kp PERIOD         &none      &none
+                                    &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
