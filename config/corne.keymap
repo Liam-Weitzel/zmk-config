@@ -421,10 +421,10 @@
 
         layer_5 {
             bindings = <
-&none  &kp QUESTION     &kp N7  &kp N8                        &kp N9                       &none                                    &kp RIGHT_BRACKET           &kp LEFT_BRACKET            &kp ASTERISK                    &kp SLASH    &kp BACKSLASH  &none
-&none  &kp EXCLAMATION  &kp N4  &kp N5                        &kp N6                       &kp PIPE                                 &kp RIGHT_PARENTHESIS       &kp LEFT_PARENTHESIS        &kp PLUS                        &kp MINUS    &kp EQUAL      &none
-&none  &kp PERIOD       &kp N1  &kp N2                        &kp N3                       &kp N0                                   &kp GREATER_THAN            &kp LESS_THAN               &kp CARET                       &kp PERCENT  &kp COMMA      &none
-                                &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+                         &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
@@ -473,7 +473,7 @@
             >;
         };
 
-        AOE_layer {
+        test1 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp A  &none                          &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
@@ -482,7 +482,7 @@
             >;
         };
 
-        SC2_layer {
+        test2 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp S  &none                          &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
@@ -491,7 +491,7 @@
             >;
         };
 
-        OSRS_layer {
+        test3 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp O  &none                          &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
@@ -500,7 +500,7 @@
             >;
         };
 
-        FPS_layer {
+        test4 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp F  &none                          &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
@@ -509,7 +509,7 @@
             >;
         };
 
-        MOBA_layer {
+        test5 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp M  &none                          &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none                          &none  &none  &none  &none
