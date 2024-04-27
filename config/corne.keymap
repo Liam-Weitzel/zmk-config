@@ -94,9 +94,9 @@
             bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
         };
 
         backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
@@ -236,6 +236,17 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
         };
+
+        hold_tap_kp_kp_homerow: hold_tap_kp_kp_homerow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_KP_KP_HOMEROW";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+        };
     };
 
     combos {
@@ -295,10 +306,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                        &kp W                   &kp F                         &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                           &kp Y                   &kp SEMICOLON           &none
-&none  &hold_tap_kp_kp RIGHT_ALT A  &hold_tap_kp_kp RGUI R  &hold_tap_kp_kp RCTRL S       &hold_tap_mo_kp 3 T          &kp G                                    &kp M                       &hold_tap_mo_kp 9 N         &hold_tap_kp_kp RCTRL E         &hold_tap_kp_kp RGUI I  &hold_tap_kp_kp RALT O  &none
-&none  &kp Z                        &kp X                   &kp C                         &kp D                        &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                       &kp DOT                 &kp APOS                &none
-                                                            &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp Q                                &kp W                                &kp F                            &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                            &kp Y                                &kp SEMICOLON                        &none
+&none  &hold_tap_kp_kp_homerow RIGHT_ALT A  &hold_tap_kp_kp_homerow RIGHT_GUI R  &hold_tap_kp_kp_homerow RCTRL S  &hold_tap_mo_kp 3 T          &kp G                                    &kp M                       &hold_tap_mo_kp 9 N         &hold_tap_kp_kp_homerow RCTRL E  &hold_tap_kp_kp_homerow RIGHT_GUI I  &hold_tap_kp_kp_homerow RIGHT_ALT O  &none
+&none  &kp Z                                &kp X                                &kp C                            &kp D                        &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                        &kp DOT                              &kp APOS                             &none
+                                                                                 &hold_tap_kp_kp LEFT_ALT TAB     &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
