@@ -190,17 +190,6 @@
             mods = <(MOD_LALT)>;
         };
 
-        hold_tap_kp_caps_word: hold_tap_kp_caps_word {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_KP_CAPS_WORD";
-            bindings = <&kp>, <&caps_capsword_mod_morph>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <220>;
-        };
-
         left_mleft: left_mleft {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_MLEFT";
@@ -292,6 +281,30 @@
         home-right {
             bindings = <&kp HOME>;
             key-positions = <39 31 32>;
+        };
+
+        esc-left-arrow {
+            bindings = <&kp ESCAPE>;
+            key-positions = <15 37>;
+            layers = <2 1 3>;
+        };
+
+        esc-right-symbol-function {
+            bindings = <&kp ESCAPE>;
+            key-positions = <20 40>;
+            layers = <9 7 8 4 5 6>;
+        };
+
+        end-right-symbol-function {
+            bindings = <&kp END>;
+            key-positions = <32 40>;
+            layers = <7 8 9 4 5 6>;
+        };
+
+        home-right-symbol-function {
+            bindings = <&kp HOME>;
+            key-positions = <39 32>;
+            layers = <7 8 9 4 5 6>;
         };
     };
 
