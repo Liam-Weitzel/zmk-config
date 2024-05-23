@@ -247,50 +247,50 @@
             keep-mods = <(MOD_LALT)>;
         };
 
-        mod_morph_a_2: mod_morph_a_2 {
+        mod_morph_a_5: mod_morph_a_5 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH_A_2";
-            bindings = <&kp A>, <&kp NUMBER_2>;
+            label = "MOD_MORPH_A_5";
+            bindings = <&kp A>, <&kp N5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
 
-        mod_morph_d_4: mod_morph_d_4 {
+        mod_morph_d_6: mod_morph_d_6 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH_D_4";
-            bindings = <&kp D>, <&kp NUMBER_4>;
+            label = "MOD_MORPH_D_6";
+            bindings = <&kp D>, <&kp NUMBER_6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
 
-        mod_morph_g_3: mod_morph_g_3 {
+        mod_morph_g_2: mod_morph_g_2 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH_G_3";
-            bindings = <&kp G>, <&kp NUMBER_3>;
+            label = "MOD_MORPH_G_2";
+            bindings = <&kp G>, <&kp NUMBER_2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
 
-        mod_morph_r_6: mod_morph_r_6 {
+        mod_morph_r_3: mod_morph_r_3 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH_R_6";
-            bindings = <&kp R>, <&kp NUMBER_6>;
+            label = "MOD_MORPH_R_3";
+            bindings = <&kp R>, <&kp NUMBER_3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
             keep-mods = <(MOD_LALT)>;
         };
 
-        mod_morph_f_5: mod_morph_f_5 {
+        mod_morph_f_4: mod_morph_f_4 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH_F_5";
-            bindings = <&kp F>, <&kp N5>;
+            label = "MOD_MORPH_F_4";
+            bindings = <&kp F>, <&kp NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -523,8 +523,8 @@
 
         test1 {
             bindings = <
-&none  &mod_morph_tab_1  &mod_morph_g_3  &kp W         &kp E           &mod_morph_r_6    &none  &none                          &none  &none  &none  &none
-&none  &kp LSHFT         &mod_morph_a_2  &kp S         &mod_morph_d_4  &mod_morph_f_5    &none  &none                          &none  &none  &none  &none
+&none  &mod_morph_tab_1  &mod_morph_g_2  &kp W         &mod_morph_r_3  &mod_morph_f_4    &none  &none                          &none  &none  &none  &none
+&none  &kp LEFT_SHIFT    &mod_morph_a_5  &kp S         &mod_morph_d_6  &kp E             &none  &none                          &none  &none  &none  &none
 &none  &kp M             &kp B           &kp X         &kp H           &kp V             &none  &none                          &none  &none  &none  &none
                                          &kp LEFT_ALT  &kp SPACE       &kp LCTRL         &none  &hold_tap_tog_kp 16 BACKSPACE  &none
             >;
