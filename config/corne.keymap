@@ -386,10 +386,10 @@
 
         layer_2 {
             bindings = <
-&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                            &none                        &none                            &kp PG_UP               &mkp MB1                    &up_mup                          &mkp MB2       &caps_capsword_mod_morph  &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &hold_tap_kp_kp RIGHT_ALT C_PREVIOUS  &none                        &mo 15                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &kp C_PLAY_PAUSE                      &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
-                                                 &hold_tap_kp_kp LEFT_ALT TAB          &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp RIGHT_ALT ENTER
+&none  &tog 16  &tog 17  &tog 18                       &none                        &none                            &kp PG_UP               &mkp MB1                    &up_mup                          &mkp MB2       &caps_capsword_mod_morph  &none
+&none  &tog 19  &tog 20  &none                         &none                        &mo 15                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
+&none  &none    &none    &none                         &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
+                         &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp RIGHT_ALT ENTER
             >;
         };
 
@@ -494,10 +494,10 @@
 
         layer_6 {
             bindings = <
-&none  &tog 16  &tog 17  &tog 18                       &none                        &none                                    &none                       &none                       &none                           &none         &none         &none
-&none  &tog 19  &tog 20  &none                         &none                        &none                                    &bt BT_SEL 0                &bt BT_SEL 1                &bt BT_SEL 2                    &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &none    &none    &none                         &bootloader                  &sys_reset                               &sys_reset                  &bootloader                 &none                           &none         &bt BT_CLR    &none
-                         &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                    &none                        &none                                    &none                       &none                       &none                           &none         &none         &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS                &none                        &none                                    &bt BT_SEL 0                &bt BT_SEL 1                &bt BT_SEL 2                    &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE              &none                        &none                                    &none                       &none                       &none                           &none         &bt BT_CLR    &none
+                                                 &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
