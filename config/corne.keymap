@@ -414,8 +414,8 @@
         layer_3 {
             bindings = <
 &none  &none  &kp F7  &kp F8                        &kp F9                       &mkp MB1                                 &kp F20                     &kp F21                     &kp F22                         &kp F23  &kp F24  &none
-&none  &none  &kp F4  &kp F5                        &kp F6                       &none                                    &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19  &none
-&none  &none  &kp F1  &kp F2                        &kp F3                       &none                                    &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14  &none
+&none  &none  &kp F4  &kp F5                        &kp F6                       &mkp MB2                                 &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19  &none
+&none  &none  &kp F1  &kp F2                        &kp F3                       &mkp MB3                                 &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14  &none
                       &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -441,8 +441,8 @@
         layer_4 {
             bindings = <
 &none  &kp BACKSLASH  &kp N7        &kp N8                        &kp N9                       &mkp MB1                                 &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp SEMICOLON  &none
-&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &none                                    &none                       &none                       &kp EQUAL                       &kp MINUS          &kp GRAVE      &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &none                                    &none                       &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
+&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &mkp MB2                                 &none                       &none                       &kp EQUAL                       &kp MINUS          &kp GRAVE      &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &mkp MB3                                 &none                       &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
                                     &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
