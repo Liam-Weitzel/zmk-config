@@ -31,6 +31,7 @@
             tapping-term-ms = <280>;
             flavor = "balanced";
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_tog_kr: hold_tap_tog_kr {
@@ -42,6 +43,7 @@
             bindings = <&tog>, <&key_repeat>;
 
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_kp_kr: hold_tap_kp_kr {
@@ -53,6 +55,7 @@
             bindings = <&kp>, <&key_repeat>;
 
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         sticky_key: sticky_key {
@@ -73,6 +76,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "balanced";
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_kp_sk: hold_tap_kp_sk {
@@ -84,6 +88,7 @@
             tapping-term-ms = <280>;
             flavor = "balanced";
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_tog_kp: hold_tap_tog_kp {
@@ -95,6 +100,7 @@
             tapping-term-ms = <280>;
             flavor = "balanced";
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
@@ -170,6 +176,7 @@
             tapping-term-ms = <280>;
             flavor = "balanced";
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         capsword: capsword {
