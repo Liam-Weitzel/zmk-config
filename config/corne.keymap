@@ -17,9 +17,10 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <170>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_kp_kp: hold_tap_kp_kp {
@@ -28,31 +29,34 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_tog_kr: hold_tap_tog_kr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_TOG_KR";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            flavor = "balanced";
             bindings = <&tog>, <&key_repeat>;
 
-            quick-tap-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_kp_kr: hold_tap_kp_kr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_KP_KR";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            flavor = "balanced";
             bindings = <&kp>, <&key_repeat>;
 
-            quick-tap-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         sticky_key: sticky_key {
@@ -70,9 +74,10 @@
             bindings = <&sticky_key>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_kp_sk: hold_tap_kp_sk {
@@ -81,9 +86,10 @@
             bindings = <&kp>, <&sticky_key>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         hold_tap_tog_kp: hold_tap_tog_kp {
@@ -92,9 +98,10 @@
             bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
@@ -167,9 +174,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <180>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         capsword: capsword {
@@ -224,15 +232,18 @@
             mods = <(MOD_RALT)>;
         };
 
-        hold_tap_kp_kp_homerow: hold_tap_kp_kp_homerow {
+        hold_tap_kp_kp_homerow_left: hold_tap_kp_kp_homerow_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_KP_KP_HOMEROW";
+            label = "HOLD_TAP_KP_KP_HOMEROW_LEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <200>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            require-prior-idle-ms = <150>;
         };
 
         mod_morph_tab_1: mod_morph_tab_1 {
@@ -302,6 +313,20 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hold_tap_kp_kp_homerow_right: hold_tap_kp_kp_homerow_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_KP_KP_HOMEROW_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <150>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
     };
 
@@ -378,7 +403,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_1 {
+        layer_0 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -386,14 +411,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                                &kp W                                &kp F                            &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                            &kp Y                                &kp SEMICOLON                        &none
-&none  &hold_tap_kp_kp_homerow RIGHT_ALT A  &hold_tap_kp_kp_homerow RIGHT_GUI R  &hold_tap_kp_kp_homerow RCTRL S  &hold_tap_mo_kp 3 T          &kp G                                    &kp M                       &hold_tap_mo_kp 9 N         &hold_tap_kp_kp_homerow RCTRL E  &hold_tap_kp_kp_homerow RIGHT_GUI I  &hold_tap_kp_kp_homerow RIGHT_ALT O  &none
-&none  &kp Z                                &kp X                                &kp C                            &kp D                        &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                        &kp DOT                              &kp APOS                             &none
-                                                                                 &hold_tap_kp_kp LEFT_ALT TAB     &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp Q                                     &kp W                                     &kp F                                 &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                                  &kp Y                                      &kp SEMICOLON                              &none
+&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI R  &hold_tap_kp_kp_homerow_left RCTRL S  &hold_tap_mo_kp 3 T          &kp G                                    &kp M                       &hold_tap_mo_kp 9 N         &hold_tap_kp_kp_homerow_right RCTRL E  &hold_tap_kp_kp_homerow_right RIGHT_GUI I  &hold_tap_kp_kp_homerow_right RIGHT_ALT O  &none
+&none  &kp Z                                     &kp X                                     &kp C                                 &kp D                        &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                              &kp DOT                                    &kp APOS                                   &none
+                                                                                           &hold_tap_kp_kp LEFT_ALT TAB          &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
-        layer_2 {
+        layer_1 {
             bindings = <
 &none  &tog 16  &tog 17  &tog 18                       &none                        &none                            &kp PG_UP               &mkp MB1                    &up_mup                          &mkp MB2       &caps_capsword_mod_morph  &none
 &none  &tog 19  &tog 20  &none                         &none                        &mo 15                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
@@ -402,16 +427,7 @@
             >;
         };
 
-        layer_2_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_2_temp {
+        layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -422,24 +438,6 @@
 
         layer_3 {
             bindings = <
-&none  &none  &kp F7  &kp F8                        &kp F9                       &mkp MB1                                 &kp F20                     &kp F21                     &kp F22                         &kp F23  &kp F24  &none
-&none  &none  &kp F4  &kp F5                        &kp F6                       &mkp MB2                                 &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19  &none
-&none  &none  &kp F1  &kp F2                        &kp F3                       &mkp MB3                                 &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14  &none
-                      &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
-            >;
-        };
-
-        layer_3_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_3_temp {
-            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -449,50 +447,14 @@
 
         layer_4 {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8                        &kp N9                       &mkp MB1                                 &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp SEMICOLON  &none
-&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &mkp MB2                                 &none                       &none                       &mod_morph_plus_equals          &kp MINUS          &kp GRAVE      &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &mkp MB3                                 &none                       &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
-                                    &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
-            >;
-        };
-
-        layer_4_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_4_temp {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none  &kp F7  &kp F8                        &kp F9                       &mkp MB1                                 &kp F20                     &kp F21                     &kp F22                         &kp F23  &kp F24  &none
+&none  &none  &kp F4  &kp F5                        &kp F6                       &mkp MB2                                 &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19  &none
+&none  &none  &kp F1  &kp F2                        &kp F3                       &mkp MB3                                 &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14  &none
+                      &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
         layer_5 {
-            bindings = <
-&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
-&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
-&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
-                         &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
-            >;
-        };
-
-        layer_5_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_5_temp {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -503,6 +465,69 @@
 
         layer_6 {
             bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&none  &kp BACKSLASH  &kp N7        &kp N8                        &kp N9                       &mkp MB1                                 &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp SEMICOLON  &none
+&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &mkp MB2                                 &none                       &none                       &mod_morph_plus_equals          &kp MINUS          &kp GRAVE      &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &mkp MB3                                 &none                       &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
+                                    &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+&none  &kp DOT  &kp DOT  &kp DOT                       &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+                         &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_12 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_13 {
+            bindings = <
 &none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                    &none                        &none                                    &none                       &none                       &none                           &none         &none         &none
 &none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS                &none                        &none                                    &bt BT_SEL 0                &bt BT_SEL 1                &bt BT_SEL 2                    &bt BT_SEL 3  &bt BT_SEL 4  &none
 &none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE              &none                        &none                                    &none                       &none                       &none                           &none         &bt BT_CLR    &none
@@ -510,7 +535,7 @@
             >;
         };
 
-        layer_6_lock {
+        layer_14 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -519,7 +544,7 @@
             >;
         };
 
-        layer_6_temp {
+        layer_15 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -528,7 +553,7 @@
             >;
         };
 
-        test1 {
+        layer_16 {
             bindings = <
 &none  &mod_morph_tab_1  &mod_morph_g_2  &kp W         &mod_morph_r_5  &mod_morph_f_6    &none  &none    &none  &none  &none  &none
 &none  &kp LEFT_SHIFT    &mod_morph_a_3  &kp S         &mod_morph_d_4  &kp E             &none  &none    &none  &none  &none  &none
@@ -537,7 +562,7 @@
             >;
         };
 
-        test2 {
+        layer_17 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp S  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
@@ -546,7 +571,7 @@
             >;
         };
 
-        test3 {
+        layer_18 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp O  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
@@ -555,7 +580,7 @@
             >;
         };
 
-        test4 {
+        layer_19 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp G  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
@@ -564,7 +589,7 @@
             >;
         };
 
-        test5 {
+        layer_20 {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp M  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
