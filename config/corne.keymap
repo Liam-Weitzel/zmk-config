@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+#include "mouse.dtsi"
 
 / {
     behaviors {
@@ -205,7 +206,7 @@
         left_mleft: left_mleft {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_MLEFT";
-            bindings = <&kp LEFT>, <&msc MOVE_LEFT>;
+            bindings = <&kp LEFT>, <U_MS_L>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -214,7 +215,7 @@
         right_mright: right_mright {
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT_MRIGHT";
-            bindings = <&kp RIGHT>, <&msc MOVE_RIGHT>;
+            bindings = <&kp RIGHT>, <U_MS_R>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -223,7 +224,7 @@
         up_mup: up_mup {
             compatible = "zmk,behavior-mod-morph";
             label = "UP_MUP";
-            bindings = <&kp UP>, <&msc MOVE_UP>;
+            bindings = <&kp UP>, <U_MS_U>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -232,7 +233,7 @@
         down_mdown: down_mdown {
             compatible = "zmk,behavior-mod-morph";
             label = "DOWN_MDOWN";
-            bindings = <&kp DOWN_ARROW>, <&msc MOVE_DOWN>;
+            bindings = <&kp DOWN_ARROW>, <U_MS_D>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -424,7 +425,7 @@
 
         mouse_trans {
             bindings = <
-&none  &tog 16  &tog 17  &tog 18                       &none                        &none                            &kp PG_UP               &mkp MB1                    &up_mup                          &mkp MB2       &caps_capsword_mod_morph  &none
+&none  &tog 16  &tog 17  &tog 18                       &none                        &none                            &kp PG_UP               &mkp LCLK                    &up_mup                          &mkp RCLK       &caps_capsword_mod_morph  &none
 &none  &tog 19  &tog 20  &none                         &none                        &mo 15                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
 &none  &none    &none    &none                         &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
                          &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp RIGHT_ALT ENTER
@@ -451,9 +452,9 @@
 
         layer_4 {
             bindings = <
-&none  &none  &kp F7  &kp F8                        &kp F9                       &mkp MB1                                 &kp F20                     &kp F21                     &kp F22                         &kp F23  &kp F24  &none
-&none  &none  &kp F4  &kp F5                        &kp F6                       &mkp MB2                                 &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19  &none
-&none  &none  &kp F1  &kp F2                        &kp F3                       &mkp MB3                                 &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14  &none
+&none  &none  &kp F7  &kp F8                        &kp F9                       &mkp LCLK                                 &kp F20                     &kp F21                     &kp F22                         &kp F23  &kp F24  &none
+&none  &none  &kp F4  &kp F5                        &kp F6                       &mkp RCLK                                 &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19  &none
+&none  &none  &kp F1  &kp F2                        &kp F3                       &mkp MCLK                                 &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14  &none
                       &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
@@ -478,9 +479,9 @@
 
         layer_7 {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8                        &kp N9                       &mkp MB1                                 &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp SEMICOLON  &none
-&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &mkp MB2                                 &none                       &none                       &mod_morph_plus_equals          &kp MINUS          &kp GRAVE      &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &mkp MB3                                 &none                       &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
+&none  &kp BACKSLASH  &kp N7        &kp N8                        &kp N9                       &mkp LCLK                                 &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp SEMICOLON  &none
+&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &mkp RCLK                                 &none                       &none                       &mod_morph_plus_equals          &kp MINUS          &kp GRAVE      &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &mkp MCLK                                 &none                       &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
                                     &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
