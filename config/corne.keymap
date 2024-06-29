@@ -32,7 +32,7 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
 
         hold_tap_tog_kr: hold_tap_tog_kr {
@@ -45,7 +45,7 @@
 
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
 
         hold_tap_kp_kr: hold_tap_kp_kr {
@@ -58,7 +58,7 @@
 
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
 
         sticky_key: sticky_key {
@@ -80,7 +80,7 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
 
         hold_tap_kp_sk: hold_tap_kp_sk {
@@ -106,7 +106,7 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
 
         backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
@@ -183,7 +183,7 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
 
         capsword: capsword {
@@ -248,7 +248,7 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
 
         mod_morph_tab_1: mod_morph_tab_1 {
@@ -330,7 +330,7 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
-            hold-while-undecided-linger;
+            hold-while-undecided;
         };
     };
 
