@@ -116,8 +116,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_3";
             bindings =
-                <&hold_tap_tog_kp 5 BACKSPACE>,
-                <&hold_tap_tog_kp 5 DELETE>;
+                <&hold_tap_tog_kp 6 BACKSPACE>,
+                <&hold_tap_tog_kp 6 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -127,8 +127,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_5";
             bindings =
-                <&hold_tap_tog_kp 11 BACKSPACE>,
-                <&hold_tap_tog_kp 11 DELETE>;
+                <&hold_tap_tog_kp 12 BACKSPACE>,
+                <&hold_tap_tog_kp 12 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -138,8 +138,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_2";
             bindings =
-                <&hold_tap_tog_kp 2 BACKSPACE>,
-                <&hold_tap_tog_kp 2 DELETE>;
+                <&hold_tap_tog_kp 3 BACKSPACE>,
+                <&hold_tap_tog_kp 3 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -149,8 +149,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_4";
             bindings =
-                <&hold_tap_tog_kp 8 BACKSPACE>,
-                <&hold_tap_tog_kp 8 DELETE>;
+                <&hold_tap_tog_kp 9 BACKSPACE>,
+                <&hold_tap_tog_kp 9 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -160,8 +160,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_6";
             bindings =
-                <&hold_tap_tog_kp 14 BACKSPACE>,
-                <&hold_tap_tog_kp 14 DELETE>;
+                <&hold_tap_tog_kp 15 BACKSPACE>,
+                <&hold_tap_tog_kp 15 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -328,8 +328,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL_MOD_LAYER_24";
             bindings =
-                <&hold_tap_tog_kp 24 BACKSPACE>,
-                <&hold_tap_tog_kp 24 DELETE>;
+                <&hold_tap_tog_kp 1 BACKSPACE>,
+                <&hold_tap_tog_kp 1 DELETE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -362,13 +362,13 @@
         home-arrow {
             bindings = <&kp HOME>;
             key-positions = <27 37>;
-            layers = <1 2 3>;
+            layers = <2 3 4>;
         };
 
         end-arrow {
             bindings = <&kp END>;
             key-positions = <27 38>;
-            layers = <1 2 3>;
+            layers = <2 3 4>;
         };
 
         end-right {
@@ -384,25 +384,25 @@
         esc-left-arrow {
             bindings = <&kp ESCAPE>;
             key-positions = <15 37>;
-            layers = <2 1 3>;
+            layers = <3 2 4>;
         };
 
         esc-right-symbol-function {
             bindings = <&kp ESCAPE>;
             key-positions = <20 40>;
-            layers = <9 7 8 4 5 6>;
+            layers = <10 8 9 5 6 7>;
         };
 
         end-right-symbol-function {
             bindings = <&kp END>;
             key-positions = <32 40>;
-            layers = <7 8 9 4 5 6>;
+            layers = <8 9 10 5 6 7>;
         };
 
         home-right-symbol-function {
             bindings = <&kp HOME>;
             key-positions = <39 32>;
-            layers = <7 8 9 4 5 6>;
+            layers = <8 9 10 5 6 7>;
         };
     };
 
@@ -418,17 +418,26 @@
 
             bindings = <
 &none  &kp Q                                     &kp W                                     &kp F                                 &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                                  &kp Y                                      &kp SEMICOLON                              &none
-&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI R  &hold_tap_kp_kp_homerow_left RCTRL S  &hold_tap_mo_kp 3 T          &kp G                                    &kp M                       &hold_tap_mo_kp 9 N         &hold_tap_kp_kp_homerow_right RCTRL E  &hold_tap_kp_kp_homerow_right RIGHT_GUI I  &hold_tap_kp_kp_homerow_right RIGHT_ALT O  &none
-&none  &kp Z                                     &kp X                                     &kp C                                 &kp D                        &kp V                                    &kp K                       &hold_tap_mo_kp 6 H         &kp COMMA                              &kp DOT                                    &kp APOS                                   &none
+&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI R  &hold_tap_kp_kp_homerow_left RCTRL S  &hold_tap_mo_kp 4 T          &kp G                                    &kp M                       &hold_tap_mo_kp 10 N        &hold_tap_kp_kp_homerow_right RCTRL E  &hold_tap_kp_kp_homerow_right RIGHT_GUI I  &hold_tap_kp_kp_homerow_right RIGHT_ALT O  &none
+&none  &kp Z                                     &kp X                                     &kp C                                 &kp D                        &kp V                                    &kp K                       &hold_tap_mo_kp 7 H         &kp COMMA                              &kp DOT                                    &kp APOS                                   &none
                                                                                            &hold_tap_kp_kp LEFT_ALT TAB          &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
+            >;
+        };
+
+        layer_24 {
+            bindings = <
+&none  &kp Q                                     &kp W                                     &kp E                                 &kp R                        &kp T                                    &kp Y                       &kp U                        &kp I                                  &kp O                                      &kp P                                              &none
+&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI S  &hold_tap_kp_kp_homerow_left RCTRL D  &hold_tap_mo_kp 4 F          &kp G                                    &kp H                       &hold_tap_mo_kp 10 J         &hold_tap_kp_kp_homerow_right RCTRL K  &hold_tap_kp_kp_homerow_right RIGHT_GUI L  &hold_tap_kp_kp_homerow_right RIGHT_ALT SEMICOLON  &none
+&none  &kp Z                                     &kp X                                     &kp C                                 &kp V                        &kp B                                    &kp N                       &hold_tap_mo_kp 7 M          &kp COMMA                              &kp DOT                                    &kp APOS                                           &none
+                                                                                           &hold_tap_kp_kp LEFT_ALT TAB          &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_24  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &tog 16  &tog 17  &tog 18                       &none                        &none                            &kp PG_UP               &mkp LCLK                   &up_mup                          &mkp RCLK      &caps_capsword_mod_morph  &none
-&none  &tog 19  &tog 20  &tog 21                       &none                        &mo 15                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
-&none  &tog 22  &tog 23  &tog 24                       &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
+&none  &tog 17  &tog 18  &tog 19                       &none                        &none                            &kp PG_UP               &mkp LCLK                   &up_mup                          &mkp RCLK      &caps_capsword_mod_morph  &none
+&none  &tog 20  &tog 21  &tog 22                       &none                        &mo 16                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
+&none  &tog 23  &tog 24  &tog 1                        &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
                          &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp RIGHT_ALT ENTER
             >;
         };
@@ -564,7 +573,7 @@
 &none  &mod_morph_tab_1  &mod_morph_g_2  &kp W         &mod_morph_r_5  &mod_morph_f_6    &none  &none    &none  &none  &none  &none
 &none  &kp LEFT_SHIFT    &mod_morph_a_3  &kp S         &mod_morph_d_4  &kp E             &none  &none    &none  &none  &none  &none
 &none  &kp M             &kp B           &kp X         &kp H           &kp V             &none  &none    &none  &none  &none  &none
-                                         &kp LEFT_ALT  &kp SPACE       &kp LCTRL         &none  &tog 16  &none
+                                         &kp LEFT_ALT  &kp SPACE       &kp LCTRL         &none  &tog 17  &none
             >;
         };
 
@@ -573,7 +582,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 17  &none
+                     &none  &none  &none    &none  &tog 18  &none
             >;
         };
 
@@ -582,7 +591,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 18  &none
+                     &none  &none  &none    &none  &tog 19  &none
             >;
         };
 
@@ -591,7 +600,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 19  &none
+                     &none  &none  &none    &none  &tog 20  &none
             >;
         };
 
@@ -600,7 +609,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 20  &none
+                     &none  &none  &none    &none  &tog 21  &none
             >;
         };
 
@@ -609,7 +618,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 21  &none
+                     &none  &none  &none    &none  &tog 22  &none
             >;
         };
 
@@ -618,7 +627,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 22  &none
+                     &none  &none  &none    &none  &tog 23  &none
             >;
         };
 
@@ -627,16 +636,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 23  &none
-            >;
-        };
-
-        layer_24 {
-            bindings = <
-&none  &kp Q                                     &kp W                                     &kp E                                 &kp R                        &kp T                                    &kp Y                       &kp U                        &kp I                                  &kp O                                      &kp P                                              &none
-&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI S  &hold_tap_kp_kp_homerow_left RCTRL D  &hold_tap_mo_kp 3 F          &kp G                                    &kp H                       &hold_tap_mo_kp 9 J          &hold_tap_kp_kp_homerow_right RCTRL K  &hold_tap_kp_kp_homerow_right RIGHT_GUI L  &hold_tap_kp_kp_homerow_right RIGHT_ALT SEMICOLON  &none
-&none  &kp Z                                     &kp X                                     &kp C                                 &kp V                        &kp B                                    &kp N                       &hold_tap_mo_kp 6 M          &kp COMMA                              &kp DOT                                    &kp APOS                                           &none
-                                                                                           &hold_tap_kp_kp LEFT_ALT TAB          &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_24  &hold_tap_kp_kp LEFT_ALT ENTER
+                     &none  &none  &none    &none  &tog 24  &none
             >;
         };
     };
@@ -645,53 +645,53 @@
         compatible = "zmk,conditional-layers";
 
         layer_2_lock {
-            if-layers = <2>;
-            then-layer = <1>;
+            if-layers = <3>;
+            then-layer = <2>;
         };
 
         layer_2_temp {
-            if-layers = <3>;
-            then-layer = <1>;
+            if-layers = <4>;
+            then-layer = <2>;
         };
 
         layer_3_lock {
-            if-layers = <5>;
-            then-layer = <4>;
+            if-layers = <6>;
+            then-layer = <5>;
         };
 
         layer_3_temp {
-            if-layers = <6>;
-            then-layer = <4>;
+            if-layers = <7>;
+            then-layer = <5>;
         };
 
         layer_4_lock {
-            if-layers = <8>;
-            then-layer = <7>;
+            if-layers = <9>;
+            then-layer = <8>;
         };
 
         layer_4_temp {
-            if-layers = <9>;
-            then-layer = <7>;
+            if-layers = <10>;
+            then-layer = <8>;
         };
 
         layer_5_lock {
-            if-layers = <11>;
-            then-layer = <10>;
+            if-layers = <12>;
+            then-layer = <11>;
         };
 
         layer_5_temp {
-            if-layers = <12>;
-            then-layer = <10>;
+            if-layers = <13>;
+            then-layer = <11>;
         };
 
         layer_6_lock {
-            if-layers = <14>;
-            then-layer = <13>;
+            if-layers = <15>;
+            then-layer = <14>;
         };
 
         layer_6_temp {
-            if-layers = <15>;
-            then-layer = <13>;
+            if-layers = <16>;
+            then-layer = <14>;
         };
     };
 };
