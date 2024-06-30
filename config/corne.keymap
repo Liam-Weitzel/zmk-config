@@ -323,6 +323,17 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <135>;
         };
+
+        backspace_del_mod_layer_24: backspace_del_mod_layer_24 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DEL_MOD_LAYER_24";
+            bindings =
+                <&hold_tap_tog_kp 24 BACKSPACE>,
+                <&hold_tap_tog_kp 24 DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     combos {
@@ -398,7 +409,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        home {
+        layer_0 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -413,16 +424,16 @@
             >;
         };
 
-        mouse_trans {
+        layer_1 {
             bindings = <
 &none  &tog 16  &tog 17  &tog 18                       &none                        &none                            &kp PG_UP               &mkp LCLK                   &up_mup                          &mkp RCLK      &caps_capsword_mod_morph  &none
-&none  &tog 19  &tog 20  &none                         &none                        &mo 15                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
-&none  &none    &none    &none                         &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
+&none  &tog 19  &tog 20  &tog 21                       &none                        &mo 15                           &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
+&none  &tog 22  &tog 23  &tog 24                       &none                        &none                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
                          &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp RIGHT_ALT ENTER
             >;
         };
 
-        mouse_locked {
+        layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -559,7 +570,7 @@
 
         layer_17 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp S  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
                      &none  &none  &none    &none  &tog 17  &none
@@ -568,7 +579,7 @@
 
         layer_18 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp O  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
                      &none  &none  &none    &none  &tog 18  &none
@@ -577,7 +588,7 @@
 
         layer_19 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp G  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
                      &none  &none  &none    &none  &tog 19  &none
@@ -586,10 +597,46 @@
 
         layer_20 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp M  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
                      &none  &none  &none    &none  &tog 20  &none
+            >;
+        };
+
+        layer_21 {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+                     &none  &none  &none    &none  &tog 21  &none
+            >;
+        };
+
+        layer_22 {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+                     &none  &none  &none    &none  &tog 22  &none
+            >;
+        };
+
+        layer_23 {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+                     &none  &none  &none    &none  &tog 23  &none
+            >;
+        };
+
+        layer_24 {
+            bindings = <
+&none  &kp Q                                     &kp W                                     &kp E                                 &kp R                        &kp T                                    &kp Y                       &kp U                        &kp I                                  &kp O                                      &kp P                                              &none
+&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI S  &hold_tap_kp_kp_homerow_left RCTRL D  &hold_tap_mo_kp 3 F          &kp G                                    &kp H                       &hold_tap_mo_kp 9 J          &hold_tap_kp_kp_homerow_right RCTRL K  &hold_tap_kp_kp_homerow_right RIGHT_GUI L  &hold_tap_kp_kp_homerow_right RIGHT_ALT SEMICOLON  &none
+&none  &kp Z                                     &kp X                                     &kp C                                 &kp V                        &kp B                                    &kp N                       &hold_tap_mo_kp 6 M          &kp COMMA                              &kp DOT                                    &kp APOS                                           &none
+                                                                                           &hold_tap_kp_kp LEFT_ALT TAB          &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_24  &hold_tap_kp_kp LEFT_ALT ENTER
             >;
         };
     };
