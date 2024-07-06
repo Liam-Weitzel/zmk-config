@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include "mouse.dtsi"
 
 / {
     behaviors {
@@ -198,7 +198,7 @@
         left_mleft: left_mleft {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_MLEFT";
-            bindings = <&kp LEFT>, <&mmv MOVE_LEFT>;
+            bindings = <&kp LEFT>, <U_MS_L>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -207,7 +207,7 @@
         right_mright: right_mright {
             compatible = "zmk,behavior-mod-morph";
             label = "RIGHT_MRIGHT";
-            bindings = <&kp RIGHT>, <&mmv MOVE_RIGHT>;
+            bindings = <&kp RIGHT>, <U_MS_R>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -216,7 +216,7 @@
         up_mup: up_mup {
             compatible = "zmk,behavior-mod-morph";
             label = "UP_MUP";
-            bindings = <&kp UP>, <&mmv MOVE_UP>;
+            bindings = <&kp UP>, <U_MS_U>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
@@ -225,7 +225,7 @@
         down_mdown: down_mdown {
             compatible = "zmk,behavior-mod-morph";
             label = "DOWN_MDOWN";
-            bindings = <&kp DOWN_ARROW>, <&mmv MOVE_DOWN>;
+            bindings = <&kp DOWN_ARROW>, <U_MS_D>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;

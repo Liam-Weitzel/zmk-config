@@ -185,53 +185,53 @@ static void draw_bottom(lv_obj_t *widget, lv_color_t cbuf[], const struct status
         if (state->layer_index == 0) {
             strcpy(text, "HOME");
         } else if (state->layer_index == 1) {
-            strcpy(text, "MOUSE");
+            strcpy(text, "QWERTY");
         } else if (state->layer_index == 2) {
             strcpy(text, "MOUSE");
         } else if (state->layer_index == 3) {
             strcpy(text, "MOUSE");
         } else if (state->layer_index == 4) {
-            strcpy(text, "FUNC");
+            strcpy(text, "MOUSE");
         } else if (state->layer_index == 5) {
             strcpy(text, "FUNC");
         } else if (state->layer_index == 6) {
             strcpy(text, "FUNC");
         } else if (state->layer_index == 7) {
-            strcpy(text, "SYMBOL");
+            strcpy(text, "FUNC");
         } else if (state->layer_index == 8) {
             strcpy(text, "SYMBOL");
         } else if (state->layer_index == 9) {
             strcpy(text, "SYMBOL");
         } else if (state->layer_index == 10) {
-            strcpy(text, "TEST");
+            strcpy(text, "SYMBOL");
         } else if (state->layer_index == 11) {
             strcpy(text, "TEST");
         } else if (state->layer_index == 12) {
             strcpy(text, "TEST");
         } else if (state->layer_index == 13) {
-            strcpy(text, "SYSTEM");
+            strcpy(text, "TEST");
         } else if (state->layer_index == 14) {
             strcpy(text, "SYSTEM");
         } else if (state->layer_index == 15) {
             strcpy(text, "SYSTEM");
         } else if (state->layer_index == 16) {
-            strcpy(text, "RUST");
+            strcpy(text, "SYSTEM");
         } else if (state->layer_index == 17) {
-            strcpy(text, "FINALS");
+            strcpy(text, "RUST");
         } else if (state->layer_index == 18) {
-            strcpy(text, "APEX");
+            strcpy(text, "FINALS");
         } else if (state->layer_index == 19) {
-            strcpy(text, "ELDEN");
+            strcpy(text, "APEX");
         } else if (state->layer_index == 20) {
-            strcpy(text, "AEO");
+            strcpy(text, "ELDEN");
         } else if (state->layer_index == 21) {
-            strcpy(text, "LOL");
+            strcpy(text, "AEO");
         } else if (state->layer_index == 22) {
-            strcpy(text, "ROCKET");
+            strcpy(text, "LOL");
         } else if (state->layer_index == 23) {
-            strcpy(text, "SC2");
+            strcpy(text, "ROCKET");
         } else if (state->layer_index == 24) {
-            strcpy(text, "QWERTY");
+            strcpy(text, "SC2");
         } else {
             sprintf(text, "LAYER %i", state->layer_index);
         }
