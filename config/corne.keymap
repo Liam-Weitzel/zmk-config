@@ -17,9 +17,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
-            quick-tap-ms = <150>;
         };
 
         hold_tap_kp_kp: hold_tap_kp_kp {
@@ -28,34 +27,34 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
         };
 
         hold_tap_tog_kr: hold_tap_tog_kr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_TOG_KR";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
             bindings = <&tog>, <&key_repeat>;
 
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
         };
 
         hold_tap_kp_kr: hold_tap_kp_kr {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_KP_KR";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
             bindings = <&kp>, <&key_repeat>;
 
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
         };
 
         sticky_key: sticky_key {
@@ -73,10 +72,10 @@
             bindings = <&sticky_key>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <160>;
         };
 
         hold_tap_kp_sk: hold_tap_kp_sk {
@@ -85,10 +84,10 @@
             bindings = <&kp>, <&sticky_key>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
         };
 
         hold_tap_tog_kp: hold_tap_tog_kp {
@@ -97,10 +96,9 @@
             bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <180>;
         };
 
         backspace_del_mod_layer_1: backspace_del_mod_layer_1 {
@@ -173,10 +171,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
         };
 
         capsword: capsword {
@@ -237,10 +235,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
         };
 
         mod_morph_tab_1: mod_morph_tab_1 {
@@ -318,10 +316,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
         };
 
         backspace_del_mod_layer_24: backspace_del_mod_layer_24 {
@@ -341,9 +339,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
+            quick-tap-ms = <180>;
         };
 
         tog_1_mod_morph: tog_1_mod_morph {
@@ -435,6 +433,196 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
+        tap_preferred_hold_tap: tap_preferred_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREFERRED_HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            flavor = "tap-preferred";
+        };
+
+        hold_tap_alt_a: hold_tap_alt_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_ALT_A";
+            bindings = <&kp>, <&alt_a>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_gui_r: hold_tap_gui_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_GUI_R";
+            bindings = <&kp>, <&gui_r>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_ctrl_s: hold_tap_ctrl_s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_CTRL_S";
+            bindings = <&kp>, <&ctrl_s>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_ctrl_space: hold_tap_ctrl_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_CTRL_SPACE";
+            bindings = <&kp>, <&ctrl_space>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        tap_preferred_hold_tap_kp_kr: tap_preferred_hold_tap_kp_kr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREFERRED_HOLD_TAP_KP_KR";
+            bindings = <&kp>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            flavor = "tap-preferred";
+        };
+
+        hold_tap_gui_kr: hold_tap_gui_kr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_GUI_KR";
+            bindings = <&kp>, <&gui_kr>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_alt_enter: hold_tap_alt_enter {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_ALT_ENTER";
+            bindings = <&kp>, <&alt_enter>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_ctrl_e: hold_tap_ctrl_e {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_CTRL_E";
+            bindings = <&kp>, <&ctrl_e>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_gui_i: hold_tap_gui_i {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_GUI_I";
+            bindings = <&kp>, <&gui_i>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_alt_o: hold_tap_alt_o {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_ALT_O";
+            bindings = <&kp>, <&alt_o>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_gui_s: hold_tap_gui_s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_GUI_S";
+            bindings = <&kp>, <&gui_s>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_ctrl_d: hold_tap_ctrl_d {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_CTRL_D";
+            bindings = <&kp>, <&ctrl_d>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_ctrl_k: hold_tap_ctrl_k {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_CTRL_K";
+            bindings = <&kp>, <&ctrl_k>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_gui_l: hold_tap_gui_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_GUI_L";
+            bindings = <&kp>, <&gui_l>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
+
+        hold_tap_alt_semi: hold_tap_alt_semi {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_ALT_SEMI";
+            bindings = <&kp>, <&alt_semi>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <160>;
+        };
     };
 
     combos {
@@ -507,6 +695,190 @@
         };
     };
 
+    macros {
+        alt_a: alt_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RIGHT_ALT A>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RIGHT_ALT A>;
+
+            label = "ALT_A";
+        };
+
+        gui_r: rgui_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RIGHT_GUI R>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RIGHT_GUI R>;
+
+            label = "RGUI_R";
+        };
+
+        ctrl_s: ctrl_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RCTRL S>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RCTRL S>;
+
+            label = "CTRL_S";
+        };
+
+        ctrl_space: ctrl_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap LCTRL SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap LCTRL SPACE>;
+
+            label = "CTRL_SPACE";
+        };
+
+        gui_kr: gui_kr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap_kp_kr LEFT_GUI 0>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap_kp_kr LEFT_GUI 0>;
+
+            label = "GUI_KR";
+        };
+
+        alt_enter: alt_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap LEFT_ALT ENTER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap LEFT_ALT ENTER>;
+
+            label = "ALT_ENTER";
+        };
+
+        ctrl_e: ctrl_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RCTRL E>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RCTRL E>;
+
+            label = "CTRL_E";
+        };
+
+        gui_i: gui_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RIGHT_GUI I>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RIGHT_GUI I>;
+
+            label = "GUI_I";
+        };
+
+        alt_o: alt_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RIGHT_ALT O>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RIGHT_ALT O>;
+
+            label = "ALT_O";
+        };
+
+        gui_s: gui_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RIGHT_GUI S>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RIGHT_GUI S>;
+
+            label = "GUI_S";
+        };
+
+        ctrl_d: ctrl_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RCTRL D>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RCTRL D>;
+
+            label = "CTRL_D";
+        };
+
+        ctrl_k: ctrl_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RCTRL K>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RCTRL K>;
+
+            label = "CTRL_K";
+        };
+
+        gui_l: gui_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RIGHT_GUI L>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RIGHT_GUI L>;
+
+            label = "GUI_L";
+        };
+
+        alt_semi: alt_semi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&tap_preferred_hold_tap RIGHT_ALT SEMICOLON>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&tap_preferred_hold_tap RIGHT_ALT SEMICOLON>;
+
+            label = "ALT_SEMI";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -518,28 +890,28 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                                     &kp W                                     &kp F                                 &kp P                        &kp B                                    &kp J                       &kp L                       &kp U                                  &kp Y                                      &kp SEMICOLON                              &none
-&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI R  &hold_tap_kp_kp_homerow_left RCTRL S  &hold_tap_mo_kp 4 T          &kp G                                    &kp M                       &hold_tap_mo_kp 10 N        &hold_tap_kp_kp_homerow_right RCTRL E  &hold_tap_kp_kp_homerow_right RIGHT_GUI I  &hold_tap_kp_kp_homerow_right RIGHT_ALT O  &none
-&none  &kp Z                                     &kp X                                     &kp C                                 &kp D                        &kp V                                    &kp K                       &hold_tap_mo_kp 7 H         &kp COMMA                              &kp DOT                                    &kp APOS                                   &none
-                                                                                           &hold_tap_kp_kp_noidle LEFT_ALT TAB   &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp Q                        &kp W                        &kp F                                &kp P                         &kp B                                    &kp J                        &kp L                       &kp U                           &kp Y                        &kp SEMICOLON                &none
+&none  &hold_tap_alt_a RIGHT_ALT 0  &hold_tap_gui_r RIGHT_GUI 0  &hold_tap_ctrl_s RCTRL 0             &hold_tap_mo_kp 4 T           &kp G                                    &kp M                        &hold_tap_mo_kp 10 N        &hold_tap_ctrl_e RCTRL 0        &hold_tap_gui_i RIGHT_GUI 0  &hold_tap_alt_o RIGHT_ALT 0  &none
+&none  &kp Z                        &kp X                        &kp C                                &kp D                         &kp V                                    &kp K                        &hold_tap_mo_kp 7 H         &kp COMMA                       &kp DOT                      &kp APOS                     &none
+                                                                 &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_ctrl_space LCTRL 0  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_gui_kr LEFT_GUI 0  &backspace_del_mod_layer_1  &hold_tap_alt_enter LEFT_ALT 0
             >;
         };
 
         layer_24 {
             bindings = <
-&none  &kp Q                                     &kp W                                     &kp E                                 &kp R                        &kp T                                    &kp Y                       &kp U                        &kp I                                  &kp O                                      &kp P                                              &none
-&none  &hold_tap_kp_kp_homerow_left RIGHT_ALT A  &hold_tap_kp_kp_homerow_left RIGHT_GUI S  &hold_tap_kp_kp_homerow_left RCTRL D  &hold_tap_mo_kp 4 F          &kp G                                    &kp H                       &hold_tap_mo_kp 10 J         &hold_tap_kp_kp_homerow_right RCTRL K  &hold_tap_kp_kp_homerow_right RIGHT_GUI L  &hold_tap_kp_kp_homerow_right RIGHT_ALT SEMICOLON  &none
-&none  &kp Z                                     &kp X                                     &kp C                                 &kp V                        &kp B                                    &kp N                       &hold_tap_mo_kp 7 M          &kp COMMA                              &kp DOT                                    &kp APOS                                           &none
-                                                                                           &hold_tap_kp_kp_noidle LEFT_ALT TAB   &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_24  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp Q                        &kp W                        &kp E                                &kp R                         &kp T                                    &kp Y                        &kp U                        &kp I                           &kp O                        &kp P                           &none
+&none  &hold_tap_alt_a RIGHT_ALT A  &hold_tap_gui_s RIGHT_GUI 0  &hold_tap_ctrl_d RCTRL 0             &hold_tap_mo_kp 4 F           &kp G                                    &kp H                        &hold_tap_mo_kp 10 J         &hold_tap_ctrl_k RCTRL 0        &hold_tap_gui_l RIGHT_GUI 0  &hold_tap_alt_semi RIGHT_ALT 0  &none
+&none  &kp Z                        &kp X                        &kp C                                &kp V                         &kp B                                    &kp N                        &hold_tap_mo_kp 7 M          &kp COMMA                       &kp DOT                      &kp APOS                        &none
+                                                                 &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_ctrl_space LCTRL 0  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_gui_kr LEFT_GUI 0  &backspace_del_mod_layer_24  &hold_tap_alt_enter LEFT_ALT 0
             >;
         };
 
         layer_1 {
             bindings = <
-&none  &tog_17_mod_morph  &tog_18_mod_morph  &tog_19_mod_morph                    &kp P                        &kp B                            &kp PG_UP               &mkp LCLK                   &up_mup                          &mkp RCLK      &caps_capsword_mod_morph  &none
-&none  &tog_20_mod_morph  &tog_21_mod_morph  &tog_22_mod_morph                    &kp T                        &mo_16_mod_morph                 &kp PAGE_DOWN           &left_mleft                 &down_mdown                      &right_mright  &none                     &none
-&none  &tog_23_mod_morph  &tog_24_mod_morph  &tog_1_mod_morph                     &kp D                        &kp V                            &none                   &none                       &none                            &none          &kp PRINTSCREEN           &none
-                                             &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_kp_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_kp_kp RIGHT_ALT ENTER
+&none  &tog_17_mod_morph  &tog_18_mod_morph  &tog_19_mod_morph                    &kp P                         &kp B                            &kp PG_UP                &mkp LCLK                   &up_mup                          &mkp RCLK      &caps_capsword_mod_morph  &none
+&none  &tog_20_mod_morph  &tog_21_mod_morph  &tog_22_mod_morph                    &kp T                         &mo_16_mod_morph                 &kp PAGE_DOWN            &left_mleft                 &down_mdown                      &right_mright  &none                     &none
+&none  &tog_23_mod_morph  &tog_24_mod_morph  &tog_1_mod_morph                     &kp D                         &kp V                            &none                    &none                       &none                            &none          &kp PRINTSCREEN           &none
+                                             &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_ctrl_space LCTRL 0  &hold_tap_kp_sk LSHIFT LSHIFT    &hold_tap_gui_kr LGUI 0  &backspace_del_mod_layer_2  &hold_tap_alt_enter RIGHT_ALT 0
             >;
         };
 
@@ -563,10 +935,10 @@
 
         layer_4 {
             bindings = <
-&none  &none  &kp F7  &kp F8                               &kp F9                       &mkp LCLK                                &kp F20                     &kp F21                     &kp F22                         &kp F23  &kp F24  &none
-&none  &none  &kp F4  &kp F5                               &kp F6                       &mkp RCLK                                &kp F15                     &kp F16                     &kp F17                         &kp F18  &kp F19  &none
-&none  &none  &kp F1  &kp F2                               &kp F3                       &mkp MCLK                                &kp F10                     &kp F11                     &kp F12                         &kp F13  &kp F14  &none
-                      &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &none  &kp F7  &kp F8                               &kp F9                        &mkp LCLK                                &kp F20                      &kp F21                     &kp F22                         &kp F23  &kp F24  &none
+&none  &none  &kp F4  &kp F5                               &kp F6                        &mkp RCLK                                &kp F15                      &kp F16                     &kp F17                         &kp F18  &kp F19  &none
+&none  &none  &kp F1  &kp F2                               &kp F3                        &mkp MCLK                                &kp F10                      &kp F11                     &kp F12                         &kp F13  &kp F14  &none
+                      &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_ctrl_space LCTRL 0  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_gui_kr LEFT_GUI 0  &backspace_del_mod_layer_3  &hold_tap_alt_enter LEFT_ALT 0
             >;
         };
 
@@ -590,10 +962,10 @@
 
         layer_7 {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8                               &kp N9                       &mkp LCLK                                &none                       &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp SEMICOLON  &none
-&none  &kp N0         &kp NUMBER_4  &kp N5                               &kp NUMBER_6                 &mkp RCLK                                &none                       &none                       &mod_morph_plus_equals          &kp MINUS          &kp GRAVE      &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                         &kp NUMBER_3                 &mkp MCLK                                &none                       &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
-                                    &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp BACKSLASH  &kp N7        &kp N8                               &kp N9                        &mkp LCLK                                &none                        &none                       &kp LEFT_BRACKET                &kp RIGHT_BRACKET  &kp SEMICOLON  &none
+&none  &kp N0         &kp NUMBER_4  &kp N5                               &kp NUMBER_6                  &mkp RCLK                                &none                        &none                       &mod_morph_plus_equals          &kp MINUS          &kp GRAVE      &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                         &kp NUMBER_3                  &mkp MCLK                                &none                        &none                       &kp COMMA                       &kp PERIOD         &kp SQT        &none
+                                    &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_ctrl_space LCTRL 0  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_gui_kr LEFT_GUI 0  &backspace_del_mod_layer_4  &hold_tap_alt_enter LEFT_ALT 0
             >;
         };
 
@@ -617,10 +989,10 @@
 
         layer_10 {
             bindings = <
-&none  &kp DOT  &kp DOT  &kp DOT                              &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
-&none  &kp DOT  &kp DOT  &kp DOT                              &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
-&none  &kp DOT  &kp DOT  &kp DOT                              &kp DOT                      &kp DOT                                  &kp DOT                     &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
-                         &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp DOT  &kp DOT  &kp DOT                              &kp DOT                       &kp DOT                                  &kp DOT                      &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+&none  &kp DOT  &kp DOT  &kp DOT                              &kp DOT                       &kp DOT                                  &kp DOT                      &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+&none  &kp DOT  &kp DOT  &kp DOT                              &kp DOT                       &kp DOT                                  &kp DOT                      &kp DOT                     &kp DOT                         &kp DOT  &kp DOT  &none
+                         &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_ctrl_space LCTRL 0  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_gui_kr LEFT_GUI 0  &backspace_del_mod_layer_5  &hold_tap_alt_enter LEFT_ALT 0
             >;
         };
 
@@ -644,10 +1016,10 @@
 
         layer_13 {
             bindings = <
-&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                           &none                        &none                                    &none                       &none                       &none                           &none         &none         &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS                       &none                        &none                                    &bt BT_SEL 0                &bt BT_SEL 1                &bt BT_SEL 2                    &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE                     &none                        &none                                    &none                       &none                       &none                           &none         &bt BT_CLR    &none
-                                                 &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &hold_tap_kp_kp LEFT_ALT ENTER
+&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                           &none                         &none                                    &none                        &none                       &none                           &none         &none         &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS                       &none                         &none                                    &bt BT_SEL 0                 &bt BT_SEL 1                &bt BT_SEL 2                    &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE                     &none                         &none                                    &none                        &none                       &none                           &none         &bt BT_CLR    &none
+                                                 &hold_tap_kp_kp_noidle LEFT_ALT TAB  &hold_tap_ctrl_space LCTRL 0  &hold_tap_kp_sk LEFT_SHIFT LEFT_SHIFT    &hold_tap_gui_kr LEFT_GUI 0  &backspace_del_mod_layer_6  &hold_tap_alt_enter LEFT_ALT 0
             >;
         };
 
