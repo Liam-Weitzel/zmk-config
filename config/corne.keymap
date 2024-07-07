@@ -704,7 +704,7 @@
                 <&tap_preferred_hold_tap RIGHT_ALT A>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RIGHT_ALT A>;
+                <&tap_preferred_hold_tap RIGHT_ALT A &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "ALT_A";
         };
@@ -717,7 +717,7 @@
                 <&tap_preferred_hold_tap RIGHT_GUI R>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RIGHT_GUI R>;
+                <&tap_preferred_hold_tap RIGHT_GUI R &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "RGUI_R";
         };
@@ -730,7 +730,7 @@
                 <&tap_preferred_hold_tap RCTRL S>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RCTRL S>;
+                <&tap_preferred_hold_tap RCTRL S &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "CTRL_S";
         };
@@ -743,7 +743,7 @@
                 <&tap_preferred_hold_tap LCTRL SPACE>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap LCTRL SPACE>;
+                <&tap_preferred_hold_tap LCTRL SPACE &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "CTRL_SPACE";
         };
@@ -756,7 +756,7 @@
                 <&tap_preferred_hold_tap_kp_kr LEFT_GUI 0>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap_kp_kr LEFT_GUI 0>;
+                <&tap_preferred_hold_tap_kp_kr LEFT_GUI 0 &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "GUI_KR";
         };
@@ -769,7 +769,7 @@
                 <&tap_preferred_hold_tap LEFT_ALT ENTER>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap LEFT_ALT ENTER>;
+                <&tap_preferred_hold_tap LEFT_ALT ENTER &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "ALT_ENTER";
         };
@@ -782,7 +782,7 @@
                 <&tap_preferred_hold_tap RCTRL E>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RCTRL E>;
+                <&tap_preferred_hold_tap RCTRL E &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "CTRL_E";
         };
@@ -795,7 +795,7 @@
                 <&tap_preferred_hold_tap RIGHT_GUI I>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RIGHT_GUI I>;
+                <&tap_preferred_hold_tap RIGHT_GUI I &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "GUI_I";
         };
@@ -808,7 +808,7 @@
                 <&tap_preferred_hold_tap RIGHT_ALT O>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RIGHT_ALT O>;
+                <&tap_preferred_hold_tap RIGHT_ALT O &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "ALT_O";
         };
@@ -821,7 +821,7 @@
                 <&tap_preferred_hold_tap RIGHT_GUI S>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RIGHT_GUI S>;
+                <&tap_preferred_hold_tap RIGHT_GUI S &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "GUI_S";
         };
@@ -834,7 +834,7 @@
                 <&tap_preferred_hold_tap RCTRL D>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RCTRL D>;
+                <&tap_preferred_hold_tap RCTRL D &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "CTRL_D";
         };
@@ -847,7 +847,7 @@
                 <&tap_preferred_hold_tap RCTRL K>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RCTRL K>;
+                <&tap_preferred_hold_tap RCTRL K &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "CTRL_K";
         };
@@ -860,7 +860,7 @@
                 <&tap_preferred_hold_tap RIGHT_GUI L>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RIGHT_GUI L>;
+                <&tap_preferred_hold_tap RIGHT_GUI L &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "GUI_L";
         };
@@ -873,7 +873,7 @@
                 <&tap_preferred_hold_tap RIGHT_ALT SEMICOLON>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&tap_preferred_hold_tap RIGHT_ALT SEMICOLON>;
+                <&tap_preferred_hold_tap RIGHT_ALT SEMICOLON &kp LEFT_ALT &kp RIGHT_ALT &kp LEFT_GUI &kp RGUI &kp LCTRL &kp RCTRL>;
 
             label = "ALT_SEMI";
         };
