@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "mouse.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include "mouse.dtsi"
 
 / {
     behaviors {
@@ -698,10 +698,10 @@
 
         layer_19 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-                     &none  &none  &none    &none  &tog 20  &none
+&none  &kp NUMBER_2  &kp C         &kp W  &kp E           &kp R           &none  &none    &none  &none  &none  &none
+&none  &kp LCTRL     &kp A         &kp S  &kp D           &kp NUMBER_1    &none  &none    &none  &none  &none  &none
+&none  &kp F         &kp NUMBER_3  &kp X  &kp NUMBER_4    &kp M           &none  &none    &none  &none  &none  &none
+                                   &kp Q  &kp LEFT_SHIFT  &kp SPACE       &none  &tog 20  &none
             >;
         };
 
