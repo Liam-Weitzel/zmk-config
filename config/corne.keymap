@@ -148,9 +148,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        hold_tap_kp_kp: hold_tap_kp_kp {
+        hold_tap_kp_kp_no_idle: hold_tap_kp_kp_no_idle {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_KP_KP";
+            label = "HOLD_TAP_KP_KP_NO_IDLE";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -249,6 +249,7 @@
             tapping-term-ms = <250>;
             flavor = "balanced";
             quick-tap-ms = <180>;
+            require-prior-idle-ms = <80>;
         };
 
         sticky_key: sticky_key {
@@ -269,6 +270,18 @@
             tapping-term-ms = <100>;
             flavor = "hold-preferred";
         };
+
+        hold_tap_idle: hold_tap_idle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_IDLE";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <80>;
+        };
     };
 
     combos {
@@ -277,67 +290,61 @@
         end {
             bindings = <&kp END>;
             key-positions = <27 28 38>;
+            require-prior-idle-ms = <80>;
         };
 
         home {
             bindings = <&kp HOME>;
             key-positions = <27 28 37>;
+            require-prior-idle-ms = <80>;
         };
 
         esc-left {
             bindings = <&kp ESCAPE>;
             key-positions = <16 15 37>;
+            require-prior-idle-ms = <80>;
         };
 
         esc-right {
             bindings = <&kp ESCAPE>;
             key-positions = <20 19 40>;
-        };
-
-        home-nav {
-            bindings = <&kp HOME>;
-            key-positions = <27 37>;
-            layers = <1 2 3>;
-        };
-
-        end-nav {
-            bindings = <&kp END>;
-            key-positions = <27 38>;
-            layers = <1 2 3>;
+            require-prior-idle-ms = <80>;
         };
 
         end-right {
             bindings = <&kp END>;
             key-positions = <31 32 40>;
+            require-prior-idle-ms = <80>;
         };
 
         home-right {
             bindings = <&kp HOME>;
             key-positions = <39 31 32>;
+            require-prior-idle-ms = <80>;
         };
 
-        esc-left-nav {
-            bindings = <&kp ESCAPE>;
-            key-positions = <15 37>;
-            layers = <2 1 3>;
+        shift_copy {
+            bindings = <&kp LS(LC(C))>;
+            key-positions = <38 15 28>;
+            require-prior-idle-ms = <80>;
         };
 
-        esc-right-num-func {
-            bindings = <&kp ESCAPE>;
-            key-positions = <20 40>;
-            layers = <9 7 8 4 5 6>;
+        shift_paste {
+            bindings = <&kp LS(LC(V))>;
+            key-positions = <29 38 15>;
+            require-prior-idle-ms = <80>;
         };
 
-        end-right-num-func {
-            bindings = <&kp END>;
-            key-positions = <32 40>;
-            layers = <7 8 9 4 5 6>;
+        fullscreen {
+            bindings = <&kp LG(F)>;
+            key-positions = <3 14 4>;
+            require-prior-idle-ms = <80>;
         };
 
-        home-right-num-func {
-            bindings = <&kp HOME>;
-            key-positions = <39 32>;
-            layers = <7 8 9 4 5 6>;
+        rgui {
+            bindings = <&kp RGUI>;
+            key-positions = <2 3 4>;
+            require-prior-idle-ms = <80>;
         };
     };
 
@@ -352,19 +359,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F                         &kp P                        &kp B                           &kp J                       &kp L                &kp U      &kp Y    &kp SEMICOLON  &none
-&none  &kp A  &kp R  &kp S                         &hold_tap_mo_kp 3 T          &kp G                           &kp M                       &hold_tap_mo_kp 9 N  &kp E      &kp I    &kp O          &none
-&none  &kp Z  &kp X  &kp C                         &kp D                        &kp V                           &kp K                       &hold_tap_mo_kp 6 H  &kp COMMA  &kp DOT  &kp APOS       &none
-                     &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_base  &kp ENTER
+&none  &kp Q  &kp W  &kp F                                 &kp P                       &kp B                           &kp J                       &kp L                &kp U      &kp Y    &kp SEMICOLON  &none
+&none  &kp A  &kp R  &kp S                                 &hold_tap_mo_kp 3 T         &kp G                           &kp M                       &hold_tap_mo_kp 9 N  &kp E      &kp I    &kp O          &none
+&none  &kp Z  &kp X  &kp C                                 &kp D                       &kp V                           &kp K                       &hold_tap_mo_kp 6 H  &kp COMMA  &kp DOT  &kp APOS       &none
+                     &hold_tap_kp_kp_no_idle LEFT_ALT TAB  &hold_tap_idle LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_base  &kp ENTER
             >;
         };
 
         nav {
             bindings = <
-&none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph              &kp P                        &kp B                           &kp PG_UP                   &mkp LCLK           &up_mup                          &mkp RCLK      &caps_capsword_mod_morph  &none
-&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph              &kp T                        &mo 12                          &kp PAGE_DOWN               &left_mleft         &down_mdown                      &right_mright  &none                     &none
-&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph              &kp D                        &kp V                           &none                       &none               &none                            &none          &kp PRINTSCREEN           &none
-                                           &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_nav  &hold_tap_kp_kp RIGHT_ALT ENTER
+&none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph                      &kp P                                &kp B                           &kp PG_UP                   &mkp LCLK           &up_mup                                  &mkp RCLK      &caps_capsword_mod_morph  &none
+&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph                      &kp T                                &mo 12                          &kp PAGE_DOWN               &left_mleft         &down_mdown                              &right_mright  &none                     &none
+&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph                      &kp D                                &kp V                           &none                       &none               &none                                    &none          &kp PRINTSCREEN           &none
+                                           &hold_tap_kp_kp_no_idle LEFT_ALT TAB  &hold_tap_kp_kp_no_idle LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_nav  &hold_tap_kp_kp_no_idle RIGHT_ALT ENTER
             >;
         };
 
@@ -388,10 +395,10 @@
 
         func {
             bindings = <
-&none  &none  &kp F7  &kp F8                        &kp F9                       &mkp LCLK                   &kp F20                     &kp F21              &kp F22    &kp F23  &kp F24  &none
-&none  &none  &kp F4  &kp F5                        &kp F6                       &mkp RCLK                   &kp F15                     &kp F16              &kp F17    &kp F18  &kp F19  &none
-&none  &none  &kp F1  &kp F2                        &kp F3                       &mkp MCLK                   &kp F10                     &kp F11              &kp F12    &kp F13  &kp F14  &none
-                      &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &shift LSHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_func  &kp ENTER
+&none  &none  &kp F7  &kp F8                                &kp F9                               &mkp LCLK                   &kp F20                     &kp F21              &kp F22    &kp F23  &kp F24  &none
+&none  &none  &kp F4  &kp F5                                &kp F6                               &mkp RCLK                   &kp F15                     &kp F16              &kp F17    &kp F18  &kp F19  &none
+&none  &none  &kp F1  &kp F2                                &kp F3                               &mkp MCLK                   &kp F10                     &kp F11              &kp F12    &kp F13  &kp F14  &none
+                      &hold_tap_kp_kp_no_idle LEFT_ALT TAB  &hold_tap_kp_kp_no_idle LCTRL SPACE  &shift LSHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_func  &kp ENTER
             >;
         };
 
@@ -415,10 +422,10 @@
 
         num {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8                        &kp N9                       &mkp LCLK                       &none                       &none               &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp SEMICOLON  &none
-&none  &kp N0         &kp NUMBER_4  &kp N5                        &kp NUMBER_6                 &mkp RCLK                       &none                       &none               &mod_morph_plus_equals  &kp MINUS          &kp GRAVE      &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                  &kp NUMBER_3                 &mkp MCLK                       &none                       &none               &kp COMMA               &kp PERIOD         &kp SQT        &none
-                                    &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_num  &kp ENTER
+&none  &kp BACKSLASH  &kp N7        &kp N8                                &kp N9                               &mkp LCLK                       &none                       &none               &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp SEMICOLON  &none
+&none  &kp N0         &kp NUMBER_4  &kp N5                                &kp NUMBER_6                         &mkp RCLK                       &none                       &none               &mod_morph_plus_equals  &kp MINUS          &kp GRAVE      &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2                          &kp NUMBER_3                         &mkp MCLK                       &none                       &none               &kp COMMA               &kp PERIOD         &kp SQT        &none
+                                    &hold_tap_kp_kp_no_idle LEFT_ALT TAB  &hold_tap_kp_kp_no_idle LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_num  &kp ENTER
             >;
         };
 
@@ -442,10 +449,10 @@
 
         sys {
             bindings = <
-&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                    &none                        &none                           &none                       &none               &none         &none         &none         &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS                &none                        &none                           &bt BT_SEL 0                &bt BT_SEL 1        &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE              &none                        &none                           &none                       &none               &none         &none         &bt BT_CLR    &none
-                                                 &hold_tap_kp_kp LEFT_ALT TAB  &hold_tap_kp_kp LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_sys  &kp ENTER
+&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT                            &none                                &none                           &none                       &none               &none         &none         &none         &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS                        &none                                &none                           &bt BT_SEL 0                &bt BT_SEL 1        &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE                      &none                                &none                           &none                       &none               &none         &none         &bt BT_CLR    &none
+                                                 &hold_tap_kp_kp_no_idle LEFT_ALT TAB  &hold_tap_kp_kp_no_idle LCTRL SPACE  &shift LEFT_SHIFT LEFT_SHIFT    &hold_tap_kp_kr LEFT_GUI 0  &backspace_del_sys  &kp ENTER
             >;
         };
 
