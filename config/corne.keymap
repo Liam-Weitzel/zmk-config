@@ -257,6 +257,7 @@
             bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <100>;
+            quick-release;
         };
 
         shift: shift {
@@ -468,10 +469,10 @@
 
         layer_13 {
             bindings = <
-&none  &none  &none  &none  &none    &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &tog 13  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none    &none  &none  &none  &none  &none  &none
-                     &none  &none    &none    &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &tog 13  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none    &none
             >;
         };
     };
@@ -479,52 +480,42 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        layer_2_lock {
+        nav_lock {
             if-layers = <2>;
             then-layer = <1>;
         };
 
-        layer_2_temp {
+        nav_temp {
             if-layers = <3>;
             then-layer = <1>;
         };
 
-        layer_3_lock {
+        func_lock {
             if-layers = <5>;
             then-layer = <4>;
         };
 
-        layer_3_temp {
+        func_temp {
             if-layers = <6>;
             then-layer = <4>;
         };
 
-        layer_4_lock {
+        num_lock {
             if-layers = <8>;
             then-layer = <7>;
         };
 
-        layer_4_temp {
+        num_temp {
             if-layers = <9>;
             then-layer = <7>;
         };
 
-        layer_5_lock {
-            if-layers = <10>;
-            then-layer = <10>;
-        };
-
-        layer_5_temp {
-            if-layers = <10>;
-            then-layer = <10>;
-        };
-
-        layer_6_lock {
+        sys_lock {
             if-layers = <11>;
             then-layer = <10>;
         };
 
-        layer_6_temp {
+        sys_temp {
             if-layers = <12>;
             then-layer = <10>;
         };
