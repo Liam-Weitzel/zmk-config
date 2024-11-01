@@ -290,25 +290,25 @@
 
         nav_lock {
             bindings = <&tog 2>;
-            key-positions = <38 39>;
+            key-positions = <31 32 33>;
             layers = <1 2 3>;
         };
 
         func_lock {
             bindings = <&tog 5>;
-            key-positions = <38 39>;
+            key-positions = <26 27 28>;
             layers = <4 5 6>;
         };
 
         num_lock {
             bindings = <&tog 8>;
-            key-positions = <38 39>;
+            key-positions = <26 27 28>;
             layers = <8 7 9>;
         };
 
         sys_lock {
             bindings = <&tog 11>;
-            key-positions = <38 39>;
+            key-positions = <31 32 33>;
             layers = <11 10 12>;
         };
 
