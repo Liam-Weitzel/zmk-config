@@ -284,7 +284,7 @@
 
         ctrl_shift_t {
             bindings = <&kp LC(LS(T))>;
-            key-positions = <4 14 37>;
+            key-positions = <36 16 15>;
         };
 
         nav_lock {
