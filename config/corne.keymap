@@ -273,17 +273,17 @@
 
         shift_copy {
             bindings = <&kp LS(LC(C))>;
-            key-positions = <38 15 28>;
+            key-positions = <29 38 15>;
         };
 
         shift_paste {
             bindings = <&kp LS(LC(V))>;
-            key-positions = <29 38 15>;
+            key-positions = <38 15 28>;
         };
 
         ctrl_shift_t {
             bindings = <&kp LC(LS(T))>;
-            key-positions = <36 16 15>;
+            key-positions = <36 15 16>;
         };
 
         nav_lock {
@@ -317,12 +317,12 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <15 17 38>;
+            key-positions = <38 15 16>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <15 16 38>;
+            key-positions = <15 38 17>;
         };
     };
 
@@ -337,10 +337,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F      &kp P                &kp B                     &kp J                         &kp H                &kp L                                 &kp U    &kp Y     &none
-&none  &kp A  &kp R  &kp S      &hold_tap_mo_kp 3 T  &kp G                     &kp M                         &mo 9                &kp E                                 &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C      &kp D                &kp V                     &kp K                         &hold_tap_mo_kp 6 N  &kp COMMA                             &kp DOT  &kp APOS  &none
-                     &kp LCTRL  &space_enter         &hold_tap_kp_kr LGUI 0    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
+&none  &kp Q  &kp W  &kp F                    &kp P                &kp B       &kp J                         &kp H                &kp L                                 &kp U    &kp Y     &none
+&none  &kp A  &kp R  &kp S                    &hold_tap_mo_kp 3 T  &kp G       &kp M                         &mo 9                &kp E                                 &kp I    &kp O     &none
+&none  &kp Z  &kp X  &kp C                    &kp D                &kp V       &kp K                         &hold_tap_mo_kp 6 N  &kp COMMA                             &kp DOT  &kp APOS  &none
+                     &hold_tap_kp_kr LCTRL 0  &space_enter         &kp LGUI    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
             >;
         };
 
