@@ -400,8 +400,8 @@
 
         num {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &mkp LCLK    &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp SEMICOLON  &none
-&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp RCLK    &none   &none   &mod_morph_plus_equals  &kp MINUS          &kp GRAVE      &none
+&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &mkp LCLK    &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp GRAVE      &none
+&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp RCLK    &none   &none   &mod_morph_plus_equals  &kp MINUS          &kp SEMICOLON  &none
 &none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp MCLK    &none   &none   &kp COMMA               &kp PERIOD         &kp SQT        &none
                                     &trans        &trans        &trans       &trans  &trans  &trans
             >;
