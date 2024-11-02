@@ -194,7 +194,6 @@
             tapping-term-ms = <250>;
             flavor = "balanced";
             quick-tap-ms = <180>;
-            require-prior-idle-ms = <120>;
         };
 
         sticky_key: sticky_key {
