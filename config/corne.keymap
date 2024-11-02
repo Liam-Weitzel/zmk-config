@@ -273,12 +273,12 @@
 
         shift_copy {
             bindings = <&kp LS(LC(C))>;
-            key-positions = <29 38 15>;
+            key-positions = <38 15 28>;
         };
 
         shift_paste {
             bindings = <&kp LS(LC(V))>;
-            key-positions = <38 15 28>;
+            key-positions = <38 15 29>;
         };
 
         ctrl_shift_t {
