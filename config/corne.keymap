@@ -45,7 +45,7 @@
             bindings = <&kp CAPSLOCK>, <&capsword>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         left_mleft: left_mleft {
@@ -373,10 +373,10 @@
 
         func {
             bindings = <
-&none  &none  &kp F7  &kp F8  &kp F9  &mkp LCLK    &kp F20  &kp F21  &kp F22  &kp F23  &kp F24  &none
-&none  &none  &kp F4  &kp F5  &kp F6  &mkp RCLK    &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &none
-&none  &none  &kp F1  &kp F2  &kp F3  &mkp MCLK    &kp F10  &kp F11  &kp F12  &kp F13  &kp F14  &none
-                      &trans  &trans  &trans       &trans   &trans   &trans
+&none  &none  &kp F7  &kp F8  &kp F9  &none     &kp F20  &kp F21  &kp F22  &kp F23  &kp F24  &none
+&none  &none  &kp F4  &kp F5  &kp F6  &none     &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &none     &kp F10  &kp F11  &kp F12  &kp F13  &kp F14  &none
+                      &trans  &trans  &trans    &trans   &trans   &trans
             >;
         };
 
@@ -400,9 +400,9 @@
 
         num {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &mkp LCLK    &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp GRAVE      &none
-&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &mkp RCLK    &none   &none   &mod_morph_plus_equals  &kp MINUS          &kp SEMICOLON  &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp MCLK    &none   &none   &kp COMMA               &kp PERIOD         &kp SQT        &none
+&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE    &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &none    &none
+&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI     &none   &none   &mod_morph_plus_equals  &kp MINUS          &none    &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp MB1     &none   &none   &kp COMMA               &kp PERIOD         &kp SQT  &none
                                     &trans        &trans        &trans       &trans  &trans  &trans
             >;
         };
