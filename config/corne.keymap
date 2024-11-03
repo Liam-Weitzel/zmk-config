@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPSWORD";
             #binding-cells = <0>;
-            continue-list = <A B D C E F G H I J K L M N O P Q R S T U V W X Y Z>;
+            continue-list = <A B D C E F G H I J K L M N O P Q R S T U V W X Y Z UNDERSCORE MINUS BACKSPACE DELETE>;
         };
 
         caps_capsword_mod_morph: caps_capsword_mod_morph {
