@@ -337,9 +337,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F                    &kp P                &kp B       &kp J                         &kp H                &kp L                                 &kp U    &kp Y     &none
-&none  &kp A  &kp R  &kp S                    &hold_tap_mo_kp 3 T  &kp G       &kp M                         &mo 9                &kp E                                 &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C                    &kp D                &kp V       &kp K                         &hold_tap_mo_kp 6 N  &kp COMMA                             &kp DOT  &kp APOS  &none
+&none  &kp Q  &kp W  &kp F                    &kp P                &kp B       &kp Y                         &kp L                &kp U                                 &kp M    &kp J     &none
+&none  &kp A  &kp R  &kp S                    &hold_tap_mo_kp 3 T  &kp G       &mo 9                         &kp N                &kp E                                 &kp I    &kp O     &none
+&none  &kp Z  &kp X  &kp C                    &kp D                &kp V       &kp K                         &hold_tap_mo_kp 6 H  &kp COMMA                             &kp DOT  &kp APOS  &none
                      &hold_tap_kp_kr LCTRL 0  &space_enter         &kp LGUI    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
             >;
         };
