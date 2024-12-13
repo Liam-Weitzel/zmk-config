@@ -210,7 +210,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&kp LEFT_SHIFT>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
     };
 
