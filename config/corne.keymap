@@ -185,17 +185,6 @@
             mods = <(MOD_LALT)>;
         };
 
-        hold_tap_kp_kr: hold_tap_kp_kr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_KP_KR";
-            bindings = <&kp>, <&key_repeat>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            quick-tap-ms = <180>;
-        };
-
         sticky_key: sticky_key {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY";
@@ -215,38 +204,26 @@
             flavor = "hold-preferred";
         };
 
-        hold_tap_idle: hold_tap_idle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_IDLE";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <120>;
-        };
-
-        space_enter: space_enter {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_ENTER";
-            bindings = <&kp SPACE>, <&kp ENTER>;
-
+        gui_shift_tap_dance: gui_shift_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_SHIFT_TAP_DANCE";
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            bindings = <&kp LEFT_GUI>, <&kp LEFT_SHIFT>;
+
+            tapping-term-ms = <200>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        end {
+        end_left {
             bindings = <&kp END>;
             key-positions = <27 28 38>;
             require-prior-idle-ms = <0>;
         };
 
-        home {
+        home_left {
             bindings = <&kp HOME>;
             key-positions = <27 28 37>;
         };
@@ -271,17 +248,17 @@
             key-positions = <39 31 32>;
         };
 
-        shift_copy {
+        shift_copy_left {
             bindings = <&kp LS(LC(C))>;
             key-positions = <38 15 28>;
         };
 
-        shift_paste {
+        shift_paste_left {
             bindings = <&kp LS(LC(V))>;
             key-positions = <38 15 29>;
         };
 
-        ctrl_shift_t {
+        ctrl_shift_t_left {
             bindings = <&kp LC(LS(T))>;
             key-positions = <36 15 16>;
         };
@@ -310,7 +287,7 @@
             layers = <11 10 12>;
         };
 
-        quit {
+        quit_left {
             bindings = <&kp LS(LG(Q))>;
             key-positions = <16 38 1>;
         };
@@ -320,14 +297,14 @@
             key-positions = <38 15 16>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <15 38 17>;
-        };
-
         enter_right {
             bindings = <&kp ENTER>;
             key-positions = <20 19 39>;
+        };
+
+        backspace_left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <15 38 17>;
         };
     };
 
@@ -342,10 +319,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F                    &kp P                &kp B       &kp M                         &kp L                &kp U                                 &kp Y    &kp J     &none
-&none  &kp A  &kp R  &kp S                    &hold_tap_mo_kp 3 T  &kp G       &mo 9                         &kp N                &kp E                                 &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C                    &kp D                &kp V       &kp K                         &hold_tap_mo_kp 6 H  &kp COMMA                             &kp DOT  &kp APOS  &none
-                     &hold_tap_kp_kr LCTRL 0  &kp SPACE            &kp LGUI    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
+&none  &kp Q  &kp W  &kp F      &kp P                &kp B                   &kp M                         &kp L                &kp U                                 &kp Y    &kp J     &none
+&none  &kp A  &kp R  &kp S      &hold_tap_mo_kp 3 T  &kp G                   &mo 9                         &kp N                &kp E                                 &kp I    &kp O     &none
+&none  &kp Z  &kp X  &kp C      &kp D                &kp V                   &kp K                         &hold_tap_mo_kp 6 H  &kp COMMA                             &kp DOT  &kp APOS  &none
+                     &kp LCTRL  &kp SPACE            &gui_shift_tap_dance    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
             >;
         };
 
