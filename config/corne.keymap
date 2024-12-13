@@ -42,7 +42,7 @@
         caps_capsword_mod_morph: caps_capsword_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS_CAPSWORD_MOD_MORPH";
-            bindings = <&kp CAPSLOCK>, <&capsword>;
+            bindings = <&capsword>, <&kp CAPSLOCK>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -107,7 +107,7 @@
         tog_9_mod_morph: tog_9_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_9_MOD_MORPH";
-            bindings = <&kp C>, <&tog 13>;
+            bindings = <&kp C>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -116,7 +116,7 @@
         tog_1_mod_morph: tog_1_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_1_MOD_MORPH";
-            bindings = <&kp Q>, <&tog 13>;
+            bindings = <&kp Q>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -125,7 +125,7 @@
         tog_2_mod_morph: tog_2_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_2_MOD_MORPH";
-            bindings = <&kp W>, <&tog 13>;
+            bindings = <&kp W>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -134,7 +134,7 @@
         tog_3_mod_morph: tog_3_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_3_MOD_MORPH";
-            bindings = <&kp F>, <&tog 13>;
+            bindings = <&kp F>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -143,7 +143,7 @@
         tog_4_mod_morph: tog_4_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_4_MOD_MORPH";
-            bindings = <&kp A>, <&tog 13>;
+            bindings = <&kp A>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -152,7 +152,7 @@
         tog_5_mod_morph: tog_5_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_5_MOD_MORPH";
-            bindings = <&kp R>, <&tog 13>;
+            bindings = <&kp R>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -161,7 +161,7 @@
         tog_6_mod_morph: tog_6_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_6_MOD_MORPH";
-            bindings = <&kp S>, <&tog 13>;
+            bindings = <&kp S>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -170,7 +170,7 @@
         tog_7_mod_morph: tog_7_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_7_MOD_MORPH";
-            bindings = <&kp Z>, <&tog 13>;
+            bindings = <&kp Z>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -179,7 +179,7 @@
         tog_8_mod_morph: tog_8_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_8_MOD_MORPH";
-            bindings = <&kp X>, <&tog 13>;
+            bindings = <&kp X>, <&tog 16>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -208,7 +208,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "GUI_SHIFT_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&kp LEFT_SHIFT>;
+            bindings = <&kp LEFT_GUI>, <&kp RIGHT_SHIFT>;
 
             tapping-term-ms = <300>;
         };
@@ -282,9 +282,9 @@
         };
 
         sys_lock {
-            bindings = <&tog 11>;
+            bindings = <&tog 14>;
             key-positions = <31 32 33>;
-            layers = <11 10 12>;
+            layers = <14 13 15>;
         };
 
         quit_left {
@@ -306,6 +306,12 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <15 38 17>;
         };
+
+        ngram_lock {
+            bindings = <&tog 11>;
+            key-positions = <31 32 33>;
+            layers = <14 13 15>;
+        };
     };
 
     keymap {
@@ -319,17 +325,17 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F      &kp P                &kp B                   &kp M                         &kp L                &kp U                                 &kp Y    &kp J     &none
-&none  &kp A  &kp R  &kp S      &hold_tap_mo_kp 3 T  &kp G                   &mo 9                         &kp N                &kp E                                 &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C      &kp D                &kp V                   &kp K                         &hold_tap_mo_kp 6 H  &kp COMMA                             &kp DOT  &kp APOS  &none
-                     &kp LCTRL  &kp SPACE            &gui_shift_tap_dance    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
+&none  &kp Q  &kp W  &kp F      &kp P                 &kp B                   &kp M                         &kp L                &kp U                                 &kp Y    &kp J     &none
+&none  &kp A  &kp R  &kp S      &hold_tap_mo_kp 3 T   &kp G                   &mo 9                         &kp N                &kp E                                 &kp I    &kp O     &none
+&none  &kp Z  &kp X  &kp C      &hold_tap_mo_kp 12 D  &kp V                   &kp K                         &hold_tap_mo_kp 6 H  &kp COMMA                             &kp DOT  &kp APOS  &none
+                     &kp LCTRL  &kp SPACE             &gui_shift_tap_dance    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
             >;
         };
 
         nav {
             bindings = <
 &none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph  &kp P   &kp B     &kp PG_UP      &mkp LCLK    &up_mup      &mkp RCLK      &caps_capsword_mod_morph  &none
-&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 12    &kp PAGE_DOWN  &left_mleft  &down_mdown  &right_mright  &kp RIGHT_ALT             &none
+&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 15    &kp PAGE_DOWN  &left_mleft  &down_mdown  &right_mright  &kp RIGHT_ALT             &none
 &none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &kp V     &none          &none        &none        &none          &kp PRINTSCREEN           &none
                                            &trans            &trans  &trans    &trans         &trans       &trans
             >;
@@ -407,6 +413,33 @@
             >;
         };
 
+        ngram {
+            bindings = <
+&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none   &none   &none     &none   &kp AT  &none   &none  &none  &none
+                     &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        ngram_lock {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        ngram_temp {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         sys {
             bindings = <
 &none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT        &none   &none     &none         &none         &none         &none         &none         &none
@@ -434,11 +467,11 @@
             >;
         };
 
-        layer_13 {
+        custom {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &tog 13  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &tog 16  &none  &none  &none  &none
                      &none  &none  &none    &none  &none    &none
             >;
         };
@@ -478,11 +511,21 @@
         };
 
         sys_lock {
+            if-layers = <14>;
+            then-layer = <13>;
+        };
+
+        sys_temp {
+            if-layers = <15>;
+            then-layer = <13>;
+        };
+
+        ngram_lock {
             if-layers = <11>;
             then-layer = <10>;
         };
 
-        sys_temp {
+        ngram_temp {
             if-layers = <12>;
             then-layer = <10>;
         };
