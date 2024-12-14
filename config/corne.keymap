@@ -314,6 +314,113 @@
         };
     };
 
+    macros {
+        std: std {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp T &kp D &kp COLON &kp COLON>;
+            label = "STD";
+        };
+
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON>;
+            label = "DOUBLE_COLON";
+        };
+
+        less_than_less_than: less_than_less_than {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp LT &kp LT &kp SPACE>;
+            label = "LESS_THAN_LESS_THAN";
+        };
+
+        semi_colon_newline: semi_colon_newline {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI &kp RET>;
+            label = "SEMI_COLON_NEWLINE";
+        };
+
+        include_qoutes: include_qoutes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp POUND &kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE &kp DQT &kp DQT>;
+            label = "INCLUDE_QOUTES";
+        };
+
+        unsigned: unsigned {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp N &kp S &kp I &kp G &kp N &kp E &kp D &kp SPACE>;
+            label = "UNSIGNED";
+        };
+
+        short: short {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H &kp O &kp R &kp T &kp SPACE>;
+            label = "SHORT";
+        };
+
+        int: int {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp T &kp SPACE>;
+            label = "INT";
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR>;
+            label = "BRACKETS";
+        };
+
+        long: long {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp O &kp N &kp G &kp SPACE>;
+            label = "LONG";
+        };
+
+        char: char {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp A &kp R &kp SPACE>;
+            label = "CHAR";
+        };
+
+        float: float {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp L &kp O &kp A &kp T &kp SPACE>;
+            label = "FLOAT";
+        };
+
+        double: double {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp U &kp B &kp L &kp E &kp SPACE>;
+            label = "DOUBLE";
+        };
+
+        bool: bool {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp O &kp O &kp L &kp SPACE>;
+            label = "BOOL";
+        };
+
+        vector: vector {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp T &kp D &kp COLON &kp COLON &kp V &kp E &kp C &kp T &kp O &kp R &kp LT &kp GT>;
+            label = "VECTOR";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -415,10 +522,10 @@
 
         ngram {
             bindings = <
-&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none     &none   &kp AT  &none   &none  &none  &none
-                     &trans  &trans  &trans    &trans  &trans  &trans
+&none  &none  &none  &none   &none   &none     &std       &double_colon  &less_than_less_than  &semi_colon_newline  &include_qoutes  &none
+&none  &none  &none  &none   &none   &none     &unsigned  &short         &int                  &long                &char            &none
+&none  &none  &none  &none   &none   &none     &float     &double        &bool                 &vector              &brackets        &none
+                     &trans  &trans  &trans    &trans     &trans         &trans
             >;
         };
 
