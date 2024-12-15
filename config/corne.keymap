@@ -107,82 +107,82 @@
         tog_9_mod_morph: tog_9_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_9_MOD_MORPH";
-            bindings = <&kp C>, <&tog 16>;
+            bindings = <&kp C>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_1_mod_morph: tog_1_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_1_MOD_MORPH";
-            bindings = <&kp Q>, <&tog 16>;
+            bindings = <&kp Q>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_2_mod_morph: tog_2_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_2_MOD_MORPH";
-            bindings = <&kp W>, <&tog 16>;
+            bindings = <&kp W>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_3_mod_morph: tog_3_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_3_MOD_MORPH";
-            bindings = <&kp F>, <&tog 16>;
+            bindings = <&kp F>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_4_mod_morph: tog_4_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_4_MOD_MORPH";
-            bindings = <&kp A>, <&tog 16>;
+            bindings = <&kp A>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_5_mod_morph: tog_5_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_5_MOD_MORPH";
-            bindings = <&kp R>, <&tog 16>;
+            bindings = <&kp RIGHT_ALT>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_6_mod_morph: tog_6_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_6_MOD_MORPH";
-            bindings = <&kp S>, <&tog 16>;
+            bindings = <&mkp MB3>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_7_mod_morph: tog_7_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_7_MOD_MORPH";
-            bindings = <&kp Z>, <&tog 16>;
+            bindings = <&kp Z>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         tog_8_mod_morph: tog_8_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "TOG_8_MOD_MORPH";
-            bindings = <&kp X>, <&tog 16>;
+            bindings = <&kp X>, <&tog 13>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         sticky_key: sticky_key {
@@ -282,9 +282,9 @@
         };
 
         sys_lock {
-            bindings = <&tog 14>;
+            bindings = <&tog 11>;
             key-positions = <31 32 33>;
-            layers = <14 13 15>;
+            layers = <11 10 12>;
         };
 
         quit_left {
@@ -306,119 +306,6 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <15 38 17>;
         };
-
-        ngram_lock {
-            bindings = <&tog 11>;
-            key-positions = <31 32 33>;
-            layers = <12 10 11>;
-        };
-    };
-
-    macros {
-        std: std {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp T &kp D &kp COLON &kp COLON>;
-            label = "STD";
-        };
-
-        double_colon: double_colon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp COLON>;
-            label = "DOUBLE_COLON";
-        };
-
-        less_than_less_than: less_than_less_than {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp LT &kp LT &kp SPACE>;
-            label = "LESS_THAN_LESS_THAN";
-        };
-
-        semi_colon_newline: semi_colon_newline {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SEMI &kp RET>;
-            label = "SEMI_COLON_NEWLINE";
-        };
-
-        include_qoutes: include_qoutes {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp POUND &kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE &kp DQT &kp DQT>;
-            label = "INCLUDE_QOUTES";
-        };
-
-        unsigned: unsigned {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp N &kp S &kp I &kp G &kp N &kp E &kp D &kp SPACE>;
-            label = "UNSIGNED";
-        };
-
-        short: short {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp H &kp O &kp R &kp T &kp SPACE>;
-            label = "SHORT";
-        };
-
-        int: int {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp T &kp SPACE>;
-            label = "INT";
-        };
-
-        brackets: brackets {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR>;
-            label = "BRACKETS";
-        };
-
-        long: long {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp O &kp N &kp G &kp SPACE>;
-            label = "LONG";
-        };
-
-        char: char {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp H &kp A &kp R &kp SPACE>;
-            label = "CHAR";
-        };
-
-        float: float {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp L &kp O &kp A &kp T &kp SPACE>;
-            label = "FLOAT";
-        };
-
-        double: double {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp D &kp O &kp U &kp B &kp L &kp E &kp SPACE>;
-            label = "DOUBLE";
-        };
-
-        bool: bool {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp O &kp O &kp L &kp SPACE>;
-            label = "BOOL";
-        };
-
-        vector: vector {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp T &kp D &kp COLON &kp COLON &kp V &kp E &kp C &kp T &kp O &kp R &kp LT &kp GT>;
-            label = "VECTOR";
-        };
     };
 
     keymap {
@@ -432,18 +319,18 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp F      &kp P                 &kp B                   &kp M                         &kp L                &kp U                                 &kp Y    &kp J     &none
-&none  &kp A  &kp R  &kp S      &hold_tap_mo_kp 3 T   &kp G                   &mo 9                         &kp N                &kp E                                 &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C      &hold_tap_mo_kp 12 D  &kp V                   &kp K                         &hold_tap_mo_kp 6 H  &kp COMMA                             &kp DOT  &kp APOS  &none
-                     &kp LCTRL  &kp SPACE             &gui_shift_tap_dance    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del       &hold_tap_kp_kp_no_idle LEFT_ALT TAB
+&none  &kp Q  &kp W  &kp F      &kp P                &kp B                   &kp M                         &kp L           &kp U                                 &kp Y    &kp J     &none
+&none  &kp A  &kp R  &kp S      &hold_tap_mo_kp 3 T  &kp G                   &mo 9                         &kp N           &kp E                                 &kp I    &kp O     &none
+&none  &kp Z  &kp X  &kp C      &kp D                &kp V                   &kp K                         &kp H           &kp COMMA                             &kp DOT  &kp APOS  &none
+                     &kp LCTRL  &kp SPACE            &gui_shift_tap_dance    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del  &hold_tap_kp_kp_no_idle LEFT_ALT TAB
             >;
         };
 
         nav {
             bindings = <
-&none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph  &kp P   &kp B     &kp PG_UP      &mkp LCLK    &up_mup      &mkp RCLK      &caps_capsword_mod_morph  &none
-&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 15    &kp PAGE_DOWN  &left_mleft  &down_mdown  &right_mright  &kp RIGHT_ALT             &none
-&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &kp V     &none          &none        &none        &none          &kp PRINTSCREEN           &none
+&none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph  &kp P   &kp B     &kp PG_UP      &mkp MB1     &up_mup      &mkp MB2       &none            &none
+&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 12    &kp PAGE_DOWN  &left_mleft  &down_mdown  &right_mright  &kp PRINTSCREEN  &none
+&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &kp V     &none          &kp K_PREV   &none        &kp K_NEXT     &none            &none
                                            &trans            &trans  &trans    &trans         &trans       &trans
             >;
         };
@@ -468,10 +355,10 @@
 
         func {
             bindings = <
-&none  &none  &kp F7  &kp F8  &kp F9  &none     &kp F20  &kp F21  &kp F22  &kp F23  &kp F24  &none
-&none  &none  &kp F4  &kp F5  &kp F6  &none     &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &none
-&none  &none  &kp F1  &kp F2  &kp F3  &none     &kp F10  &kp F11  &kp F12  &kp F13  &kp F14  &none
-                      &trans  &trans  &trans    &trans   &trans   &trans
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F10    &none   &none   &none   &none  &none  &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &none   &none   &none   &none  &none  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F12    &none   &none   &none   &none  &none  &none
+                      &trans  &trans  &trans     &trans  &trans  &trans
             >;
         };
 
@@ -496,7 +383,7 @@
         num {
             bindings = <
 &none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE    &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &none    &none
-&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI     &none   &none   &mod_morph_plus_equals  &kp MINUS          &none    &none
+&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI     &none   &mo 6   &mod_morph_plus_equals  &kp MINUS          &none    &none
 &none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp MB1     &none   &none   &kp COMMA               &kp PERIOD         &kp SQT  &none
                                     &trans        &trans        &trans       &trans  &trans  &trans
             >;
@@ -512,33 +399,6 @@
         };
 
         num_temp {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        ngram {
-            bindings = <
-&none  &none  &none  &none   &none   &none     &std       &double_colon  &less_than_less_than  &semi_colon_newline  &include_qoutes  &none
-&none  &none  &none  &none   &none   &none     &unsigned  &short         &int                  &long                &char            &none
-&none  &none  &none  &none   &none   &none     &float     &double        &bool                 &vector              &brackets        &none
-                     &trans  &trans  &trans    &trans     &trans         &trans
-            >;
-        };
-
-        ngram_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        ngram_temp {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -578,7 +438,7 @@
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &tog 16  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &tog 13  &none  &none  &none  &none
                      &none  &none  &none    &none  &none    &none
             >;
         };
@@ -618,21 +478,11 @@
         };
 
         sys_lock {
-            if-layers = <14>;
-            then-layer = <13>;
-        };
-
-        sys_temp {
-            if-layers = <15>;
-            then-layer = <13>;
-        };
-
-        ngram_lock {
             if-layers = <11>;
             then-layer = <10>;
         };
 
-        ngram_temp {
+        sys_temp {
             if-layers = <12>;
             then-layer = <10>;
         };
