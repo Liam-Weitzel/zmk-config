@@ -335,6 +335,967 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <15 38 17>;
         };
+
+        combo_1 {
+            bindings = <&kp F13>;
+            key-positions = <1 2 3>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_2 {
+            bindings = <&kp LC(F13)>;
+            key-positions = <1 2 4>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_3 {
+            bindings = <&kp LS(F13)>;
+            key-positions = <1 2 5>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_4 {
+            bindings = <&kp LA(F13)>;
+            key-positions = <1 2 6>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_5 {
+            bindings = <&kp LMETA(F13)>;
+            key-positions = <1 2 7>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_6 {
+            bindings = <&kp LC(LS(F13))>;
+            key-positions = <1 2 8>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_7 {
+            bindings = <&kp LC(LA(F13))>;
+            key-positions = <1 2 9>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_8 {
+            bindings = <&kp LC(LMETA(F13))>;
+            key-positions = <1 2 10>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_9 {
+            bindings = <&kp LS(LA(F13))>;
+            key-positions = <1 2 13>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_10 {
+            bindings = <&kp LS(LMETA(F13))>;
+            key-positions = <1 2 14>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_11 {
+            bindings = <&kp LA(LMETA(F13))>;
+            key-positions = <1 2 15>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_12 {
+            bindings = <&kp LC(LS(LA(F13)))>;
+            key-positions = <1 2 16>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_13 {
+            bindings = <&kp LC(LS(LMETA(F13)))>;
+            key-positions = <1 2 17>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_14 {
+            bindings = <&kp LC(LA(LMETA(F13)))>;
+            key-positions = <1 2 18>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_15 {
+            bindings = <&kp LS(LA(LMETA(F13)))>;
+            key-positions = <1 2 19>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_16 {
+            bindings = <&kp LC(LS(LA(LMETA(F13))))>;
+            key-positions = <1 2 20>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_17 {
+            bindings = <&kp F14>;
+            key-positions = <1 2 21>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_18 {
+            bindings = <&kp LC(F14)>;
+            key-positions = <1 2 22>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_19 {
+            bindings = <&kp LS(F14)>;
+            key-positions = <1 2 25>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_20 {
+            bindings = <&kp LA(F14)>;
+            key-positions = <1 2 26>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_21 {
+            bindings = <&kp LMETA(F14)>;
+            key-positions = <1 2 27>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_22 {
+            bindings = <&kp LC(LS(F14))>;
+            key-positions = <1 2 28>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_23 {
+            bindings = <&kp LC(LA(F14))>;
+            key-positions = <1 2 29>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_24 {
+            bindings = <&kp LC(LMETA(F14))>;
+            key-positions = <1 2 30>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_25 {
+            bindings = <&kp LS(LA(F14))>;
+            key-positions = <1 2 31>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_26 {
+            bindings = <&kp LS(LMETA(F14))>;
+            key-positions = <1 2 32>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_27 {
+            bindings = <&kp LA(LMETA(F14))>;
+            key-positions = <1 2 33>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_28 {
+            bindings = <&kp LC(LS(LA(F14)))>;
+            key-positions = <1 2 34>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_29 {
+            bindings = <&kp LC(LS(LMETA(F14)))>;
+            key-positions = <1 2 36>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_30 {
+            bindings = <&kp LC(LA(LMETA(F14)))>;
+            key-positions = <1 2 37>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_31 {
+            bindings = <&kp LS(LA(LMETA(F14)))>;
+            key-positions = <1 2 38>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_32 {
+            bindings = <&kp LC(LS(LA(LMETA(F14))))>;
+            key-positions = <1 2 39>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_33 {
+            bindings = <&kp F15>;
+            key-positions = <1 2 40>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_34 {
+            bindings = <&kp LC(F15)>;
+            key-positions = <1 2 41>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_35 {
+            bindings = <&kp LS(F15)>;
+            key-positions = <1 3 4>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_36 {
+            bindings = <&kp LA(F15)>;
+            key-positions = <1 3 5>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_37 {
+            bindings = <&kp LMETA(F15)>;
+            key-positions = <1 3 6>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_38 {
+            bindings = <&kp LC(LS(F15))>;
+            key-positions = <1 3 7>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_39 {
+            bindings = <&kp LC(LA(F15))>;
+            key-positions = <1 3 8>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_40 {
+            bindings = <&kp LC(LMETA(F15))>;
+            key-positions = <1 3 9>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_41 {
+            bindings = <&kp LS(LA(F15))>;
+            key-positions = <1 3 10>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_42 {
+            bindings = <&kp LS(LMETA(F15))>;
+            key-positions = <1 3 13>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_43 {
+            bindings = <&kp LA(LMETA(F15))>;
+            key-positions = <1 3 14>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_44 {
+            bindings = <&kp LC(LS(LA(F15)))>;
+            key-positions = <1 3 15>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_45 {
+            bindings = <&kp LC(LS(LMETA(F15)))>;
+            key-positions = <1 3 16>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_46 {
+            bindings = <&kp LC(LA(LMETA(F15)))>;
+            key-positions = <1 3 17>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_47 {
+            bindings = <&kp LS(LA(LMETA(F15)))>;
+            key-positions = <1 3 18>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_48 {
+            bindings = <&kp LC(LS(LA(LMETA(F15))))>;
+            key-positions = <1 3 19>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_49 {
+            bindings = <&kp F16>;
+            key-positions = <1 3 20>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_50 {
+            bindings = <&kp LC(F16)>;
+            key-positions = <1 3 21>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_51 {
+            bindings = <&kp LS(F16)>;
+            key-positions = <1 3 22>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_52 {
+            bindings = <&kp LA(F16)>;
+            key-positions = <1 3 25>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_53 {
+            bindings = <&kp LMETA(F16)>;
+            key-positions = <1 3 26>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_54 {
+            bindings = <&kp LC(LS(F16))>;
+            key-positions = <1 3 27>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_55 {
+            bindings = <&kp LC(LA(F16))>;
+            key-positions = <1 3 28>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_56 {
+            bindings = <&kp LC(LMETA(F16))>;
+            key-positions = <1 3 29>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_57 {
+            bindings = <&kp LS(LA(F16))>;
+            key-positions = <1 3 30>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_58 {
+            bindings = <&kp LS(LMETA(F16))>;
+            key-positions = <1 3 31>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_59 {
+            bindings = <&kp LA(LMETA(F16))>;
+            key-positions = <1 3 32>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_60 {
+            bindings = <&kp LC(LS(LA(F16)))>;
+            key-positions = <1 3 33>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_61 {
+            bindings = <&kp LC(LS(LMETA(F16)))>;
+            key-positions = <1 3 34>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_62 {
+            bindings = <&kp LC(LA(LMETA(F16)))>;
+            key-positions = <1 3 36>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_63 {
+            bindings = <&kp LS(LA(LMETA(F16)))>;
+            key-positions = <1 3 37>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_64 {
+            bindings = <&kp LC(LS(LA(LMETA(F16))))>;
+            key-positions = <1 3 38>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_65 {
+            bindings = <&kp F17>;
+            key-positions = <1 3 39>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_66 {
+            bindings = <&kp LC(F17)>;
+            key-positions = <1 3 40>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_67 {
+            bindings = <&kp LS(F17)>;
+            key-positions = <1 3 41>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_68 {
+            bindings = <&kp LA(F17)>;
+            key-positions = <1 4 5>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_69 {
+            bindings = <&kp LMETA(F17)>;
+            key-positions = <1 4 6>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_70 {
+            bindings = <&kp LC(LS(F17))>;
+            key-positions = <1 4 7>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_71 {
+            bindings = <&kp LC(LA(F17))>;
+            key-positions = <1 4 8>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_72 {
+            bindings = <&kp LC(LMETA(F17))>;
+            key-positions = <1 4 9>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_73 {
+            bindings = <&kp LS(LA(F17))>;
+            key-positions = <1 4 10>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_74 {
+            bindings = <&kp LS(LMETA(F17))>;
+            key-positions = <1 4 13>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_75 {
+            bindings = <&kp LA(LMETA(F17))>;
+            key-positions = <1 4 14>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_76 {
+            bindings = <&kp LC(LS(LA(F17)))>;
+            key-positions = <1 4 15>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_77 {
+            bindings = <&kp LC(LS(LMETA(F17)))>;
+            key-positions = <1 4 16>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_78 {
+            bindings = <&kp LC(LA(LMETA(F17)))>;
+            key-positions = <1 4 17>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_79 {
+            bindings = <&kp LS(LA(LMETA(F17)))>;
+            key-positions = <1 4 18>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_80 {
+            bindings = <&kp LC(LS(LA(LMETA(F17))))>;
+            key-positions = <1 4 19>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_81 {
+            bindings = <&kp F18>;
+            key-positions = <1 4 20>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_82 {
+            bindings = <&kp LC(F18)>;
+            key-positions = <1 4 21>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_83 {
+            bindings = <&kp LS(F18)>;
+            key-positions = <1 4 22>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_84 {
+            bindings = <&kp LA(F18)>;
+            key-positions = <1 4 25>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_85 {
+            bindings = <&kp LMETA(F18)>;
+            key-positions = <1 4 26>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_86 {
+            bindings = <&kp LC(LS(F18))>;
+            key-positions = <1 4 27>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_87 {
+            bindings = <&kp LC(LA(F18))>;
+            key-positions = <1 4 28>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_88 {
+            bindings = <&kp LC(LMETA(F18))>;
+            key-positions = <1 4 29>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_89 {
+            bindings = <&kp LS(LA(F18))>;
+            key-positions = <1 4 30>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_90 {
+            bindings = <&kp LS(LMETA(F18))>;
+            key-positions = <1 4 31>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_91 {
+            bindings = <&kp LA(LMETA(F18))>;
+            key-positions = <1 4 32>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_92 {
+            bindings = <&kp LC(LS(LA(F18)))>;
+            key-positions = <1 4 33>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_93 {
+            bindings = <&kp LC(LS(LMETA(F18)))>;
+            key-positions = <1 4 34>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_94 {
+            bindings = <&kp LC(LA(LMETA(F18)))>;
+            key-positions = <1 4 36>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_95 {
+            bindings = <&kp LS(LA(LMETA(F18)))>;
+            key-positions = <1 4 37>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_96 {
+            bindings = <&kp LC(LS(LA(LMETA(F18))))>;
+            key-positions = <1 4 38>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_97 {
+            bindings = <&kp F19>;
+            key-positions = <1 4 39>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_98 {
+            bindings = <&kp LC(F19)>;
+            key-positions = <1 4 40>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_99 {
+            bindings = <&kp LS(F19)>;
+            key-positions = <1 4 41>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_100 {
+            bindings = <&kp LA(F19)>;
+            key-positions = <1 5 6>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_101 {
+            bindings = <&kp LMETA(F19)>;
+            key-positions = <1 5 7>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_102 {
+            bindings = <&kp LC(LS(F19))>;
+            key-positions = <1 5 8>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_103 {
+            bindings = <&kp LC(LA(F19))>;
+            key-positions = <1 5 9>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_104 {
+            bindings = <&kp LC(LMETA(F19))>;
+            key-positions = <1 5 10>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_105 {
+            bindings = <&kp LS(LA(F19))>;
+            key-positions = <1 5 13>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_106 {
+            bindings = <&kp LS(LMETA(F19))>;
+            key-positions = <1 5 14>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_107 {
+            bindings = <&kp LA(LMETA(F19))>;
+            key-positions = <1 5 15>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_108 {
+            bindings = <&kp LC(LS(LA(F19)))>;
+            key-positions = <1 5 16>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_109 {
+            bindings = <&kp LC(LS(LMETA(F19)))>;
+            key-positions = <1 5 17>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_110 {
+            bindings = <&kp LC(LA(LMETA(F19)))>;
+            key-positions = <1 5 18>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_111 {
+            bindings = <&kp LS(LA(LMETA(F19)))>;
+            key-positions = <1 5 19>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_112 {
+            bindings = <&kp LC(LS(LA(LMETA(F19))))>;
+            key-positions = <1 5 20>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_113 {
+            bindings = <&kp F20>;
+            key-positions = <1 5 21>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_114 {
+            bindings = <&kp LC(F20)>;
+            key-positions = <1 5 22>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_115 {
+            bindings = <&kp LS(F20)>;
+            key-positions = <1 5 25>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_116 {
+            bindings = <&kp LA(F20)>;
+            key-positions = <1 5 26>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_117 {
+            bindings = <&kp LMETA(F20)>;
+            key-positions = <1 5 27>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_118 {
+            bindings = <&kp LC(LS(F20))>;
+            key-positions = <1 5 28>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_119 {
+            bindings = <&kp LC(LA(F20))>;
+            key-positions = <1 5 29>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_120 {
+            bindings = <&kp LC(LMETA(F20))>;
+            key-positions = <1 5 30>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_121 {
+            bindings = <&kp LS(LA(F20))>;
+            key-positions = <1 5 31>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_122 {
+            bindings = <&kp LS(LMETA(F20))>;
+            key-positions = <1 5 32>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_123 {
+            bindings = <&kp LA(LMETA(F20))>;
+            key-positions = <1 5 33>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_124 {
+            bindings = <&kp LC(LS(LA(F20)))>;
+            key-positions = <1 5 34>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_125 {
+            bindings = <&kp LC(LS(LMETA(F20)))>;
+            key-positions = <1 5 36>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_126 {
+            bindings = <&kp LC(LA(LMETA(F20)))>;
+            key-positions = <1 5 37>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_127 {
+            bindings = <&kp LS(LA(LMETA(F20)))>;
+            key-positions = <1 5 38>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_128 {
+            bindings = <&kp LC(LS(LA(LMETA(F20))))>;
+            key-positions = <1 5 39>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_129 {
+            bindings = <&kp F21>;
+            key-positions = <1 5 40>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_130 {
+            bindings = <&kp LC(F21)>;
+            key-positions = <1 5 41>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_131 {
+            bindings = <&kp LS(F21)>;
+            key-positions = <1 6 7>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_132 {
+            bindings = <&kp LA(F21)>;
+            key-positions = <1 6 8>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_133 {
+            bindings = <&kp LMETA(F21)>;
+            key-positions = <1 6 9>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_134 {
+            bindings = <&kp LC(LS(F21))>;
+            key-positions = <1 6 10>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_135 {
+            bindings = <&kp LC(LA(F21))>;
+            key-positions = <1 6 13>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_136 {
+            bindings = <&kp LC(LMETA(F21))>;
+            key-positions = <1 6 14>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_137 {
+            bindings = <&kp LS(LA(F21))>;
+            key-positions = <1 6 15>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_138 {
+            bindings = <&kp LS(LMETA(F21))>;
+            key-positions = <1 6 16>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_139 {
+            bindings = <&kp LA(LMETA(F21))>;
+            key-positions = <1 6 17>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_140 {
+            bindings = <&kp LC(LS(LA(F21)))>;
+            key-positions = <1 6 18>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_141 {
+            bindings = <&kp LC(LS(LMETA(F21)))>;
+            key-positions = <1 6 19>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_142 {
+            bindings = <&kp LC(LA(LMETA(F21)))>;
+            key-positions = <1 6 20>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_143 {
+            bindings = <&kp LS(LA(LMETA(F21)))>;
+            key-positions = <1 6 21>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_144 {
+            bindings = <&kp LC(LS(LA(LMETA(F21))))>;
+            key-positions = <1 6 22>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_145 {
+            bindings = <&kp F22>;
+            key-positions = <1 6 25>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_146 {
+            bindings = <&kp LC(F22)>;
+            key-positions = <1 6 26>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_147 {
+            bindings = <&kp LS(F22)>;
+            key-positions = <1 6 27>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_148 {
+            bindings = <&kp LA(F22)>;
+            key-positions = <1 6 28>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_149 {
+            bindings = <&kp LMETA(F22)>;
+            key-positions = <1 6 29>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_150 {
+            bindings = <&kp LC(LS(F22))>;
+            key-positions = <1 6 30>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_151 {
+            bindings = <&kp LC(LA(F22))>;
+            key-positions = <1 6 31>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_152 {
+            bindings = <&kp LC(LMETA(F22))>;
+            key-positions = <1 6 32>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_153 {
+            bindings = <&kp LS(LA(F22))>;
+            key-positions = <1 6 33>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_154 {
+            bindings = <&kp LS(LMETA(F22))>;
+            key-positions = <1 6 34>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_155 {
+            bindings = <&kp LA(LMETA(F22))>;
+            key-positions = <1 6 36>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_156 {
+            bindings = <&kp LC(LS(LA(F22)))>;
+            key-positions = <1 6 37>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_157 {
+            bindings = <&kp LC(LS(LMETA(F22)))>;
+            key-positions = <1 6 38>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_158 {
+            bindings = <&kp LC(LA(LMETA(F22)))>;
+            key-positions = <1 6 39>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_159 {
+            bindings = <&kp LS(LA(LMETA(F22)))>;
+            key-positions = <1 6 40>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_160 {
+            bindings = <&kp LC(LS(LA(LMETA(F22))))>;
+            key-positions = <1 6 41>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_161 {
+            bindings = <&kp F23>;
+            key-positions = <1 7 8>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_162 {
+            bindings = <&kp LC(F23)>;
+            key-positions = <1 7 9>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_163 {
+            bindings = <&kp LS(F23)>;
+            key-positions = <1 7 10>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_164 {
+            bindings = <&kp LA(F23)>;
+            key-positions = <1 7 13>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_165 {
+            bindings = <&kp LMETA(F23)>;
+            key-positions = <1 7 14>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_166 {
+            bindings = <&kp LC(LS(F23))>;
+            key-positions = <1 7 15>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_167 {
+            bindings = <&kp LC(LA(F23))>;
+            key-positions = <1 7 16>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_168 {
+            bindings = <&kp LC(LMETA(F23))>;
+            key-positions = <1 7 17>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_169 {
+            bindings = <&kp LS(LA(F23))>;
+            key-positions = <1 7 18>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_170 {
+            bindings = <&kp LS(LMETA(F23))>;
+            key-positions = <1 7 19>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_171 {
+            bindings = <&kp LA(LMETA(F23))>;
+            key-positions = <1 7 20>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_172 {
+            bindings = <&kp LC(LS(LA(F23)))>;
+            key-positions = <1 7 21>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_173 {
+            bindings = <&kp LC(LS(LMETA(F23)))>;
+            key-positions = <1 7 22>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_174 {
+            bindings = <&kp LC(LA(LMETA(F23)))>;
+            key-positions = <1 7 25>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_175 {
+            bindings = <&kp LS(LA(LMETA(F23)))>;
+            key-positions = <1 7 26>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_176 {
+            bindings = <&kp LC(LS(LA(LMETA(F23))))>;
+            key-positions = <1 7 27>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_177 {
+            bindings = <&kp F24>;
+            key-positions = <1 7 28>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_178 {
+            bindings = <&kp LC(F24)>;
+            key-positions = <1 7 29>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_179 {
+            bindings = <&kp LS(F24)>;
+            key-positions = <1 7 30>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_180 {
+            bindings = <&kp LA(F24)>;
+            key-positions = <1 7 31>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_181 {
+            bindings = <&kp LMETA(F24)>;
+            key-positions = <1 7 32>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_182 {
+            bindings = <&kp LC(LS(F24))>;
+            key-positions = <1 7 33>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_183 {
+            bindings = <&kp LC(LA(F24))>;
+            key-positions = <1 7 34>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_184 {
+            bindings = <&kp LC(LMETA(F24))>;
+            key-positions = <1 7 36>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_185 {
+            bindings = <&kp LS(LA(F24))>;
+            key-positions = <1 7 37>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_186 {
+            bindings = <&kp LS(LMETA(F24))>;
+            key-positions = <1 7 38>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_187 {
+            bindings = <&kp LA(LMETA(F24))>;
+            key-positions = <1 7 39>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_188 {
+            bindings = <&kp LC(LS(LA(F24)))>;
+            key-positions = <1 7 40>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_189 {
+            bindings = <&kp LC(LS(LMETA(F24)))>;
+            key-positions = <1 7 41>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_190 {
+            bindings = <&kp LC(LA(LMETA(F24)))>;
+            key-positions = <1 8 9>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_191 {
+            bindings = <&kp LS(LA(LMETA(F24)))>;
+            key-positions = <1 8 10>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_192 {
+            bindings = <&kp LC(LS(LA(LMETA(F24))))>;
+            key-positions = <1 8 13>;
+            require-prior-idle-ms = <0>;
+        };
     };
 
     keymap {
