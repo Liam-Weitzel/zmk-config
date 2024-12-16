@@ -300,21 +300,21 @@
         };
 
         func_lock {
-            bindings = <&tog 5>;
+            bindings = <&tog 8>;
             key-positions = <26 27 28>;
-            layers = <4 5 6>;
+            layers = <11 9 10>;
         };
 
         num_lock {
-            bindings = <&tog 8>;
+            bindings = <&tog 5>;
             key-positions = <26 27 28>;
-            layers = <8 7 9>;
+            layers = <5 4 6>;
         };
 
         sys_lock {
             bindings = <&tog 11>;
             key-positions = <31 32 33>;
-            layers = <11 10 12>;
+            layers = <11 11 12>;
         };
 
         quit_left {
@@ -350,7 +350,7 @@
 
             bindings = <
 &none  &kp Q  &kp W  &kp F        &kp P                &kp B       &kp M                         &kp L           &kp U                                 &kp Y    &kp J     &none
-&none  &kp A  &kp R  &kp S        &hold_tap_mo_kp 3 T  &kp G       &mo 9                         &kp N           &kp E                                 &kp I    &kp O     &none
+&none  &kp A  &kp R  &kp S        &hold_tap_mo_kp 3 T  &kp G       &mo 6                         &kp N           &kp E                                 &kp I    &kp O     &none
 &none  &kp Z  &kp X  &kp C        &kp D                &kp V       &kp K                         &kp H           &kp COMMA                             &kp DOT  &kp APOS  &none
                      &ctrl_shift  &kp SPACE            &kp LGUI    &shift LEFT_SHIFT LEFT_SHIFT  &backspace_del  &hold_tap_kp_kp_no_idle LEFT_ALT TAB
             >;
@@ -383,6 +383,33 @@
             >;
         };
 
+        num {
+            bindings = <
+&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE      &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &none    &none
+&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI       &none   &mo 9   &mod_morph_plus_equals  &kp MINUS          &none    &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp_morph1    &none   &none   &kp COMMA               &kp PERIOD         &kp SQT  &none
+                                    &trans        &trans        &trans         &trans  &trans  &trans
+            >;
+        };
+
+        num_lock {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        num_temp {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         func {
             bindings = <
 &none  &none  &kp F7  &kp F8  &kp F9  &kp F10    &none   &none   &none   &none  &none  &none
@@ -402,33 +429,6 @@
         };
 
         func_temp {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        num {
-            bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE      &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &none    &none
-&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI       &none   &mo 6   &mod_morph_plus_equals  &kp MINUS          &none    &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp_morph1    &none   &none   &kp COMMA               &kp PERIOD         &kp SQT  &none
-                                    &trans        &trans        &trans         &trans  &trans  &trans
-            >;
-        };
-
-        num_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        num_temp {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -488,23 +488,23 @@
         };
 
         func_lock {
-            if-layers = <5>;
-            then-layer = <4>;
-        };
-
-        func_temp {
-            if-layers = <6>;
-            then-layer = <4>;
-        };
-
-        num_lock {
             if-layers = <8>;
             then-layer = <7>;
         };
 
-        num_temp {
+        func_temp {
             if-layers = <9>;
             then-layer = <7>;
+        };
+
+        num_lock {
+            if-layers = <5>;
+            then-layer = <4>;
+        };
+
+        num_temp {
+            if-layers = <6>;
+            then-layer = <4>;
         };
 
         sys_lock {
