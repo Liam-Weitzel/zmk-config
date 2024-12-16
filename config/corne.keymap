@@ -255,210 +255,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F13> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F13>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_003_f13_rctrl: macro_003_f13_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F13> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F13>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_004_f13_lshft: macro_004_f13_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F13> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F13>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_005_f13_rshft: macro_005_f13_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F13> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F13>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_006_f13_lalt: macro_006_f13_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F13> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F13>, <&macro_release &kp LALT>
                 ;
         };
         macro_007_f13_ralt: macro_007_f13_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F13> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F13>, <&macro_release &kp RALT>
                 ;
         };
         macro_008_f13_lgui: macro_008_f13_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>
                 ;
         };
         macro_009_f13_rgui: macro_009_f13_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>
                 ;
         };
         macro_010_f13_lctrl_lshft: macro_010_f13_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F13> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F13>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_011_f13_rctrl_rshft: macro_011_f13_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F13> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F13>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_012_f13_lctrl_lalt: macro_012_f13_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F13> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F13>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_013_f13_rctrl_ralt: macro_013_f13_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F13> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F13>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_014_f13_lctrl_lgui: macro_014_f13_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_015_f13_rctrl_rgui: macro_015_f13_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_016_f13_lshft_lalt: macro_016_f13_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F13> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F13>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_017_f13_rshft_ralt: macro_017_f13_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F13> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F13>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_018_f13_lshft_lgui: macro_018_f13_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_019_f13_rshft_rgui: macro_019_f13_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_020_f13_lalt_lgui: macro_020_f13_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_021_f13_ralt_rgui: macro_021_f13_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_022_f13_lctrl_lshft_lalt: macro_022_f13_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F13> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F13>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_023_f13_rctrl_rshft_ralt: macro_023_f13_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F13> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F13>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_024_f13_lctrl_lshft_lgui: macro_024_f13_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_025_f13_rctrl_rshft_rgui: macro_025_f13_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_026_f13_lctrl_lalt_lgui: macro_026_f13_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_027_f13_rctrl_ralt_rgui: macro_027_f13_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_028_f13_lshft_lalt_lgui: macro_028_f13_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_029_f13_rshft_ralt_rgui: macro_029_f13_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_030_f13_lctrl_lshft_lalt_lgui: macro_030_f13_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F13> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F13>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_031_f13_rctrl_rshft_ralt_rgui: macro_031_f13_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F13> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F13>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_032_f14: macro_032_f14 {
@@ -472,210 +472,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F14> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F14>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_034_f14_rctrl: macro_034_f14_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F14> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F14>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_035_f14_lshft: macro_035_f14_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F14> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F14>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_036_f14_rshft: macro_036_f14_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F14> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F14>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_037_f14_lalt: macro_037_f14_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F14> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F14>, <&macro_release &kp LALT>
                 ;
         };
         macro_038_f14_ralt: macro_038_f14_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F14> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F14>, <&macro_release &kp RALT>
                 ;
         };
         macro_039_f14_lgui: macro_039_f14_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>
                 ;
         };
         macro_040_f14_rgui: macro_040_f14_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>
                 ;
         };
         macro_041_f14_lctrl_lshft: macro_041_f14_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F14> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F14>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_042_f14_rctrl_rshft: macro_042_f14_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F14> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F14>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_043_f14_lctrl_lalt: macro_043_f14_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F14> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F14>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_044_f14_rctrl_ralt: macro_044_f14_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F14> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F14>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_045_f14_lctrl_lgui: macro_045_f14_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_046_f14_rctrl_rgui: macro_046_f14_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_047_f14_lshft_lalt: macro_047_f14_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F14> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F14>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_048_f14_rshft_ralt: macro_048_f14_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F14> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F14>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_049_f14_lshft_lgui: macro_049_f14_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_050_f14_rshft_rgui: macro_050_f14_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_051_f14_lalt_lgui: macro_051_f14_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_052_f14_ralt_rgui: macro_052_f14_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_053_f14_lctrl_lshft_lalt: macro_053_f14_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F14> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F14>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_054_f14_rctrl_rshft_ralt: macro_054_f14_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F14> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F14>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_055_f14_lctrl_lshft_lgui: macro_055_f14_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_056_f14_rctrl_rshft_rgui: macro_056_f14_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_057_f14_lctrl_lalt_lgui: macro_057_f14_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_058_f14_rctrl_ralt_rgui: macro_058_f14_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_059_f14_lshft_lalt_lgui: macro_059_f14_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_060_f14_rshft_ralt_rgui: macro_060_f14_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_061_f14_lctrl_lshft_lalt_lgui: macro_061_f14_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F14> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F14>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_062_f14_rctrl_rshft_ralt_rgui: macro_062_f14_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F14> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F14>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_063_f15: macro_063_f15 {
@@ -689,210 +689,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F15> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F15>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_065_f15_rctrl: macro_065_f15_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F15> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F15>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_066_f15_lshft: macro_066_f15_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F15> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F15>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_067_f15_rshft: macro_067_f15_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F15> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F15>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_068_f15_lalt: macro_068_f15_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F15> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F15>, <&macro_release &kp LALT>
                 ;
         };
         macro_069_f15_ralt: macro_069_f15_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F15> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F15>, <&macro_release &kp RALT>
                 ;
         };
         macro_070_f15_lgui: macro_070_f15_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>
                 ;
         };
         macro_071_f15_rgui: macro_071_f15_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>
                 ;
         };
         macro_072_f15_lctrl_lshft: macro_072_f15_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F15> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F15>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_073_f15_rctrl_rshft: macro_073_f15_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F15> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F15>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_074_f15_lctrl_lalt: macro_074_f15_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F15> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F15>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_075_f15_rctrl_ralt: macro_075_f15_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F15> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F15>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_076_f15_lctrl_lgui: macro_076_f15_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_077_f15_rctrl_rgui: macro_077_f15_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_078_f15_lshft_lalt: macro_078_f15_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F15> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F15>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_079_f15_rshft_ralt: macro_079_f15_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F15> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F15>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_080_f15_lshft_lgui: macro_080_f15_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_081_f15_rshft_rgui: macro_081_f15_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_082_f15_lalt_lgui: macro_082_f15_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_083_f15_ralt_rgui: macro_083_f15_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_084_f15_lctrl_lshft_lalt: macro_084_f15_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F15> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F15>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_085_f15_rctrl_rshft_ralt: macro_085_f15_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F15> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F15>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_086_f15_lctrl_lshft_lgui: macro_086_f15_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_087_f15_rctrl_rshft_rgui: macro_087_f15_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_088_f15_lctrl_lalt_lgui: macro_088_f15_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_089_f15_rctrl_ralt_rgui: macro_089_f15_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_090_f15_lshft_lalt_lgui: macro_090_f15_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_091_f15_rshft_ralt_rgui: macro_091_f15_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_092_f15_lctrl_lshft_lalt_lgui: macro_092_f15_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F15> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F15>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_093_f15_rctrl_rshft_ralt_rgui: macro_093_f15_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F15> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F15>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_094_f16: macro_094_f16 {
@@ -906,210 +906,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F16> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F16>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_096_f16_rctrl: macro_096_f16_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F16> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F16>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_097_f16_lshft: macro_097_f16_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F16> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F16>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_098_f16_rshft: macro_098_f16_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F16> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F16>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_099_f16_lalt: macro_099_f16_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F16> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F16>, <&macro_release &kp LALT>
                 ;
         };
         macro_100_f16_ralt: macro_100_f16_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F16> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F16>, <&macro_release &kp RALT>
                 ;
         };
         macro_101_f16_lgui: macro_101_f16_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>
                 ;
         };
         macro_102_f16_rgui: macro_102_f16_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>
                 ;
         };
         macro_103_f16_lctrl_lshft: macro_103_f16_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F16> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F16>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_104_f16_rctrl_rshft: macro_104_f16_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F16> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F16>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_105_f16_lctrl_lalt: macro_105_f16_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F16> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F16>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_106_f16_rctrl_ralt: macro_106_f16_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F16> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F16>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_107_f16_lctrl_lgui: macro_107_f16_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_108_f16_rctrl_rgui: macro_108_f16_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_109_f16_lshft_lalt: macro_109_f16_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F16> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F16>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_110_f16_rshft_ralt: macro_110_f16_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F16> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F16>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_111_f16_lshft_lgui: macro_111_f16_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_112_f16_rshft_rgui: macro_112_f16_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_113_f16_lalt_lgui: macro_113_f16_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_114_f16_ralt_rgui: macro_114_f16_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_115_f16_lctrl_lshft_lalt: macro_115_f16_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F16> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F16>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_116_f16_rctrl_rshft_ralt: macro_116_f16_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F16> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F16>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_117_f16_lctrl_lshft_lgui: macro_117_f16_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_118_f16_rctrl_rshft_rgui: macro_118_f16_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_119_f16_lctrl_lalt_lgui: macro_119_f16_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_120_f16_rctrl_ralt_rgui: macro_120_f16_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_121_f16_lshft_lalt_lgui: macro_121_f16_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_122_f16_rshft_ralt_rgui: macro_122_f16_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_123_f16_lctrl_lshft_lalt_lgui: macro_123_f16_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F16> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F16>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_124_f16_rctrl_rshft_ralt_rgui: macro_124_f16_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F16> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F16>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_125_f17: macro_125_f17 {
@@ -1123,210 +1123,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F17> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F17>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_127_f17_rctrl: macro_127_f17_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F17> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F17>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_128_f17_lshft: macro_128_f17_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F17> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F17>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_129_f17_rshft: macro_129_f17_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F17> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F17>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_130_f17_lalt: macro_130_f17_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F17> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F17>, <&macro_release &kp LALT>
                 ;
         };
         macro_131_f17_ralt: macro_131_f17_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F17> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F17>, <&macro_release &kp RALT>
                 ;
         };
         macro_132_f17_lgui: macro_132_f17_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>
                 ;
         };
         macro_133_f17_rgui: macro_133_f17_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>
                 ;
         };
         macro_134_f17_lctrl_lshft: macro_134_f17_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F17> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F17>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_135_f17_rctrl_rshft: macro_135_f17_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F17> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F17>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_136_f17_lctrl_lalt: macro_136_f17_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F17> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F17>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_137_f17_rctrl_ralt: macro_137_f17_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F17> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F17>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_138_f17_lctrl_lgui: macro_138_f17_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_139_f17_rctrl_rgui: macro_139_f17_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_140_f17_lshft_lalt: macro_140_f17_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F17> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F17>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_141_f17_rshft_ralt: macro_141_f17_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F17> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F17>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_142_f17_lshft_lgui: macro_142_f17_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_143_f17_rshft_rgui: macro_143_f17_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_144_f17_lalt_lgui: macro_144_f17_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_145_f17_ralt_rgui: macro_145_f17_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_146_f17_lctrl_lshft_lalt: macro_146_f17_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F17> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F17>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_147_f17_rctrl_rshft_ralt: macro_147_f17_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F17> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F17>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_148_f17_lctrl_lshft_lgui: macro_148_f17_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_149_f17_rctrl_rshft_rgui: macro_149_f17_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_150_f17_lctrl_lalt_lgui: macro_150_f17_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_151_f17_rctrl_ralt_rgui: macro_151_f17_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_152_f17_lshft_lalt_lgui: macro_152_f17_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_153_f17_rshft_ralt_rgui: macro_153_f17_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_154_f17_lctrl_lshft_lalt_lgui: macro_154_f17_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F17> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F17>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_155_f17_rctrl_rshft_ralt_rgui: macro_155_f17_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F17> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F17>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_156_f18: macro_156_f18 {
@@ -1340,210 +1340,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F18> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F18>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_158_f18_rctrl: macro_158_f18_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F18> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F18>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_159_f18_lshft: macro_159_f18_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F18> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F18>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_160_f18_rshft: macro_160_f18_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F18> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F18>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_161_f18_lalt: macro_161_f18_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F18> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F18>, <&macro_release &kp LALT>
                 ;
         };
         macro_162_f18_ralt: macro_162_f18_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F18> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F18>, <&macro_release &kp RALT>
                 ;
         };
         macro_163_f18_lgui: macro_163_f18_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>
                 ;
         };
         macro_164_f18_rgui: macro_164_f18_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>
                 ;
         };
         macro_165_f18_lctrl_lshft: macro_165_f18_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F18> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F18>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_166_f18_rctrl_rshft: macro_166_f18_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F18> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F18>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_167_f18_lctrl_lalt: macro_167_f18_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F18> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F18>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_168_f18_rctrl_ralt: macro_168_f18_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F18> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F18>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_169_f18_lctrl_lgui: macro_169_f18_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_170_f18_rctrl_rgui: macro_170_f18_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_171_f18_lshft_lalt: macro_171_f18_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F18> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F18>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_172_f18_rshft_ralt: macro_172_f18_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F18> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F18>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_173_f18_lshft_lgui: macro_173_f18_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_174_f18_rshft_rgui: macro_174_f18_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_175_f18_lalt_lgui: macro_175_f18_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_176_f18_ralt_rgui: macro_176_f18_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_177_f18_lctrl_lshft_lalt: macro_177_f18_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F18> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F18>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_178_f18_rctrl_rshft_ralt: macro_178_f18_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F18> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F18>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_179_f18_lctrl_lshft_lgui: macro_179_f18_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_180_f18_rctrl_rshft_rgui: macro_180_f18_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_181_f18_lctrl_lalt_lgui: macro_181_f18_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_182_f18_rctrl_ralt_rgui: macro_182_f18_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_183_f18_lshft_lalt_lgui: macro_183_f18_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_184_f18_rshft_ralt_rgui: macro_184_f18_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_185_f18_lctrl_lshft_lalt_lgui: macro_185_f18_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F18> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F18>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_186_f18_rctrl_rshft_ralt_rgui: macro_186_f18_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F18> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F18>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_187_f19: macro_187_f19 {
@@ -1557,210 +1557,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F19> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F19>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_189_f19_rctrl: macro_189_f19_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F19> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F19>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_190_f19_lshft: macro_190_f19_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F19> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F19>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_191_f19_rshft: macro_191_f19_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F19> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F19>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_192_f19_lalt: macro_192_f19_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F19> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F19>, <&macro_release &kp LALT>
                 ;
         };
         macro_193_f19_ralt: macro_193_f19_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F19> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F19>, <&macro_release &kp RALT>
                 ;
         };
         macro_194_f19_lgui: macro_194_f19_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>
                 ;
         };
         macro_195_f19_rgui: macro_195_f19_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>
                 ;
         };
         macro_196_f19_lctrl_lshft: macro_196_f19_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F19> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F19>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_197_f19_rctrl_rshft: macro_197_f19_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F19> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F19>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_198_f19_lctrl_lalt: macro_198_f19_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F19> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F19>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_199_f19_rctrl_ralt: macro_199_f19_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F19> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F19>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_200_f19_lctrl_lgui: macro_200_f19_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_201_f19_rctrl_rgui: macro_201_f19_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_202_f19_lshft_lalt: macro_202_f19_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F19> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F19>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_203_f19_rshft_ralt: macro_203_f19_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F19> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F19>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_204_f19_lshft_lgui: macro_204_f19_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_205_f19_rshft_rgui: macro_205_f19_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_206_f19_lalt_lgui: macro_206_f19_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_207_f19_ralt_rgui: macro_207_f19_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_208_f19_lctrl_lshft_lalt: macro_208_f19_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F19> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F19>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_209_f19_rctrl_rshft_ralt: macro_209_f19_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F19> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F19>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_210_f19_lctrl_lshft_lgui: macro_210_f19_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_211_f19_rctrl_rshft_rgui: macro_211_f19_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_212_f19_lctrl_lalt_lgui: macro_212_f19_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_213_f19_rctrl_ralt_rgui: macro_213_f19_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_214_f19_lshft_lalt_lgui: macro_214_f19_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_215_f19_rshft_ralt_rgui: macro_215_f19_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_216_f19_lctrl_lshft_lalt_lgui: macro_216_f19_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F19> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F19>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_217_f19_rctrl_rshft_ralt_rgui: macro_217_f19_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F19> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F19>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_218_f20: macro_218_f20 {
@@ -1774,210 +1774,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F20> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F20>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_220_f20_rctrl: macro_220_f20_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F20> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F20>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_221_f20_lshft: macro_221_f20_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F20> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F20>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_222_f20_rshft: macro_222_f20_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F20> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F20>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_223_f20_lalt: macro_223_f20_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F20> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F20>, <&macro_release &kp LALT>
                 ;
         };
         macro_224_f20_ralt: macro_224_f20_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F20> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F20>, <&macro_release &kp RALT>
                 ;
         };
         macro_225_f20_lgui: macro_225_f20_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>
                 ;
         };
         macro_226_f20_rgui: macro_226_f20_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>
                 ;
         };
         macro_227_f20_lctrl_lshft: macro_227_f20_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F20> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F20>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_228_f20_rctrl_rshft: macro_228_f20_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F20> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F20>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_229_f20_lctrl_lalt: macro_229_f20_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F20> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F20>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_230_f20_rctrl_ralt: macro_230_f20_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F20> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F20>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_231_f20_lctrl_lgui: macro_231_f20_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_232_f20_rctrl_rgui: macro_232_f20_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_233_f20_lshft_lalt: macro_233_f20_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F20> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F20>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_234_f20_rshft_ralt: macro_234_f20_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F20> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F20>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_235_f20_lshft_lgui: macro_235_f20_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_236_f20_rshft_rgui: macro_236_f20_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_237_f20_lalt_lgui: macro_237_f20_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_238_f20_ralt_rgui: macro_238_f20_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_239_f20_lctrl_lshft_lalt: macro_239_f20_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F20> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F20>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_240_f20_rctrl_rshft_ralt: macro_240_f20_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F20> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F20>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_241_f20_lctrl_lshft_lgui: macro_241_f20_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_242_f20_rctrl_rshft_rgui: macro_242_f20_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_243_f20_lctrl_lalt_lgui: macro_243_f20_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_244_f20_rctrl_ralt_rgui: macro_244_f20_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_245_f20_lshft_lalt_lgui: macro_245_f20_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_246_f20_rshft_ralt_rgui: macro_246_f20_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_247_f20_lctrl_lshft_lalt_lgui: macro_247_f20_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F20> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F20>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_248_f20_rctrl_rshft_ralt_rgui: macro_248_f20_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F20> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F20>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_249_f21: macro_249_f21 {
@@ -1991,210 +1991,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F21> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F21>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_251_f21_rctrl: macro_251_f21_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F21> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F21>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_252_f21_lshft: macro_252_f21_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F21> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F21>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_253_f21_rshft: macro_253_f21_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F21> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F21>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_254_f21_lalt: macro_254_f21_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F21> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F21>, <&macro_release &kp LALT>
                 ;
         };
         macro_255_f21_ralt: macro_255_f21_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F21> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F21>, <&macro_release &kp RALT>
                 ;
         };
         macro_256_f21_lgui: macro_256_f21_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>
                 ;
         };
         macro_257_f21_rgui: macro_257_f21_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>
                 ;
         };
         macro_258_f21_lctrl_lshft: macro_258_f21_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F21> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F21>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_259_f21_rctrl_rshft: macro_259_f21_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F21> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F21>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_260_f21_lctrl_lalt: macro_260_f21_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F21> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F21>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_261_f21_rctrl_ralt: macro_261_f21_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F21> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F21>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_262_f21_lctrl_lgui: macro_262_f21_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_263_f21_rctrl_rgui: macro_263_f21_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_264_f21_lshft_lalt: macro_264_f21_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F21> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F21>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_265_f21_rshft_ralt: macro_265_f21_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F21> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F21>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_266_f21_lshft_lgui: macro_266_f21_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_267_f21_rshft_rgui: macro_267_f21_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_268_f21_lalt_lgui: macro_268_f21_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_269_f21_ralt_rgui: macro_269_f21_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_270_f21_lctrl_lshft_lalt: macro_270_f21_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F21> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F21>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_271_f21_rctrl_rshft_ralt: macro_271_f21_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F21> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F21>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_272_f21_lctrl_lshft_lgui: macro_272_f21_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_273_f21_rctrl_rshft_rgui: macro_273_f21_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_274_f21_lctrl_lalt_lgui: macro_274_f21_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_275_f21_rctrl_ralt_rgui: macro_275_f21_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_276_f21_lshft_lalt_lgui: macro_276_f21_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_277_f21_rshft_ralt_rgui: macro_277_f21_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_278_f21_lctrl_lshft_lalt_lgui: macro_278_f21_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F21> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F21>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_279_f21_rctrl_rshft_ralt_rgui: macro_279_f21_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F21> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F21>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_280_f22: macro_280_f22 {
@@ -2208,210 +2208,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F22> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F22>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_282_f22_rctrl: macro_282_f22_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F22> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F22>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_283_f22_lshft: macro_283_f22_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F22> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F22>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_284_f22_rshft: macro_284_f22_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F22> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F22>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_285_f22_lalt: macro_285_f22_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F22> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F22>, <&macro_release &kp LALT>
                 ;
         };
         macro_286_f22_ralt: macro_286_f22_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F22> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F22>, <&macro_release &kp RALT>
                 ;
         };
         macro_287_f22_lgui: macro_287_f22_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>
                 ;
         };
         macro_288_f22_rgui: macro_288_f22_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>
                 ;
         };
         macro_289_f22_lctrl_lshft: macro_289_f22_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F22> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F22>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_290_f22_rctrl_rshft: macro_290_f22_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F22> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F22>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_291_f22_lctrl_lalt: macro_291_f22_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F22> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F22>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_292_f22_rctrl_ralt: macro_292_f22_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F22> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F22>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_293_f22_lctrl_lgui: macro_293_f22_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_294_f22_rctrl_rgui: macro_294_f22_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_295_f22_lshft_lalt: macro_295_f22_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F22> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F22>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_296_f22_rshft_ralt: macro_296_f22_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F22> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F22>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_297_f22_lshft_lgui: macro_297_f22_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_298_f22_rshft_rgui: macro_298_f22_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_299_f22_lalt_lgui: macro_299_f22_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_300_f22_ralt_rgui: macro_300_f22_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_301_f22_lctrl_lshft_lalt: macro_301_f22_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F22> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F22>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_302_f22_rctrl_rshft_ralt: macro_302_f22_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F22> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F22>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_303_f22_lctrl_lshft_lgui: macro_303_f22_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_304_f22_rctrl_rshft_rgui: macro_304_f22_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_305_f22_lctrl_lalt_lgui: macro_305_f22_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_306_f22_rctrl_ralt_rgui: macro_306_f22_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_307_f22_lshft_lalt_lgui: macro_307_f22_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_308_f22_rshft_ralt_rgui: macro_308_f22_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_309_f22_lctrl_lshft_lalt_lgui: macro_309_f22_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F22> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F22>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_310_f22_rctrl_rshft_ralt_rgui: macro_310_f22_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F22> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F22>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_311_f23: macro_311_f23 {
@@ -2425,210 +2425,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F23> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F23>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_313_f23_rctrl: macro_313_f23_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F23> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F23>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_314_f23_lshft: macro_314_f23_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F23> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F23>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_315_f23_rshft: macro_315_f23_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F23> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F23>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_316_f23_lalt: macro_316_f23_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F23> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F23>, <&macro_release &kp LALT>
                 ;
         };
         macro_317_f23_ralt: macro_317_f23_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F23> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F23>, <&macro_release &kp RALT>
                 ;
         };
         macro_318_f23_lgui: macro_318_f23_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>
                 ;
         };
         macro_319_f23_rgui: macro_319_f23_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>
                 ;
         };
         macro_320_f23_lctrl_lshft: macro_320_f23_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F23> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F23>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_321_f23_rctrl_rshft: macro_321_f23_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F23> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F23>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_322_f23_lctrl_lalt: macro_322_f23_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F23> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F23>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_323_f23_rctrl_ralt: macro_323_f23_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F23> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F23>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_324_f23_lctrl_lgui: macro_324_f23_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_325_f23_rctrl_rgui: macro_325_f23_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_326_f23_lshft_lalt: macro_326_f23_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F23> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F23>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_327_f23_rshft_ralt: macro_327_f23_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F23> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F23>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_328_f23_lshft_lgui: macro_328_f23_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_329_f23_rshft_rgui: macro_329_f23_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_330_f23_lalt_lgui: macro_330_f23_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_331_f23_ralt_rgui: macro_331_f23_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_332_f23_lctrl_lshft_lalt: macro_332_f23_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F23> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F23>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_333_f23_rctrl_rshft_ralt: macro_333_f23_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F23> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F23>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_334_f23_lctrl_lshft_lgui: macro_334_f23_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_335_f23_rctrl_rshft_rgui: macro_335_f23_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_336_f23_lctrl_lalt_lgui: macro_336_f23_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_337_f23_rctrl_ralt_rgui: macro_337_f23_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_338_f23_lshft_lalt_lgui: macro_338_f23_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_339_f23_rshft_ralt_rgui: macro_339_f23_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_340_f23_lctrl_lshft_lalt_lgui: macro_340_f23_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F23> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F23>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_341_f23_rctrl_rshft_ralt_rgui: macro_341_f23_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F23> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F23>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_342_f24: macro_342_f24 {
@@ -2642,210 +2642,210 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_tap &kp F24> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_tap &kp F24>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_344_f24_rctrl: macro_344_f24_rctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_tap &kp F24> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_tap &kp F24>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_345_f24_lshft: macro_345_f24_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_tap &kp F24> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_tap &kp F24>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_346_f24_rshft: macro_346_f24_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_tap &kp F24> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_tap &kp F24>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_347_f24_lalt: macro_347_f24_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_tap &kp F24> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_tap &kp F24>, <&macro_release &kp LALT>
                 ;
         };
         macro_348_f24_ralt: macro_348_f24_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_tap &kp F24> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_tap &kp F24>, <&macro_release &kp RALT>
                 ;
         };
         macro_349_f24_lgui: macro_349_f24_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI>
+                = <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>
                 ;
         };
         macro_350_f24_rgui: macro_350_f24_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI>
+                = <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>
                 ;
         };
         macro_351_f24_lctrl_lshft: macro_351_f24_lctrl_lshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_tap &kp F24> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_tap &kp F24>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_352_f24_rctrl_rshft: macro_352_f24_rctrl_rshft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_tap &kp F24> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_tap &kp F24>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_353_f24_lctrl_lalt: macro_353_f24_lctrl_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_tap &kp F24> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_tap &kp F24>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_354_f24_rctrl_ralt: macro_354_f24_rctrl_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_tap &kp F24> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_tap &kp F24>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_355_f24_lctrl_lgui: macro_355_f24_lctrl_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_356_f24_rctrl_rgui: macro_356_f24_rctrl_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_357_f24_lshft_lalt: macro_357_f24_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F24> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F24>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_358_f24_rshft_ralt: macro_358_f24_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F24> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F24>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_359_f24_lshft_lgui: macro_359_f24_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_360_f24_rshft_rgui: macro_360_f24_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_361_f24_lalt_lgui: macro_361_f24_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI> <&macro_release &kp LALT>
+                = <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>
                 ;
         };
         macro_362_f24_ralt_rgui: macro_362_f24_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI> <&macro_release &kp RALT>
+                = <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>
                 ;
         };
         macro_363_f24_lctrl_lshft_lalt: macro_363_f24_lctrl_lshft_lalt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_tap &kp F24> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_tap &kp F24>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_364_f24_rctrl_rshft_ralt: macro_364_f24_rctrl_rshft_ralt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_tap &kp F24> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_tap &kp F24>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_365_f24_lctrl_lshft_lgui: macro_365_f24_lctrl_lshft_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_366_f24_rctrl_rshft_rgui: macro_366_f24_rctrl_rshft_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_367_f24_lctrl_lalt_lgui: macro_367_f24_lctrl_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_368_f24_rctrl_ralt_rgui: macro_368_f24_rctrl_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RCTRL>
                 ;
         };
         macro_369_f24_lshft_lalt_lgui: macro_369_f24_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT>
+                = <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>
                 ;
         };
         macro_370_f24_rshft_ralt_rgui: macro_370_f24_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT>
+                = <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>
                 ;
         };
         macro_371_f24_lctrl_lshft_lalt_lgui: macro_371_f24_lctrl_lshft_lalt_lgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL> <&macro_press &kp LSHFT> <&macro_press &kp LALT> <&macro_press &kp LGUI> <&macro_tap &kp F24> <&macro_release &kp LGUI> <&macro_release &kp LALT> <&macro_release &kp LSHFT> <&macro_release &kp LCTRL>
+                = <&macro_press &kp LCTRL>, <&macro_press &kp LSHFT>, <&macro_press &kp LALT>, <&macro_press &kp LGUI>, <&macro_tap &kp F24>, <&macro_release &kp LGUI>, <&macro_release &kp LALT>, <&macro_release &kp LSHFT>, <&macro_release &kp LCTRL>
                 ;
         };
         macro_372_f24_rctrl_rshft_ralt_rgui: macro_372_f24_rctrl_rshft_ralt_rgui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTRL> <&macro_press &kp RSHFT> <&macro_press &kp RALT> <&macro_press &kp RGUI> <&macro_tap &kp F24> <&macro_release &kp RGUI> <&macro_release &kp RALT> <&macro_release &kp RSHFT> <&macro_release &kp RCTRL>
+                = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&macro_press &kp RALT>, <&macro_press &kp RGUI>, <&macro_tap &kp F24>, <&macro_release &kp RGUI>, <&macro_release &kp RALT>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>
                 ;
         };
     };
