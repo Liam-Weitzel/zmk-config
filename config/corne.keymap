@@ -197,6 +197,15 @@
 
             tapping-term-ms = <300>;
         };
+
+        mouse_keys: mouse_keys {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOUSE_KEYS";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1>, <&mkp MB2>, <&mkp MB3>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     combos {
@@ -315,7 +324,7 @@
             bindings = <
 &none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph  &kp P   &kp RIGHT_ALT    &kp PG_UP      &kp K_PREV   &up_mup      &kp K_NEXT     &none            &none
 &none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 12           &kp PAGE_DOWN  &left_mleft  &down_mdown  &right_mright  &kp PRINTSCREEN  &none
-&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &kp V            &none          &mkp MB1     &mkp MB3     &mkp MB2       &none            &none
+&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &mouse_keys      &none          &mkp MB1     &mkp MB3     &mkp MB2       &none            &none
                                            &trans            &trans  &trans           &trans         &trans       &trans
             >;
         };
@@ -367,10 +376,10 @@
 
         num {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE    &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &none    &none
-&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI     &none   &mo 6   &mod_morph_plus_equals  &kp MINUS          &none    &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp MB1     &none   &none   &kp COMMA               &kp PERIOD         &kp SQT  &none
-                                    &trans        &trans        &trans       &trans  &trans  &trans
+&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE      &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &none    &none
+&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI       &none   &mo 6   &mod_morph_plus_equals  &kp MINUS          &none    &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mouse_keys    &none   &none   &kp COMMA               &kp PERIOD         &kp SQT  &none
+                                    &trans        &trans        &trans         &trans  &trans  &trans
             >;
         };
 
