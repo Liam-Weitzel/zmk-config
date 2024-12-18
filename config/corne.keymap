@@ -246,8 +246,8 @@
     combos {
         compatible = "zmk,combos";
 
-        std {
-            key-positions = <15 16 28>;
+        stn {
+            key-positions = <15 16 19>;
             bindings = <&kp F13>;
         };
 
@@ -271,13 +271,13 @@
             bindings = <&kp F17>;
         };
 
-        end {
-            key-positions = <19 20 28>;
+        end_space_ {
+            key-positions = <19 20 28 37>;
             bindings = <&kp F18>;
         };
 
-        enz {
-            key-positions = <19 20 25>;
+        end {
+            key-positions = <19 20 28>;
             bindings = <&kp F19>;
         };
 
