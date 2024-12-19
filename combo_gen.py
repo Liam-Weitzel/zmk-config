@@ -211,17 +211,16 @@ class ComboGenerator:
 
 
         clipboard_text = snippet.replace('[cursor]', '')
-
         left_steps = 0
         if '[cursor]' in snippet:
             left_steps = len(snippet) - snippet.index('[cursor]') - len('[cursor]')
 
-        clipboard_text = snippet.replace('[suffix]', '')
+        clipboard_text = clipboard_text.replace('[suffix]', '')
         suffix_steps = 0
         if '[suffix]' in snippet:
             suffix_steps = 1
 
-        clipboard_text = snippet.replace('[right]', '')
+        clipboard_text = clipboard_text.replace('[right]', '')
         right_steps = 0
         if '[right]' in snippet:
             right_steps = snippet.count('[right]')
@@ -292,18 +291,18 @@ def main():
         ('sta', 'static '),
         ('voi', 'void '),
         ('aut', 'auto '),
-        ('ret', 'return cursor;'),
-        ('inc', '#include <cursor>'),
+        ('ret', 'return [cursor];'),
+        ('inc', '#include <[cursor]>'),
         ('def', '#define '),
         ('str[backspace]', 'std::string '),
-        ('ty[space]', 'std::typeid(cursor)'),
-        ('map[backspace]', 'std::unordered_map<cursor> '),
-        ('set[backspace]', 'std::unordered_set<cursor> '),
-        ('deq[backspace]', 'std::dequeue<cursor> '),
-        ('pai[backspace]', 'std::pair<cursor> '),
-        ('npai[backspace]', 'std::make_pair(cursor) '),
-        ('ple[backspace]', 'std::tuple<cursor> '),
-        ('vec[backspace]', 'std::vector<cursor> '),
+        ('ty[space]', 'std::typeid([cursor])'),
+        ('map[backspace]', 'std::unordered_map<[cursor]> '),
+        ('set[backspace]', 'std::unordered_set<[cursor]> '),
+        ('deq[backspace]', 'std::dequeue<[cursor]> '),
+        ('pai[backspace]', 'std::pair<[cursor]> '),
+        ('npai[backspace]', 'std::make_pair([cursor]) '),
+        ('ple[backspace]', 'std::tuple<[cursor]> '),
+        ('vec[backspace]', 'std::vector<[cursor]> '),
 
         ('fex', 'for example '),
         ('i[backspace]o', 'in my opinion '),
