@@ -246,108 +246,108 @@
     combos {
         compatible = "zmk,combos";
 
-        stn {
-            key-positions = <15 16 19>;
+        stn_shift_ {
+            key-positions = <15 16 19 39>;
             bindings = <&kp F13>;
         };
 
-        aro {
-            key-positions = <13 14 22>;
+        aro_shift_ {
+            key-positions = <13 14 22 39>;
             bindings = <&kp F14>;
         };
 
-        sig {
-            key-positions = <15 17 21>;
+        sig_shift_ {
+            key-positions = <15 17 21 39>;
             bindings = <&kp F15>;
         };
 
-        con {
-            key-positions = <19 22 27>;
+        con_shift_ {
+            key-positions = <19 22 27 39>;
             bindings = <&kp F16>;
         };
 
-        npr {
-            key-positions = <4 14 19>;
+        npr_shift_ {
+            key-positions = <4 14 19 39>;
             bindings = <&kp F17>;
         };
 
-        vir {
-            key-positions = <14 21 29>;
+        vir_shift_ {
+            key-positions = <14 21 29 39>;
             bindings = <&kp F18>;
         };
 
-        sta {
-            key-positions = <13 15 16>;
+        sta_shift_ {
+            key-positions = <13 15 16 39>;
             bindings = <&kp F19>;
         };
 
-        voi {
-            key-positions = <21 22 29>;
+        voi_shift_ {
+            key-positions = <21 22 29 39>;
             bindings = <&kp F20>;
         };
 
-        aut {
-            key-positions = <8 13 16>;
+        aut_shift_ {
+            key-positions = <8 13 16 39>;
             bindings = <&kp F21>;
         };
 
-        ret {
-            key-positions = <14 16 20>;
+        ret_shift_ {
+            key-positions = <14 16 20 39>;
             bindings = <&kp F22>;
         };
 
-        inc {
-            key-positions = <19 21 27>;
+        inc_shift_ {
+            key-positions = <19 21 27 39>;
             bindings = <&kp F23>;
         };
 
-        def {
-            key-positions = <3 20 28>;
+        def_shift_ {
+            key-positions = <3 20 28 39>;
             bindings = <&kp F24>;
         };
 
-        str_backspace_ {
-            key-positions = <14 15 16 40>;
+        str_shift_ {
+            key-positions = <14 15 16 39>;
             bindings = <&kp LC(F13)>;
         };
 
-        ty_space_ {
-            key-positions = <9 16 37>;
+        ty_shift_ {
+            key-positions = <9 16 39>;
             bindings = <&kp LC(F14)>;
         };
 
-        map_backspace_ {
-            key-positions = <4 6 13 40>;
+        map_shift_ {
+            key-positions = <4 6 13 39>;
             bindings = <&kp LC(F15)>;
         };
 
-        set_backspace_ {
-            key-positions = <15 16 20 40>;
+        set_shift_ {
+            key-positions = <15 16 20 39>;
             bindings = <&kp LC(F16)>;
         };
 
-        deq_backspace_ {
-            key-positions = <1 20 28 40>;
+        deq_shift_ {
+            key-positions = <1 20 28 39>;
             bindings = <&kp LC(F17)>;
         };
 
-        pai_backspace_ {
-            key-positions = <4 13 21 40>;
+        pai_shift_ {
+            key-positions = <4 13 21 39>;
             bindings = <&kp LC(F18)>;
         };
 
-        npai_backspace_ {
-            key-positions = <4 13 19 21 40>;
+        npai_shift_ {
+            key-positions = <4 13 19 21 39>;
             bindings = <&kp LC(F19)>;
         };
 
-        ple_backspace_ {
-            key-positions = <4 7 20 40>;
+        ple_shift_ {
+            key-positions = <4 7 20 39>;
             bindings = <&kp LC(F20)>;
         };
 
-        vec_backspace_ {
-            key-positions = <20 27 29 40>;
+        vec_shift_ {
+            key-positions = <20 27 29 39>;
             bindings = <&kp LC(F21)>;
         };
 
@@ -356,13 +356,13 @@
             bindings = <&kp LC(F22)>;
         };
 
-        i_backspace_o {
-            key-positions = <21 22 40>;
+        imo {
+            key-positions = <6 21 22>;
             bindings = <&kp LC(F23)>;
         };
 
-        not_backspace_ {
-            key-positions = <16 19 22 40>;
+        note {
+            key-positions = <16 19 20 22>;
             bindings = <&kp LC(F24)>;
         };
 
@@ -381,229 +381,404 @@
             bindings = <&kp RC(F15)>;
         };
 
-        ros {
-            key-positions = <14 15 22>;
+        gmai {
+            key-positions = <6 13 17 21>;
             bindings = <&kp RC(F16)>;
+        };
+
+        rosh {
+            key-positions = <14 15 22 31>;
+            bindings = <&kp RC(F17)>;
         };
 
         it_backspace_ {
             key-positions = <16 21 40>;
-            bindings = <&kp RC(F17)>;
-        };
-
-        tion {
-            key-positions = <16 19 21 22>;
             bindings = <&kp RC(F18)>;
         };
 
-        ous {
-            key-positions = <8 15 22>;
+        tio_backspace_ {
+            key-positions = <16 21 22 40>;
             bindings = <&kp RC(F19)>;
         };
 
-        ious {
-            key-positions = <8 15 21 22>;
+        atio_backspace_ {
+            key-positions = <13 16 21 22 40>;
             bindings = <&kp RC(F20)>;
         };
 
-        ial {
-            key-positions = <7 13 21>;
+        ous_backspace_ {
+            key-positions = <8 15 22 40>;
             bindings = <&kp RC(F21)>;
         };
 
-        ive {
-            key-positions = <20 21 29>;
+        ious_backspace_ {
+            key-positions = <8 15 21 22 40>;
             bindings = <&kp RC(F22)>;
         };
 
-        acti {
-            key-positions = <13 16 21 27>;
+        ial_backspace_ {
+            key-positions = <7 13 21 40>;
             bindings = <&kp RC(F23)>;
         };
 
-        ship {
-            key-positions = <4 15 21 31>;
+        ive_backspace_ {
+            key-positions = <20 21 29 40>;
             bindings = <&kp RC(F24)>;
         };
 
-        hod {
-            key-positions = <22 28 31>;
+        atie_backspace_ {
+            key-positions = <13 16 20 21 40>;
             bindings = <&kp LS(F13)>;
         };
 
-        enc {
-            key-positions = <19 20 27>;
+        ship_backspace_ {
+            key-positions = <4 15 21 31 40>;
             bindings = <&kp LS(F14)>;
         };
 
-        ance {
-            key-positions = <13 19 20 27>;
+        hod_backspace_ {
+            key-positions = <22 28 31 40>;
             bindings = <&kp LS(F15)>;
+        };
+
+        enc_backspace_ {
+            key-positions = <19 20 27 40>;
+            bindings = <&kp LS(F16)>;
+        };
+
+        ance_backspace_ {
+            key-positions = <13 19 20 27 40>;
+            bindings = <&kp LS(F17)>;
         };
 
         er_backspace_ {
             key-positions = <14 20 40>;
-            bindings = <&kp LS(F16)>;
+            bindings = <&kp LS(F18)>;
         };
 
         or_backspace_ {
             key-positions = <14 22 40>;
-            bindings = <&kp LS(F17)>;
-        };
-
-        est {
-            key-positions = <15 16 20>;
-            bindings = <&kp LS(F18)>;
-        };
-
-        ish {
-            key-positions = <15 21 31>;
             bindings = <&kp LS(F19)>;
         };
 
-        ism {
-            key-positions = <6 15 21>;
+        est_backspace_ {
+            key-positions = <15 16 20 40>;
             bindings = <&kp LS(F20)>;
         };
 
-        ist {
-            key-positions = <15 16 21>;
+        ish_backspace_ {
+            key-positions = <15 21 31 40>;
             bindings = <&kp LS(F21)>;
         };
 
-        ing {
-            key-positions = <17 19 21>;
+        ism_backspace_ {
+            key-positions = <6 15 21 40>;
             bindings = <&kp LS(F22)>;
-        };
-
-        ed_backspace_ {
-            key-positions = <20 28 40>;
-            bindings = <&kp LS(F23)>;
-        };
-
-        abl {
-            key-positions = <5 7 13>;
-            bindings = <&kp LS(F24)>;
-        };
-
-        ibl {
-            key-positions = <5 7 21>;
-            bindings = <&kp LA(F13)>;
-        };
-
-        ment {
-            key-positions = <6 16 19 20>;
-            bindings = <&kp LA(F14)>;
-        };
-
-        nes {
-            key-positions = <15 19 20>;
-            bindings = <&kp LA(F15)>;
-        };
-
-        ful {
-            key-positions = <3 7 8>;
-            bindings = <&kp LA(F16)>;
-        };
-
-        les {
-            key-positions = <7 15 20>;
-            bindings = <&kp LA(F17)>;
-        };
-
-        ize {
-            key-positions = <20 21 25>;
-            bindings = <&kp LA(F18)>;
-        };
-
-        ise {
-            key-positions = <15 20 21>;
-            bindings = <&kp LA(F19)>;
         };
 
         ist_backspace_ {
             key-positions = <15 16 21 40>;
+            bindings = <&kp LS(F23)>;
+        };
+
+        itc_backspace_ {
+            key-positions = <16 21 27 40>;
+            bindings = <&kp LS(F24)>;
+        };
+
+        ing_backspace_ {
+            key-positions = <17 19 21 40>;
+            bindings = <&kp LA(F13)>;
+        };
+
+        ed_backspace_ {
+            key-positions = <20 28 40>;
+            bindings = <&kp LA(F14)>;
+        };
+
+        abl_backspace_ {
+            key-positions = <5 7 13 40>;
+            bindings = <&kp LA(F15)>;
+        };
+
+        ibl_backspace_ {
+            key-positions = <5 7 21 40>;
+            bindings = <&kp LA(F16)>;
+        };
+
+        met_backspace_ {
+            key-positions = <6 16 20 40>;
+            bindings = <&kp LA(F17)>;
+        };
+
+        nes_backspace_ {
+            key-positions = <15 19 20 40>;
+            bindings = <&kp LA(F18)>;
+        };
+
+        ful_backspace_ {
+            key-positions = <3 7 8 40>;
+            bindings = <&kp LA(F19)>;
+        };
+
+        les_backspace_ {
+            key-positions = <7 15 20 40>;
             bindings = <&kp LA(F20)>;
         };
 
-        olg {
-            key-positions = <7 17 22>;
+        ize_backspace_ {
+            key-positions = <20 21 25 40>;
             bindings = <&kp LA(F21)>;
         };
 
-        ary {
-            key-positions = <9 13 14>;
+        ise_backspace_ {
+            key-positions = <15 20 21 40>;
             bindings = <&kp LA(F22)>;
         };
 
-        ory {
-            key-positions = <9 14 22>;
+        olg_backspace_ {
+            key-positions = <7 17 22 40>;
             bindings = <&kp LA(F23)>;
         };
 
-        ister {
-            key-positions = <14 15 16 20 21>;
+        ary_backspace_ {
+            key-positions = <9 13 14 40>;
             bindings = <&kp LA(F24)>;
+        };
+
+        ory_backspace_ {
+            key-positions = <9 14 22 40>;
+            bindings = <&kp RA(F13)>;
+        };
+
+        ister_backspace_ {
+            key-positions = <14 15 16 20 21 40>;
+            bindings = <&kp RA(F14)>;
         };
 
         infra {
             key-positions = <3 13 14 19 21>;
-            bindings = <&kp RA(F13)>;
+            bindings = <&kp RA(F15)>;
         };
 
-        iden {
-            key-positions = <19 20 21 28>;
-            bindings = <&kp RA(F14)>;
+        undr {
+            key-positions = <8 14 19 28>;
+            bindings = <&kp RA(F16)>;
+        };
+
+        oldf {
+            key-positions = <3 7 22 28>;
+            bindings = <&kp RA(F17)>;
+        };
+
+        conti {
+            key-positions = <16 19 21 22 27>;
+            bindings = <&kp RA(F18)>;
+        };
+
+        sophiae {
+            key-positions = <4 13 15 20 21 22 31>;
+            bindings = <&kp RA(F19)>;
         };
 
         dicr {
             key-positions = <14 21 27 28>;
-            bindings = <&kp RA(F15)>;
-        };
-
-        prion {
-            key-positions = <4 14 19 21 22>;
-            bindings = <&kp RA(F16)>;
-        };
-
-        reps {
-            key-positions = <4 14 15 20>;
-            bindings = <&kp RA(F17)>;
-        };
-
-        reco {
-            key-positions = <14 20 22 27>;
-            bindings = <&kp RA(F18)>;
-        };
-
-        cont {
-            key-positions = <16 19 22 27>;
-            bindings = <&kp RA(F19)>;
-        };
-
-        inter {
-            key-positions = <14 16 19 20 21>;
             bindings = <&kp RA(F20)>;
         };
 
-        trans {
-            key-positions = <13 14 15 16 19>;
+        mauf {
+            key-positions = <3 6 8 13>;
             bindings = <&kp RA(F21)>;
+        };
+
+        contr {
+            key-positions = <14 16 19 22 27>;
+            bindings = <&kp RA(F22)>;
+        };
+
+        sub {
+            key-positions = <5 8 15>;
+            bindings = <&kp RA(F23)>;
+        };
+
+        conet {
+            key-positions = <16 19 20 22 27>;
+            bindings = <&kp RA(F24)>;
+        };
+
+        instr {
+            key-positions = <14 15 16 19 21>;
+            bindings = <&kp LG(F13)>;
+        };
+
+        cola {
+            key-positions = <7 13 22 27>;
+            bindings = <&kp LG(F14)>;
+        };
+
+        demo {
+            key-positions = <6 20 22 28>;
+            bindings = <&kp LG(F15)>;
+        };
+
+        respo {
+            key-positions = <4 14 15 20 22>;
+            bindings = <&kp LG(F16)>;
+        };
+
+        apx {
+            key-positions = <4 13 26>;
+            bindings = <&kp LG(F17)>;
         };
 
         inst {
             key-positions = <15 16 19 21>;
-            bindings = <&kp RA(F22)>;
+            bindings = <&kp LG(F18)>;
+        };
+
+        detr {
+            key-positions = <14 16 20 28>;
+            bindings = <&kp LG(F19)>;
+        };
+
+        corend {
+            key-positions = <14 19 20 22 27 28>;
+            bindings = <&kp LG(F20)>;
+        };
+
+        compr {
+            key-positions = <4 6 14 22 27>;
+            bindings = <&kp LG(F21)>;
+        };
+
+        psyh {
+            key-positions = <4 9 15 31>;
+            bindings = <&kp LG(F22)>;
+        };
+
+        revo {
+            key-positions = <14 20 22 29>;
+            bindings = <&kp LG(F23)>;
+        };
+
+        phiso {
+            key-positions = <4 15 21 22 31>;
+            bindings = <&kp LG(F24)>;
+        };
+
+        instru {
+            key-positions = <8 14 15 16 19 21>;
+            bindings = <&kp RG(F13)>;
+        };
+
+        tech {
+            key-positions = <16 20 27 31>;
+            bindings = <&kp RG(F14)>;
+        };
+
+        trans {
+            key-positions = <13 14 15 16 19>;
+            bindings = <&kp RG(F15)>;
+        };
+
+        entr {
+            key-positions = <14 16 19 20>;
+            bindings = <&kp RG(F16)>;
+        };
+
+        auto {
+            key-positions = <8 13 16 22>;
+            bindings = <&kp RG(F17)>;
+        };
+
+        con {
+            key-positions = <19 22 27>;
+            bindings = <&kp RG(F18)>;
+        };
+
+        inter {
+            key-positions = <14 16 19 20 21>;
+            bindings = <&kp RG(F19)>;
+        };
+
+        recom {
+            key-positions = <6 14 20 22 27>;
+            bindings = <&kp RG(F20)>;
+        };
+
+        tra_space_ {
+            key-positions = <13 14 16 37>;
+            bindings = <&kp RG(F21)>;
+        };
+
+        reps {
+            key-positions = <4 14 15 20>;
+            bindings = <&kp RG(F22)>;
+        };
+
+        ordi {
+            key-positions = <14 21 22 28>;
+            bindings = <&kp RG(F23)>;
+        };
+
+        esta {
+            key-positions = <13 15 16 20>;
+            bindings = <&kp RG(F24)>;
         };
 
         char {
             key-positions = <13 14 27 31>;
-            bindings = <&kp RA(F23)>;
+            bindings = <&kp RC(LC(F13))>;
+        };
+
+        qust {
+            key-positions = <1 8 15 16>;
+            bindings = <&kp RC(LC(F14))>;
         };
 
         prio {
             key-positions = <4 14 21 22>;
-            bindings = <&kp RA(F24)>;
+            bindings = <&kp RC(LC(F15))>;
+        };
+
+        iden {
+            key-positions = <19 20 21 28>;
+            bindings = <&kp RC(LC(F16))>;
+        };
+
+        front {
+            key-positions = <3 14 16 19 22>;
+            bindings = <&kp RC(LC(F17))>;
+        };
+
+        coni {
+            key-positions = <19 21 22 27>;
+            bindings = <&kp RC(LC(F18))>;
+        };
+
+        com {
+            key-positions = <6 22 27>;
+            bindings = <&kp RC(LC(F19))>;
+        };
+
+        dev {
+            key-positions = <20 28 29>;
+            bindings = <&kp RC(LC(F20))>;
+        };
+
+        pre {
+            key-positions = <4 14 20>;
+            bindings = <&kp RC(LC(F21))>;
+        };
+
+        eft {
+            key-positions = <3 16 20>;
+            bindings = <&kp RC(LC(F22))>;
+        };
+
+        adm {
+            key-positions = <6 13 28>;
+            bindings = <&kp RC(LC(F23))>;
         };
 
         end_left {
