@@ -102,8 +102,6 @@ class ComboGenerator:
         print(already_mapped_all_numbers)
         self.used_key_positions = set(already_mapped_all_numbers)
         self.key_usage = Counter(num for triple in self.used_key_positions for num in triple)
-
-
         
         self.KEY_TO_CHAR = {
             1: 'q', 2: 'w', 3: 'f', 4: 'p', 5: 'b', 6: 'm', 7: 'l', 8: 'u', 9: 'y', 10: 'j',
