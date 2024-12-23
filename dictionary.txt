@@ -227,7 +227,6 @@
 # ('', 'requirement ', 1)
 # ('', 'combination ', 1)
 # ('', 'acknowledge ', 1)
-# ('', 'consequence ', 1)
 # ('', 'temperature ', 1)
 # ('', 'educational ', 1)
 # ('', 'application ', 1)
