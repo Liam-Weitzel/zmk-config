@@ -366,594 +366,704 @@
             bindings = <&kp LC(F24)>;
         };
 
+        dm_space_ {
+            key-positions = <6 28 37>;
+            bindings = <&kp RC(F13)>;
+        };
+
+        pm_space_ {
+            key-positions = <4 6 37>;
+            bindings = <&kp RC(F14)>;
+        };
+
+        rco {
+            key-positions = <14 22 27>;
+            bindings = <&kp RC(F15)>;
+        };
+
         bra {
             key-positions = <5 13 14>;
-            bindings = <&kp RC(F13)>;
+            bindings = <&kp RC(F16)>;
         };
 
         thx {
             key-positions = <16 26 31>;
-            bindings = <&kp RC(F14)>;
+            bindings = <&kp RC(F17)>;
         };
 
         lam {
             key-positions = <6 7 13>;
-            bindings = <&kp RC(F15)>;
+            bindings = <&kp RC(F18)>;
         };
 
         gmai {
             key-positions = <6 13 17 21>;
-            bindings = <&kp RC(F16)>;
+            bindings = <&kp RC(F19)>;
         };
 
         rosh {
             key-positions = <14 15 22 31>;
-            bindings = <&kp RC(F17)>;
+            bindings = <&kp RC(F20)>;
+        };
+
+        evr {
+            key-positions = <14 20 29>;
+            bindings = <&kp RC(F21)>;
         };
 
         oldf {
             key-positions = <3 7 22 28>;
-            bindings = <&kp RC(F18)>;
+            bindings = <&kp RC(F22)>;
         };
 
         infra {
             key-positions = <3 13 14 19 21>;
-            bindings = <&kp RC(F19)>;
+            bindings = <&kp RC(F23)>;
         };
 
         undra {
             key-positions = <8 13 14 19 28>;
-            bindings = <&kp RC(F20)>;
+            bindings = <&kp RC(F24)>;
         };
 
         midc {
             key-positions = <6 21 27 28>;
-            bindings = <&kp RC(F21)>;
+            bindings = <&kp LS(F13)>;
         };
 
         econy {
             key-positions = <9 19 20 22 27>;
-            bindings = <&kp RC(F22)>;
+            bindings = <&kp LS(F14)>;
         };
 
         survi {
             key-positions = <8 14 15 21 29>;
-            bindings = <&kp RC(F23)>;
+            bindings = <&kp LS(F15)>;
         };
 
         avil {
             key-positions = <7 13 21 29>;
-            bindings = <&kp RC(F24)>;
+            bindings = <&kp LS(F16)>;
         };
 
         jury {
             key-positions = <8 9 10 14>;
-            bindings = <&kp LS(F13)>;
+            bindings = <&kp LS(F17)>;
         };
 
         dely {
             key-positions = <7 9 20 28>;
-            bindings = <&kp LS(F14)>;
+            bindings = <&kp LS(F18)>;
         };
 
         usgi {
             key-positions = <8 15 17 21>;
-            bindings = <&kp LS(F15)>;
+            bindings = <&kp LS(F19)>;
         };
 
         insto {
             key-positions = <15 16 19 21 22>;
-            bindings = <&kp LS(F16)>;
+            bindings = <&kp LS(F20)>;
         };
 
         serva {
             key-positions = <13 14 15 20 29>;
-            bindings = <&kp LS(F17)>;
+            bindings = <&kp LS(F21)>;
         };
 
         conq {
             key-positions = <1 19 22 27>;
-            bindings = <&kp LS(F18)>;
+            bindings = <&kp LS(F22)>;
         };
 
         apr {
             key-positions = <4 13 14>;
-            bindings = <&kp LS(F19)>;
+            bindings = <&kp LS(F23)>;
         };
 
         metr {
             key-positions = <6 14 16 20>;
-            bindings = <&kp LS(F20)>;
+            bindings = <&kp LS(F24)>;
         };
 
         chri {
             key-positions = <14 21 27 31>;
-            bindings = <&kp LS(F21)>;
+            bindings = <&kp LA(F13)>;
         };
 
         enpr {
             key-positions = <4 14 19 20>;
-            bindings = <&kp LS(F22)>;
+            bindings = <&kp LA(F14)>;
         };
 
         prane {
             key-positions = <4 13 14 19 20>;
-            bindings = <&kp LS(F23)>;
+            bindings = <&kp LA(F15)>;
         };
 
         prou {
             key-positions = <4 8 14 22>;
-            bindings = <&kp LS(F24)>;
+            bindings = <&kp LA(F16)>;
         };
 
         refig {
             key-positions = <3 14 17 20 21>;
-            bindings = <&kp LA(F13)>;
+            bindings = <&kp LA(F17)>;
         };
 
         carb {
             key-positions = <5 13 14 27>;
-            bindings = <&kp LA(F14)>;
+            bindings = <&kp LA(F18)>;
         };
 
         hist {
             key-positions = <15 16 21 31>;
-            bindings = <&kp LA(F15)>;
+            bindings = <&kp LA(F19)>;
         };
 
         comp {
             key-positions = <4 6 22 27>;
-            bindings = <&kp LA(F16)>;
+            bindings = <&kp LA(F20)>;
         };
 
         rpec {
             key-positions = <4 14 20 27>;
-            bindings = <&kp LA(F17)>;
+            bindings = <&kp LA(F21)>;
         };
 
         trasm {
             key-positions = <6 13 14 15 16>;
-            bindings = <&kp LA(F18)>;
+            bindings = <&kp LA(F22)>;
         };
 
         anouc {
             key-positions = <8 13 19 22 27>;
-            bindings = <&kp LA(F19)>;
+            bindings = <&kp LA(F23)>;
         };
 
         siten {
             key-positions = <15 16 19 20 21>;
-            bindings = <&kp LA(F20)>;
+            bindings = <&kp LA(F24)>;
         };
 
         welm {
             key-positions = <2 6 7 20>;
-            bindings = <&kp LA(F21)>;
+            bindings = <&kp RA(F13)>;
         };
 
         archi {
             key-positions = <13 14 21 27 31>;
-            bindings = <&kp LA(F22)>;
+            bindings = <&kp RA(F14)>;
         };
 
         civ {
             key-positions = <21 27 29>;
-            bindings = <&kp LA(F23)>;
+            bindings = <&kp RA(F15)>;
         };
 
         moy {
             key-positions = <6 9 22>;
-            bindings = <&kp LA(F24)>;
+            bindings = <&kp RA(F16)>;
         };
 
-        expm {
+        xpme {
             key-positions = <4 6 20 26>;
-            bindings = <&kp RA(F13)>;
+            bindings = <&kp RA(F17)>;
+        };
+
+        xpm {
+            key-positions = <4 6 26>;
+            bindings = <&kp RA(F18)>;
         };
 
         supr {
             key-positions = <4 8 14 15>;
-            bindings = <&kp RA(F14)>;
+            bindings = <&kp RA(F19)>;
         };
 
         dram {
             key-positions = <6 13 14 28>;
-            bindings = <&kp RA(F15)>;
+            bindings = <&kp RA(F20)>;
         };
 
         prs {
             key-positions = <4 14 15>;
-            bindings = <&kp RA(F16)>;
+            bindings = <&kp RA(F21)>;
         };
 
         phor {
             key-positions = <4 14 22 31>;
-            bindings = <&kp RA(F17)>;
+            bindings = <&kp RA(F22)>;
         };
 
         cign {
             key-positions = <17 19 21 27>;
-            bindings = <&kp RA(F18)>;
+            bindings = <&kp RA(F23)>;
         };
 
         intro {
             key-positions = <14 16 19 21 22>;
-            bindings = <&kp RA(F19)>;
+            bindings = <&kp RA(F24)>;
         };
 
         taion {
             key-positions = <13 16 19 21 22>;
-            bindings = <&kp RA(F20)>;
+            bindings = <&kp LG(F13)>;
         };
 
         hq_space_ {
             key-positions = <1 31 37>;
-            bindings = <&kp RA(F21)>;
+            bindings = <&kp LG(F14)>;
         };
 
-        int {
-            key-positions = <16 19 21>;
-            bindings = <&kp RA(F22)>;
+        inta {
+            key-positions = <13 16 19 21>;
+            bindings = <&kp LG(F15)>;
+        };
+
+        inte {
+            key-positions = <16 19 20 21>;
+            bindings = <&kp LG(F16)>;
         };
 
         sat {
             key-positions = <13 15 16>;
-            bindings = <&kp RA(F23)>;
+            bindings = <&kp LG(F17)>;
         };
 
         nevr {
             key-positions = <14 19 20 29>;
-            bindings = <&kp RA(F24)>;
+            bindings = <&kp LG(F18)>;
         };
 
         conv {
             key-positions = <19 22 27 29>;
-            bindings = <&kp LG(F13)>;
+            bindings = <&kp LG(F19)>;
         };
 
         sion {
             key-positions = <15 19 21 22>;
-            bindings = <&kp LG(F14)>;
+            bindings = <&kp LG(F20)>;
+        };
+
+        grami {
+            key-positions = <6 13 14 17 21>;
+            bindings = <&kp LG(F21)>;
         };
 
         disr {
             key-positions = <14 15 21 28>;
-            bindings = <&kp LG(F15)>;
+            bindings = <&kp LG(F22)>;
         };
 
         penc {
             key-positions = <4 19 20 27>;
-            bindings = <&kp LG(F16)>;
+            bindings = <&kp LG(F23)>;
         };
 
         spey {
             key-positions = <4 9 15 20>;
-            bindings = <&kp LG(F17)>;
+            bindings = <&kp LG(F24)>;
+        };
+
+        behar {
+            key-positions = <5 13 14 20 31>;
+            bindings = <&kp RG(F13)>;
+        };
+
+        servo {
+            key-positions = <14 15 20 22 29>;
+            bindings = <&kp RG(F14)>;
+        };
+
+        cirum {
+            key-positions = <6 8 14 21 27>;
+            bindings = <&kp RG(F15)>;
+        };
+
+        gram {
+            key-positions = <6 13 14 17>;
+            bindings = <&kp RG(F16)>;
+        };
+
+        int {
+            key-positions = <16 19 21>;
+            bindings = <&kp RG(F17)>;
+        };
+
+        cole {
+            key-positions = <7 20 22 27>;
+            bindings = <&kp RG(F18)>;
+        };
+
+        col {
+            key-positions = <7 22 27>;
+            bindings = <&kp RG(F19)>;
+        };
+
+        ro_space_ {
+            key-positions = <14 22 37>;
+            bindings = <&kp RG(F20)>;
+        };
+
+        contri {
+            key-positions = <14 16 19 21 22 27>;
+            bindings = <&kp RG(F21)>;
+        };
+
+        inv {
+            key-positions = <19 21 29>;
+            bindings = <&kp RG(F22)>;
+        };
+
+        ctem {
+            key-positions = <6 16 20 27>;
+            bindings = <&kp RG(F23)>;
+        };
+
+        tem {
+            key-positions = <6 16 20>;
+            bindings = <&kp RG(F24)>;
+        };
+
+        beha {
+            key-positions = <5 13 20 31>;
+            bindings = <&kp RC(LC(F13))>;
+        };
+
+        rem {
+            key-positions = <6 14 20>;
+            bindings = <&kp RC(LC(F14))>;
         };
 
         spe {
             key-positions = <4 15 20>;
-            bindings = <&kp LG(F18)>;
+            bindings = <&kp RC(LC(F15))>;
         };
 
         chap {
             key-positions = <4 13 27 31>;
-            bindings = <&kp LG(F19)>;
+            bindings = <&kp RC(LC(F16))>;
         };
 
         camp {
             key-positions = <4 6 13 27>;
-            bindings = <&kp LG(F20)>;
+            bindings = <&kp RC(LC(F17))>;
         };
 
         agri {
             key-positions = <13 14 17 21>;
-            bindings = <&kp LG(F21)>;
+            bindings = <&kp RC(LC(F18))>;
         };
 
         exp {
             key-positions = <4 20 26>;
-            bindings = <&kp LG(F22)>;
+            bindings = <&kp RC(LC(F19))>;
         };
 
         sophie {
             key-positions = <4 15 20 21 22 31>;
-            bindings = <&kp LG(F23)>;
+            bindings = <&kp RC(LC(F20))>;
         };
 
         envi {
             key-positions = <19 20 21 29>;
-            bindings = <&kp LG(F24)>;
+            bindings = <&kp RC(LC(F21))>;
         };
 
         gra {
             key-positions = <13 14 17>;
-            bindings = <&kp RG(F13)>;
+            bindings = <&kp RC(LC(F22))>;
         };
 
         mid {
             key-positions = <6 21 28>;
-            bindings = <&kp RG(F14)>;
+            bindings = <&kp RC(LC(F23))>;
         };
 
         econ {
             key-positions = <19 20 22 27>;
-            bindings = <&kp RG(F15)>;
+            bindings = <&kp RC(LC(F24))>;
         };
 
         surv {
             key-positions = <8 14 15 29>;
-            bindings = <&kp RG(F16)>;
+            bindings = <&kp LS(LC(F13))>;
         };
 
         avile {
             key-positions = <7 13 20 21 29>;
-            bindings = <&kp RG(F17)>;
+            bindings = <&kp LS(LC(F14))>;
         };
 
         deli {
             key-positions = <7 20 21 28>;
-            bindings = <&kp RG(F18)>;
+            bindings = <&kp LS(LC(F15))>;
         };
 
         insta {
             key-positions = <13 15 16 19 21>;
-            bindings = <&kp RG(F19)>;
+            bindings = <&kp LS(LC(F16))>;
         };
 
         serv {
             key-positions = <14 15 20 29>;
-            bindings = <&kp RG(F20)>;
+            bindings = <&kp LS(LC(F17))>;
         };
 
         conqe {
             key-positions = <1 19 20 22 27>;
-            bindings = <&kp RG(F21)>;
+            bindings = <&kp LS(LC(F18))>;
         };
 
         comt {
             key-positions = <6 16 22 27>;
-            bindings = <&kp RG(F22)>;
+            bindings = <&kp LS(LC(F19))>;
         };
 
         dev {
             key-positions = <20 28 29>;
-            bindings = <&kp RG(F23)>;
+            bindings = <&kp LS(LC(F20))>;
         };
 
         pre {
             key-positions = <4 14 20>;
-            bindings = <&kp RG(F24)>;
+            bindings = <&kp LS(LC(F21))>;
         };
 
         fort {
             key-positions = <3 14 16 22>;
-            bindings = <&kp RC(LC(F13))>;
+            bindings = <&kp LS(LC(F22))>;
         };
 
         eft {
             key-positions = <3 16 20>;
-            bindings = <&kp RC(LC(F14))>;
+            bindings = <&kp LS(LC(F23))>;
         };
 
         adm {
             key-positions = <6 13 28>;
-            bindings = <&kp RC(LC(F15))>;
+            bindings = <&kp LS(LC(F24))>;
         };
 
         nat {
             key-positions = <13 16 19>;
-            bindings = <&kp RC(LC(F16))>;
+            bindings = <&kp LA(LC(F13))>;
         };
 
         front {
             key-positions = <3 14 16 19 22>;
-            bindings = <&kp RC(LC(F17))>;
+            bindings = <&kp LA(LC(F14))>;
         };
 
         cong {
             key-positions = <17 19 22 27>;
-            bindings = <&kp RC(LC(F18))>;
+            bindings = <&kp LA(LC(F15))>;
         };
 
         cond {
             key-positions = <19 22 27 28>;
-            bindings = <&kp RC(LC(F19))>;
+            bindings = <&kp LA(LC(F16))>;
         };
 
         dicr {
             key-positions = <14 21 27 28>;
-            bindings = <&kp RC(LC(F20))>;
+            bindings = <&kp LA(LC(F17))>;
         };
 
         pari {
             key-positions = <4 13 14 21>;
-            bindings = <&kp RC(LC(F21))>;
+            bindings = <&kp LA(LC(F18))>;
         };
 
         mauf {
             key-positions = <3 6 8 13>;
-            bindings = <&kp RC(LC(F22))>;
+            bindings = <&kp LA(LC(F19))>;
         };
 
-        contr {
-            key-positions = <14 16 19 22 27>;
-            bindings = <&kp RC(LC(F23))>;
+        contry {
+            key-positions = <9 14 16 19 22 27>;
+            bindings = <&kp LA(LC(F20))>;
+        };
+
+        contra {
+            key-positions = <13 14 16 19 22 27>;
+            bindings = <&kp LA(LC(F21))>;
         };
 
         comu {
             key-positions = <6 8 22 27>;
-            bindings = <&kp RC(LC(F24))>;
+            bindings = <&kp LA(LC(F22))>;
         };
 
         sub {
             key-positions = <5 8 15>;
-            bindings = <&kp LS(LC(F13))>;
+            bindings = <&kp LA(LC(F23))>;
         };
 
         conet {
             key-positions = <16 19 20 22 27>;
-            bindings = <&kp LS(LC(F14))>;
+            bindings = <&kp LA(LC(F24))>;
         };
 
         inves {
             key-positions = <15 19 20 21 29>;
-            bindings = <&kp LS(LC(F15))>;
+            bindings = <&kp RA(LC(F13))>;
         };
 
         instr {
             key-positions = <14 15 16 19 21>;
-            bindings = <&kp LS(LC(F16))>;
+            bindings = <&kp RA(LC(F14))>;
         };
 
         cola {
             key-positions = <7 13 22 27>;
-            bindings = <&kp LS(LC(F17))>;
+            bindings = <&kp RA(LC(F15))>;
         };
 
         dem {
             key-positions = <6 20 28>;
-            bindings = <&kp LS(LC(F18))>;
+            bindings = <&kp RA(LC(F16))>;
         };
 
         respo {
             key-positions = <4 14 15 20 22>;
-            bindings = <&kp LS(LC(F19))>;
+            bindings = <&kp RA(LC(F17))>;
         };
 
         apx {
             key-positions = <4 13 26>;
-            bindings = <&kp LS(LC(F20))>;
+            bindings = <&kp RA(LC(F18))>;
         };
 
         inst {
             key-positions = <15 16 19 21>;
-            bindings = <&kp LS(LC(F21))>;
+            bindings = <&kp RA(LC(F19))>;
         };
 
         undr {
             key-positions = <8 14 19 28>;
-            bindings = <&kp LS(LC(F22))>;
+            bindings = <&kp RA(LC(F20))>;
         };
 
         corend {
             key-positions = <14 19 20 22 27 28>;
-            bindings = <&kp LS(LC(F23))>;
+            bindings = <&kp RA(LC(F21))>;
         };
 
         compr {
             key-positions = <4 6 14 22 27>;
-            bindings = <&kp LS(LC(F24))>;
+            bindings = <&kp RA(LC(F22))>;
         };
 
         psyh {
             key-positions = <4 9 15 31>;
-            bindings = <&kp LA(LC(F13))>;
+            bindings = <&kp RA(LC(F23))>;
         };
 
         conti {
             key-positions = <16 19 21 22 27>;
-            bindings = <&kp LA(LC(F14))>;
+            bindings = <&kp RA(LC(F24))>;
         };
 
         revo {
             key-positions = <14 20 22 29>;
-            bindings = <&kp LA(LC(F15))>;
+            bindings = <&kp LG(LC(F13))>;
         };
 
         phiso {
             key-positions = <4 15 21 22 31>;
-            bindings = <&kp LA(LC(F16))>;
+            bindings = <&kp LG(LC(F14))>;
         };
 
         instru {
             key-positions = <8 14 15 16 19 21>;
-            bindings = <&kp LA(LC(F17))>;
+            bindings = <&kp LG(LC(F15))>;
         };
 
         tech {
             key-positions = <16 20 27 31>;
-            bindings = <&kp LA(LC(F18))>;
+            bindings = <&kp LG(LC(F16))>;
         };
 
         trans {
             key-positions = <13 14 15 16 19>;
-            bindings = <&kp LA(LC(F19))>;
+            bindings = <&kp LG(LC(F17))>;
         };
 
         entr {
             key-positions = <14 16 19 20>;
-            bindings = <&kp LA(LC(F20))>;
+            bindings = <&kp LG(LC(F18))>;
         };
 
         auto {
             key-positions = <8 13 16 22>;
-            bindings = <&kp LA(LC(F21))>;
+            bindings = <&kp LG(LC(F19))>;
         };
 
         con {
             key-positions = <19 22 27>;
-            bindings = <&kp LA(LC(F22))>;
+            bindings = <&kp LG(LC(F20))>;
         };
 
         inter {
             key-positions = <14 16 19 20 21>;
-            bindings = <&kp LA(LC(F23))>;
+            bindings = <&kp LG(LC(F21))>;
         };
 
-        recom {
-            key-positions = <6 14 20 22 27>;
-            bindings = <&kp LA(LC(F24))>;
+        reco {
+            key-positions = <14 20 22 27>;
+            bindings = <&kp LG(LC(F22))>;
         };
 
         tra_space_ {
             key-positions = <13 14 16 37>;
-            bindings = <&kp RA(LC(F13))>;
+            bindings = <&kp LG(LC(F23))>;
         };
 
         reps {
             key-positions = <4 14 15 20>;
-            bindings = <&kp RA(LC(F14))>;
+            bindings = <&kp LG(LC(F24))>;
         };
 
         ordi {
             key-positions = <14 21 22 28>;
-            bindings = <&kp RA(LC(F15))>;
+            bindings = <&kp RG(LC(F13))>;
         };
 
         esta {
             key-positions = <13 15 16 20>;
-            bindings = <&kp RA(LC(F16))>;
+            bindings = <&kp RG(LC(F14))>;
         };
 
         derm {
             key-positions = <6 14 20 28>;
-            bindings = <&kp RA(LC(F17))>;
+            bindings = <&kp RG(LC(F15))>;
         };
 
         char {
             key-positions = <13 14 27 31>;
-            bindings = <&kp RA(LC(F18))>;
+            bindings = <&kp RG(LC(F16))>;
         };
 
         qust {
             key-positions = <1 8 15 16>;
-            bindings = <&kp RA(LC(F19))>;
+            bindings = <&kp RG(LC(F17))>;
         };
 
         prio {
             key-positions = <4 14 21 22>;
-            bindings = <&kp RA(LC(F20))>;
+            bindings = <&kp RG(LC(F18))>;
         };
 
         iden {
             key-positions = <19 20 21 28>;
-            bindings = <&kp RA(LC(F21))>;
+            bindings = <&kp RG(LC(F19))>;
         };
 
         sign {
             key-positions = <15 17 19 21>;
-            bindings = <&kp RA(LC(F22))>;
+            bindings = <&kp RG(LC(F20))>;
         };
 
         end_left {
