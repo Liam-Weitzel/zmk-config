@@ -10,6 +10,7 @@ def extract_typing_words(input_file):
     prefixes = []
     root_words = []
     brief = []
+    english5k = []
     
     current_section = None
     keywords = ['[cursor]', '[left]', '[right]', '[shift]', '[space]', '[backspace]']
@@ -35,6 +36,8 @@ def extract_typing_words(input_file):
                     current_section = 'roots'
                 elif 'BRIEF' in line:
                     current_section = 'brief'
+                elif 'ENGLISH 5K' in line:
+                    current_section = 'english5k'
                 continue
                 
             try:
@@ -70,6 +73,8 @@ def extract_typing_words(input_file):
                             root_words.append(word)
                         elif current_section == 'brief':
                             brief.append(word)
+                        elif current_section == 'english5k':
+                            english5k.append(word)
             except:
                 continue
 
@@ -84,6 +89,8 @@ def extract_typing_words(input_file):
     word_count += len(snippets)
     combined_words += brief
     word_count += len(brief)
+    combined_words += english5k
+    word_count += len(english5k)
 
     for i in range(len(suffixes)):
         suffix, backspace_count = suffixes[i]
