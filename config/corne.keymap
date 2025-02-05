@@ -9,6 +9,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -30,42 +31,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
-        };
-
-        left_mleft: left_mleft {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LEFT_MLEFT";
-            bindings = <&kp LEFT>, <U_MS_L>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
-        right_mright: right_mright {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RIGHT_MRIGHT";
-            bindings = <&kp RIGHT>, <U_MS_R>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
-        up_mup: up_mup {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UP_MUP";
-            bindings = <&kp UP>, <U_MS_U>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
-        down_mdown: down_mdown {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOWN_MDOWN";
-            bindings = <&kp DOWN_ARROW>, <U_MS_D>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
         };
 
         mod_morph_plus_equals: mod_morph_plus_equals {
@@ -186,42 +151,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             flavor = "hold-preferred";
-        };
-
-        ctrl_shift: ctrl_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CTRL_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp RSHIFT>;
-
-            tapping-term-ms = <300>;
-        };
-
-        ralt_mb1: ralt_mb1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_MB1";
-            bindings = <&mkp MB1>, <&mkp MB1>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_mb2: ralt_mb2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_MB2";
-            bindings = <&mkp MB2>, <&mkp MB2>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
-        };
-
-        ralt_mb3: ralt_mb3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RALT_MB3";
-            bindings = <&mkp MB3>, <&mkp MB3>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
         };
 
         mkp_morph1: mkp_morph1 {
@@ -1539,6 +1468,16 @@
         enter_right {
             bindings = <&kp ENTER>;
             key-positions = <20 19 39>;
+        };
+
+        back_space_left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <17 15 38>;
+        };
+
+        shift_left {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <2 4 3>;
         };
     };
 
