@@ -9,7 +9,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -1501,10 +1500,10 @@
 
         nav {
             bindings = <
-&none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph  &kp P   &kp PRINTSCREEN    &kp PG_UP      &kp K_PREV      &kp UP_ARROW    &kp K_NEXT       &none  &none
-&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 12             &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &mkp_morph1        &none          &none           &none           &none            &none  &none
-                                           &trans            &trans  &trans             &trans         &trans          &trans
+&none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph  &kp P   &kp PRINTSCREEN    &kp PG_UP      &kp C_AL_PREVIOUS_TASK  &kp UP_ARROW    &kp C_AL_NEXT_TASK  &kp J    &none
+&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 12             &kp PAGE_DOWN  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp O    &none
+&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &mkp_morph1        &kp K          &kp H                   &kp COMMA       &kp PERIOD          &kp SQT  &none
+                                           &trans            &trans  &trans             &trans         &trans                  &trans
             >;
         };
 
@@ -1528,9 +1527,9 @@
 
         num {
             bindings = <
-&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE      &none   &none   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &none    &none
-&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI       &none   &mo 9   &mod_morph_plus_equals  &kp MINUS          &none    &none
-&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp_morph1    &none   &none   &kp COMMA               &kp PERIOD         &kp SQT  &none
+&none  &kp BACKSLASH  &kp N7        &kp N8        &kp N9        &kp GRAVE      &kp M   &kp L   &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp J    &none
+&none  &kp N0         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMI       &none   &mo 9   &mod_morph_plus_equals  &kp MINUS          &kp O    &none
+&none  &kp SLASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mkp_morph1    &kp K   &kp H   &kp COMMA               &kp PERIOD         &kp SQT  &none
                                     &trans        &trans        &trans         &trans  &trans  &trans
             >;
         };
@@ -1555,9 +1554,9 @@
 
         func {
             bindings = <
-&none  &none    &kp F7  &kp F8  &kp F9  &kp F11        &none   &none   &none   &none  &none  &none
-&none  &kp F10  &kp F4  &kp F5  &kp F6  &kp F12        &none   &none   &none   &none  &none  &none
-&none  &none    &kp F1  &kp F2  &kp F3  &mkp_morph1    &none   &none   &none   &none  &none  &none
+&none  &kp Q    &kp F7  &kp F8  &kp F9  &kp F11        &kp M   &kp L   &kp U      &kp Y    &kp J    &none
+&none  &kp F10  &kp F4  &kp F5  &kp F6  &kp F12        &none   &none   &kp E      &kp I    &kp O    &none
+&none  &kp Z    &kp F1  &kp F2  &kp F3  &mkp_morph1    &kp K   &kp H   &kp COMMA  &kp DOT  &kp SQT  &none
                         &trans  &trans  &trans         &trans  &trans  &trans
             >;
         };
@@ -1582,10 +1581,10 @@
 
         sys {
             bindings = <
-&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT        &none   &none          &none         &none         &none         &none         &none         &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS    &none   &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE  &none   &mkp_morph1    &none         &none         &none         &none         &bt BT_CLR    &none
-                                                 &trans            &trans  &trans         &trans        &trans        &trans
+&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT        &kp P   &kp B     &kp M         &kp L         &kp U         &kp Y         &kp J         &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS    &none   &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE  &kp D   &kp V     &kp K         &kp H         &kp COMMA     &kp DOT       &bt BT_CLR    &none
+                                                 &trans            &trans  &trans    &trans        &trans        &trans
             >;
         };
 
