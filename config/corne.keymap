@@ -1551,10 +1551,10 @@
 
         mouse {
             bindings = <
-&none  &kp Q            &kp W           &kp F     &kp P   &kp B     &msc SCRL_UP    &kp C_AL_PREVIOUS_TASK  &mmv MOVE_UP    &kp C_AL_NEXT_TASK  &kp J    &none
-&none  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp S     &kp T   &kp G     &msc SCRL_DOWN  &mmv MOVE_LEFT          &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &kp O    &none
-&none  &mkp MB3         &mkp MB2        &mkp MB1  &kp D   &kp V     &kp K           &kp H                   &kp COMMA       &kp DOT             &kp SQT  &none
-                                        &trans    &trans  &trans    &trans          &trans                  &trans
+&none  &kp Q            &kp W           &kp F     &kp P   &kp B       &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp J    &none
+&none  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp S     &kp T   &kp G       &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp O    &none
+&none  &mkp MB3         &mkp MB2        &mkp MB1  &kp D   &mkp MB1    &kp K           &kp H           &kp COMMA       &kp DOT          &kp SQT  &none
+                                        &trans    &trans  &trans      &trans          &trans          &trans
             >;
         };
 
