@@ -1502,6 +1502,11 @@
             key-positions = <31 32 33>;
             layers = <5 6 4>;
         };
+
+        caps_compose {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <2 3 16>;
+        };
     };
 
     keymap {
