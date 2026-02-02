@@ -52,87 +52,6 @@
             quick-tap-ms = <180>;
         };
 
-        tog_9_mod_morph: tog_9_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_9_MOD_MORPH";
-            bindings = <&kp C>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_1_mod_morph: tog_1_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_1_MOD_MORPH";
-            bindings = <&kp Q>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_2_mod_morph: tog_2_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_2_MOD_MORPH";
-            bindings = <&kp W>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_3_mod_morph: tog_3_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_3_MOD_MORPH";
-            bindings = <&kp F>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_4_mod_morph: tog_4_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_4_MOD_MORPH";
-            bindings = <&kp A>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_5_mod_morph: tog_5_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_5_MOD_MORPH";
-            bindings = <&kp R>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_6_mod_morph: tog_6_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_6_MOD_MORPH";
-            bindings = <&kp S>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_7_mod_morph: tog_7_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_7_MOD_MORPH";
-            bindings = <&kp Z>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        tog_8_mod_morph: tog_8_mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TOG_8_MOD_MORPH";
-            bindings = <&kp X>, <&tog 16>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
         sticky_key: sticky_key {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY";
@@ -150,53 +69,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             flavor = "hold-preferred";
-        };
-
-        hold_tap_tog_kp: hold_tap_tog_kp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_TOG_KP";
-            bindings = <&tog>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <299>;
-        };
-
-        left_arrow: left_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LEFT_ARROW";
-            bindings = <&kp LEFT>, <&mmv MOVE_LEFT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        right_arrow: right_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RIGHT_ARROW";
-            bindings = <&kp RIGHT>, <&mmv MOVE_RIGHT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        up_arrow: up_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UP_ARROW";
-            bindings = <&kp UP>, <&mmv MOVE_UP>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        down_arrow: down_arrow {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOWN_ARROW";
-            bindings = <&kp DOWN>, <&mmv MOVE_DOWN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
         };
     };
 
@@ -1529,10 +1401,10 @@
 
         nav {
             bindings = <
-&none  &tog_1_mod_morph  &tog_2_mod_morph  &tog_3_mod_morph  &kp P   &kp B       &kp PG_UP      &kp C_AL_PREVIOUS_TASK  &up_arrow    &kp C_AL_NEXT_TASK  &kp J    &none
-&none  &tog_4_mod_morph  &tog_5_mod_morph  &tog_6_mod_morph  &kp T   &mo 15      &kp PAGE_DOWN  &left_arrow             &down_arrow  &right_arrow        &kp O    &none
-&none  &tog_7_mod_morph  &tog_8_mod_morph  &tog_9_mod_morph  &kp D   &mkp MB1    &kp K          &kp H                   &kp COMMA    &kp PERIOD          &kp SQT  &none
-                                           &trans            &trans  &trans      &trans         &trans                  &trans
+&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT        &kp P   &kp B       &kp PG_UP      &kp C_AL_PREVIOUS_TASK  &kp UP_ARROW    &kp C_AL_NEXT_TASK  &kp J    &none
+&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREV        &kp T   &mo 15      &kp PAGE_DOWN  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp O    &none
+&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE  &kp D   &mkp MB1    &kp K          &kp H                   &kp COMMA       &kp PERIOD          &kp SQT  &none
+                                                 &trans            &trans  &trans      &trans         &trans                  &trans
             >;
         };
 
@@ -1637,10 +1509,10 @@
 
         sys {
             bindings = <
-&none  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT        &kp P   &kp B       &kp M         &kp L         &kp U         &kp Y         &kp J         &none
-&none  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREVIOUS    &kp T   &kp G       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&none  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE         &kp C_PLAY_PAUSE  &kp D   &mkp MB1    &kp K         &kp H         &kp COMMA     &kp DOT       &bt BT_CLR    &none
-                                                 &trans            &trans  &trans      &trans        &trans        &trans
+&none  &kp Q           &kp W        &kp F   &kp P   &kp B       &kp M         &kp L         &kp U         &kp Y         &kp J         &none
+&none  &bt BT_CLR_ALL  &kp R        &kp S   &kp T   &kp G       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &sys_reset      &bootloader  &kp C   &kp D   &mkp MB1    &kp K         &kp H         &kp COMMA     &kp DOT       &bt BT_CLR    &none
+                                    &trans  &trans  &trans      &trans        &trans        &trans
             >;
         };
 
@@ -1659,15 +1531,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        test {
-            bindings = <
-&none  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P                      &none
-&none  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI                   &none
-&none  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &hold_tap_tog_kp 16 SLASH  &none
-                     &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
