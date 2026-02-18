@@ -1540,16 +1540,6 @@
             then-layer = <7>;
         };
 
-        sys_lock {
-            if-layers = <13>;
-            then-layer = <13>;
-        };
-
-        sys_temp {
-            if-layers = <13>;
-            then-layer = <13>;
-        };
-
         mouse_lock {
             if-layers = <5>;
             then-layer = <4>;
