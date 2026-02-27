@@ -2,15 +2,15 @@ manifest:
     remotes:
         - name: zmkfirmware
           url-base: https://github.com/zmkfirmware
-        - name: m165437
-          url-base: https://github.com/M165437
+        - name: Liam-Weitzel
+          url-base: https://github.com/Liam-Weitzel
     projects:
         - name: zmk
           remote: zmkfirmware
           revision: v0.3
           import: app/west.yml
-        - name: nice-view-gem
-          remote: m165437
-          revision: v0.3.0
+        - name: nice-shield-roshela
+          remote: Liam-Weitzel
+          revision: main
     self:
         path: config
